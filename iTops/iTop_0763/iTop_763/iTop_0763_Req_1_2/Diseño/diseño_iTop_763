@@ -1,0 +1,2140 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="">
+  <node_order><![CDATA[]]></node_order>
+  <details><![CDATA[]]></details>
+  <testsuite name="EM-003 -Visualizacion de informacion de empleados ">
+    <node_order><![CDATA[]]></node_order>
+    <details><![CDATA[]]></details>
+    <testcase internalid="" name="Visualización de la Información Específica del Empleado">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que cuando el usuario con perfil de  (director, gerente o jefe inmediato) ingrese al sistema de odoo y al seleccionar un empleado en el módulo "empleados", el sistema muestra únicamente las pestañas definidas que son : 'Currículum vitae', 'Información del trabajo', 'Información privada', 'Información familiar', 'Intereses' , 'Mascotas ‘.]]></summary>
+      <preconditions><![CDATA[*El usuario con rol de (director, gerente o jefe inmediato) debe tener acceso al módulo de empleados.                 *Debe existir al menos un empleado registrado en el sistema.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-ingresar al ERP odoo con credenciales de “director, jefe inmediato o gerente”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-dar clic en el icono de cuadritos que esta en el lado derecho de la parte de arriba de la página.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3-dar clic al módulo de empleados.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-dar clic en un empleado específico.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-Verificar que se muestran únicamente las pestañas: 'Currículum vitae', 'Información del trabajo', 'Información privada', 'Información familiar', 'Intereses' y 'Mascotas'.]]></actions>
+          <expectedresults><![CDATA[cuando se ingresa al ERP odoo como (director, gerente o jefe inmediato) e ingresa al modulo empleados y selecciona un empleado el sistema muestra las pestañas 'Currículum vitae', 'Información del trabajo', 'Información privada', 'Información familiar', 'Intereses' y 'Mascotas', correctamente.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Restricción de Edición en Pestañas">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que cuando el usuario con perfil de  (director, gerente o jefe inmediato) ingrese al sistema de odoo y al seleccionar un empleado en el modulo "empleados"  no se le permita la edición en ninguna de las pestañas mostradas.]]></summary>
+      <preconditions><![CDATA[*El usuario (director, gerente o jefe inmediato) debe tener acceso al módulo de empleados.
+*Debe existir al menos un empleado registrado en el sistema]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-ingresar al ERP odoo con credenciales de “director, jefe inmediato o gerente”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-dar clic en el icono de cuadritos que está en el lado derecho de la parte de arriba de la página.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3-dar clic al módulo de empleados.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-dar clic en un empleado específico.                         ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-Verificar que se muestra la información general del empleado: Nombre del empleado, Celular corporativo, Correo electrónico laboral, Departamento, Gerente y Jefe inmediato.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6-Verificar que la información es de solo lectura.]]></actions>
+          <expectedresults><![CDATA[*El sistema muestra la información general del empleado: Nombre del empleado, Celular corporativo, Correo electrónico laboral, Departamento, Gerente y Jefe inmediato.
+*La información es de solo lectura.
+El sistema muestra los botones de acceso rápido al módulo de ausencias y partes de hora junto con la información de conexión del empleado.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Visualización de Información General del Empleado">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que cuando el usuario con perfil de  (director, gerente o jefe inmediato) ingrese al sistema de odoo y al seleccionar un empleado en el modulo "empleados", el sistema muestra la información general sin permitir edición alguna.]]></summary>
+      <preconditions><![CDATA[*El usuario (director, gerente o jefe inmediato) debe tener acceso al módulo de empleados.
+*Debe existir al menos un empleado registrado en el sistema]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-ingresar al ERP odoo con credenciales de “director, jefe inmediato o gerente”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-dar clic en el icono de cuadritos que está en el lado derecho de la parte de arriba de la página.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3-dar clic al módulo de empleados.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-dar clic en un empleado específico.                         ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-Verificar que se muestra la información general del empleado: Nombre del empleado, Celular corporativo, Correo electrónico laboral, Departamento, Gerente y Jefe inmediato.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6-Verificar que la información es de solo lectura.]]></actions>
+          <expectedresults><![CDATA[*El sistema muestra la información general del empleado: Nombre del empleado, Celular corporativo, Correo electrónico laboral, Departamento, Gerente y Jefe inmediato.
+*La información es de solo lectura.
+El sistema muestra los botones de acceso rápido al módulo de ausencias y partes de hora junto con la información de conexión del empleado.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="existencia de botones de acceso rápido.">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[verificar que cuando el usuario con perfil de (director, gerente o jefe inmediato) ingrese al sistema de odoo y al seleccionar un empleado en el módulo "empleados” existan los botones de acceso rápido al módulo de ausencias y partes de hora.]]></summary>
+      <preconditions><![CDATA[*Se ha ingresado al sistema odoo                 
+*Se ha ingresado al módulo empleados 
+*Se ha seleccionado un empleado.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-ingresar al ERP odoo con credenciales de “director, jefe inmediato o gerente”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-dar clic en el icono de cuadritos que está en el lado derecho de la parte de arriba de la página.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3-dar clic al módulo de empleados.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-dar clic en un empleado específico.                         ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5- verifica que existan los botones de acceso rápido al módulo "ausencias y partes de hora ".]]></actions>
+          <expectedresults><![CDATA[Al ingresar al sistema de odoo e ir hasta el modulo "Empleados " y seleccionar un empleado se verifica que existen los botones de acceso rapido para los modulo de Ausencia y partes de hora.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="botón de acceso rápido al módulo &quot;Ausencias&quot;.">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[verificar que cuando el usuario con perfil de (director, gerente o jefe inmediato) ingrese al sistema de odoo, al seleccionar un empleado en el módulo "empleados" y al dar clic en el botón de acceso rápido del módulo  "Ausencias" nos dirija directamente al módulo de "Ausencias".]]></summary>
+      <preconditions><![CDATA[*Se ha ingresado al sistema odoo                    
+*Se ha ingresado al módulo empleados 
+* Se ha seleccionado un empleado.                        
+*Existe el botón de acceso rápido del módulo de "Ausencias"]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1.ingresa al sistema odoo                                                            ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2. da clic en el módulo "Empleados"                                        ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3. selecciona un empleado                                                        ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4. da clic en el botón de acceso rápido al módulo "ausencias  "]]></actions>
+          <expectedresults><![CDATA[al ingresar al sistema de odoo e ir hasta el modulo "Empleados ", seleccionar un empleado y dar clic en el boton de acceso rapido al modulo de "Ausencias " este nos dirije al modulo de ausencias correctamente.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="botón de acceso rápido al módulo &quot;Partes de hora&quot;">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[verificar que cuando el usuario con perfil de (director, gerente o jefe inmediato) ingrese al sistema de odoo, al seleccionar un empleado en el módulo "empleados" y al dar clic en el botón de acceso rápido del módulo  "Partes de hora" nos dirija directamente al módulo de "Partes de hora".]]></summary>
+      <preconditions><![CDATA[*Se ha ingresado al sistema odoo                    
+*Se ha ingresado al módulo empleados 
+* Se ha seleccionado un empleado.                        
+*Existe el botón de acceso rápido del módulo de "Partes de hora" ]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-ingresar al ERP odoo con credenciales de “director, jefe inmediato o gerente”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-dar clic en el icono de cuadritos que está en el lado derecho de la parte de arriba de la página.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3-dar clic al módulo de empleados.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-dar clic en un empleado específico.                         ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5- dar clic en el botón de acceso rápido al módulo "partes de hora “]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6- verificar que ingrese al módulo “partes de hora”]]></actions>
+          <expectedresults><![CDATA[al ingresar al sistema de odoo e ir hasta el modulo "Empleados ", seleccionar un empleado y dar clic en el boton de acceso rapido al modulo de "Partes de hora " este nos dirije al modulo de partes de hora correctamente.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="botón de acceso rápido al módulo &quot;Partes de hora&quot;">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[verificar que cuando el usuario con perfil de (director, gerente o jefe inmediato) ingrese al sistema de odoo, al seleccionar un empleado en el módulo "empleados" y al dar clic en el botón de acceso rápido del módulo  "Partes de hora" nos dirija directamente al módulo de "Partes de hora".]]></summary>
+      <preconditions><![CDATA[*Se ha ingresado al sistema odoo                    
+*Se ha ingresado al módulo empleados 
+* Se ha seleccionado un empleado.                        
+*Existe el botón de acceso rápido del módulo de "Partes de hora" ]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-ingresar al ERP odoo con credenciales de “director, jefe inmediato o gerente”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-dar clic en el icono de cuadritos que está en el lado derecho de la parte de arriba de la página.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3-dar clic al módulo de empleados.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-dar clic en un empleado específico.                         ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5- dar clic en el botón de acceso rápido al módulo "partes de hora “]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+  <testsuite name="MP-004  -Actualización del perfil de usuario">
+    <node_order><![CDATA[]]></node_order>
+    <details><![CDATA[]]></details>
+    <testcase internalid="" name="Restricción de Acceso al Módulo de Empleados">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que un empleado regular cuando ingrese al ERP odoo no pueda acceder al módulo de empleados, no exista el modulo empleados en su usuario.]]></summary>
+      <preconditions><![CDATA[El usuario debe estar logueado en el ERP de Odoo con un rol de empleado regular.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1.Iniciar sesión en el ERP de Odoo con credenciales de un empleado regular.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2.dar clic al menú principal de Odoo.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3.Buscar el módulo de 'Empleados' en el menú.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4.Verificar que no existe el módulo empleado dentro del menú principal de odoo para un empleado regular.]]></actions>
+          <expectedresults><![CDATA[se ingreso con credenciales de empleado regular al ERP de odoo y se puede validar que el  módulo de 'Empleados' en el menú principal de Odoo no se visualiza.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Visualizacion de &quot;Mi perfil &quot; al dar clic en el boton usuario">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que cuando un empleado haya ingresado al ERP odoo y haya dado clic en el botón usuario de despliegue una lista de opciones, entre ellas debe estar "Mi perfil".]]></summary>
+      <preconditions><![CDATA[El usuario debe estar logueado en el ERP de Odoo con un rol de empleado regular.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1.Iniciar sesión en el ERP de Odoo con credenciales de un empleado regular.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2.dar clic en el botón de usuario.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3.Verificar que el menú desplegable se muestra correctamente, con la opción "Mi perfil".]]></actions>
+          <expectedresults><![CDATA[al ingresar al ERP odoo con credenciales de empleado regular y dar clic en el boton de usuario el  sistema muestra la opcion "Mi perfil" correctamente]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Acceso a la Información del Empleado desde &quot;Mi perfil&quot;">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que cuando un empleado haya ingresado al ERP y al dar clic en la opción “Mi perfil" acceda a toda la información general del empleado, que debe contener:  Nombre del empleado, Celular corporativo, Correo electrónico laboral, Departamento, Gerente y jefe inmediato.]]></summary>
+      <preconditions><![CDATA[*El usuario debe estar logueado en el ERP de Odoo con un rol de empleado regular.                       *Acceso al perfil del usuario.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1.Iniciar sesión en el ERP de Odoo con credenciales de un empleado regular.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2.dar clic en el botón de usuario.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3.Verificar que el menú desplegable se muestra correctamente, con las opciones: Documentación, Soporte, Atajo, Mi perfil, Mi cuenta Odoo.com, Cerrar sesión]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4.dar clic en la opción 'Mi perfil'.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5. Verificar que la información de "Mi perfil " del empleado regular no pueda ser editada por El.]]></actions>
+          <expectedresults><![CDATA[al ingresar al ERP odoo con credenciales de empleado regular y dar clic en el boton de usuario el  sistema muestra uan lista desplegable con las opciones Documentacion, Soporte, Atajo, Mi perfil, Mi cuenta Odoo.com, Cerrar sesión y al dar clic en "Mi perfil" permite acceder a la informacion del empleado:  Nombre del empleado, Celular corporativo, Correo electrónico laboral, Departamento, Gerente y Jefe inmediato. correctamente.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="restricción de edicion a empleado regular de informacion general ">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que un empleado regular no pueda editar su información general. ]]></summary>
+      <preconditions><![CDATA[*El usuario debe estar logueado en el ERP de Odoo con un rol de empleado regular.                       *Acceso al perfil del usuario.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1.Iniciar sesión en el ERP de Odoo con credenciales de un empleado regular.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2.dar clic en el botón de usuario.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3.dar clic en la opción 'Mi perfil'.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4.dar clic en el botón “Editar”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5. Verificar que la información de "Mi perfil " del empleado regular no pueda ser editada por El.]]></actions>
+          <expectedresults><![CDATA[al ingresar al ERP odoo con credenciales de empleado regular y dar clic en el boton de usuario y clic en "Mi perfil", se visualiza la informacion general del empleado y esta no se permite editar por El.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Visualización de Información Específica en el Perfil">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que cuando un empleado haya ingresado al ERP, de clic en la opción  "Mi perfil", acceda a toda la información general del empleado el sistema debe mostrar únicamente las siguientes pestañas: 'Currículum vitae', 'Información del trabajo', 'Información privada', 'Información familiar', 'Intereses', 'Mascotas'. 	]]></summary>
+      <preconditions><![CDATA[*El usuario debe estar logueado en el ERP de Odoo con una cuenta de empleado regular.
+*Acceso al perfil del usuario.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-Iniciar sesión en el ERP de Odoo con credenciales de un empleado regular.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-dar clic el botón de usuario en el menú principal.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3-dar clic en la opción 'Mi perfil'.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-Verificar que la información específica del perfil, las pestañas: 'Currículum vitae', 'Información del trabajo', 'Información privada', 'Información familiar', 'Intereses', 'Mascotas’, se muestra correctamente, ]]></actions>
+          <expectedresults><![CDATA[Al ingresar al ERP odoo con credenciales de empleado regular al dar clic en el boton de usuario y clic en "Mi perfil" la información específica que son las siguientes pestañas 'Currículum vitae', 'Información del trabajo', 'Información privada', 'Información familiar', 'Intereses', 'Mascotas',  se muestran correctamente. ]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Modificación del Currículum Vitae, información &quot;educacion&quot;">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Cuando un empleado haya  ingresado al ERP odoo  haya dado clic en el botón usuario, clic en la opción  "Mi perfil" y  clic en la pestaña "currículum vitae" verificar que  pueda modificar toda la  información de la opción tipo "educación", en los campos : *nombre de la institución ,*título del programa,*estado de formación, 
+*fecha de inicio,*fecha de finalización,*formación,*nivel de estudio, diploma/certificado'.]]></summary>
+      <preconditions><![CDATA[*El usuario debe estar logueado en el ERP de Odoo con una cuenta de empleado regular.
+*Acceso al perfil del usuario.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-Iniciar sesión en el ERP de Odoo con credenciales de un empleado regular. ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-dar clic el botón de usuario en el menú principal. ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3-dar clic en la opción 'Mi perfil'. ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4- dar clic en la pestaña ‘’Curriculum vitae” ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-dar clic en el botón “Editar” ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6-dar clic en una tarjeta de información que haya registrado. ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7-Verificar que en la pestaña: 'Currículum vitae' puedan modificarse toda la información de ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[8]]></step_number>
+          <actions><![CDATA[Educación en                                                                                                                                                       ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[9]]></step_number>
+          <actions><![CDATA[los siguientes campos: *nombre de la institución ,*título del programa,*estado de formación, ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[10]]></step_number>
+          <actions><![CDATA[*fecha de inicio,*fecha de finalización,*formación,*nivel de estudio, diploma/certificado'                                                     ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[11]]></step_number>
+          <actions><![CDATA[8-dar clic en el botón guardar del formulario ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[12]]></step_number>
+          <actions><![CDATA[9-dar clic en el botón Guardar.    ]]></actions>
+          <expectedresults><![CDATA[Al ingresar al ERP odoo con credenciales de empleado regular al dar clic en el boton de usuario, clic en "Mi perfil", clic en la pestaña "curriculum vitae", clic en la opción "Educación" permite que el empleado pueda modicar toda la información de los siguientes campos:  *nombre de la institución ,*titulo del programa,*estado de formacion, *fecha de inicio,*fecha de finalización,*formación,*nivel de estudio,diploma/certificado', correctamente.        ]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="validar que no se pueda guardar información sin llenar un campo requerido">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Cuando un empleado haya ingresado al ERP odoo haya dado clic en el botón usuario, clic en la opción “Mi perfil", clic en la pestaña "currículum vitae" y clic en la opción "Educación" validar que no se pueda guardar información sin ver llenado un campo requerido en la información de educación.]]></summary>
+      <preconditions><![CDATA[*El usuario debe estar logueado en el ERP de Odoo con un rol de empleado regular.                       *Acceso al perfil del usuario.
+*Estar dentro la pestaña “Currriculm Vitae”]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-Iniciar sesión en el ERP de Odoo con credenciales de un empleado regular.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-dar clic el botón de usuario en el menú principal.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3-dar clic en la opción 'Mi perfil'.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4- dar clic en la pestaña ‘’Curriculum vitae”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-dar clic en el botón “Editar”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6-dar clic en una tarjeta de información que haya registrado.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7-no llenar un campo requerido]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[8]]></step_number>
+          <actions><![CDATA[8-dar clic en el botón guardar del formulario y verificar que no permita guardar información sin llenar un campo requerido.]]></actions>
+          <expectedresults><![CDATA[al ingresar al ERP odoo con credenciales de empleado regular al dar clic en el boton de usuario, clic en "Mi perfil", clic en la pestaña "curriculum vitae", clic en la opción "Educación" y clic en el boton guardar, se verifica que no se guarda la información sin ver llenado uno o todos  los campos requeridos.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Modificación del Currículum Vitae, informacion &quot;experiencia&quot;">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Cuando un empleado haya ingresado al ERP odoo haya dado clic en el botón usuario, clic en la opción “Mi perfil" y clic en la pestaña "currículum vitae" verificar que pueda modificar toda la información de la opción tipo "experiencia", certificados y habilidades. ]]></summary>
+      <preconditions><![CDATA[*El usuario debe estar logueado en el ERP de Odoo con un rol de empleado regular.                       *Acceso al perfil del usuario.
+*Estar dentro la pestaña “Currriculm Vitae”]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-Iniciar sesión en el ERP de Odoo con credenciales de un empleado regular.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-dar clic el botón de usuario en el menú principal.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3-Seleccionar la opción 'Mi perfil'.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-Verificar que en la pestaña: 'Currículum vitae' puedan modificarse toda la información de "Experiencia" en                                                                                                                                                       los siguientes campos: *Nombre de la empresa, *cargo, *fecha de inicio, *fecha de finalización, *sector,*ciudad laboral,*descripción de funciones que realizo a sus conocimientos adquiridos.                                                         ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-dar clic en el botón guardar y cerrar    ]]></actions>
+          <expectedresults><![CDATA[Al ingresar al ERP odoo con credenciales de empleado regular al dar clic en el boton de usuario, clic en "Mi perfil", clic en la pestaña "curriculum vitae", clic en la opción tipo "Experiencia" permite que el empleado pueda modicar toda la información de los siguientes campos:   *Nombre de la empresa, *cargo, *fecha de inicio, *fecha de finalización, *sector,*ciudad laboral,*descripcion de funciones que realizo a sus conocimientos adquiridos, correctamente.  ]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="validar que no se pueda guardar información sin llenar un campo requerido">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Cuando un empleado haya  ingresado al ERP odoo  haya dado clic en el boton usuario, clic en la opcion  "Mi perfil", clic en la pestaña "currículum vitae" y clic en la opcion "Experiencia" validar que no se pueda guardar informacion sin ver llenado un campo requerido en la información de experiencia.]]></summary>
+      <preconditions><![CDATA[*El usuario debe estar logueado en el ERP de Odoo con un rol de empleado regular.                       *Acceso al perfil del usuario.
+*Estar dentro la pestaña “Currriculm Vitae”]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-Iniciar sesión en el ERP de Odoo con credenciales de un empleado regular.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-dar clic el botón de usuario en el menú principal.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3-Seleccionar la opción 'Mi perfil'.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-dar clic en la pestaña "currículum vitae"                         ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[  5-dar clic en el tipo "experiencia"                                              ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6-dar clic en el boton guardar y verificar que no permia guardar informacion sin llenar un campo requerido.]]></actions>
+          <expectedresults><![CDATA[Al ingresar al ERP odoo con credenciales de empleado regular al dar clic en el boton de usuario, clic en "Mi perfil", clic en la pestaña "curriculum vitae", clic en la opción "Experiencia" y clic en el boton guardar, se verifica que no se guarda la información sin ver llenado uno o todos  los campos requeridos.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Modificación del Currículum Vitae, informacion &quot;perfil profesional&quot;">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Cuando un empleado haya ingresado al ERP odoo haya dado clic en el botón usuario, clic en la opción “Mi perfil" y clic en la pestaña "currículum vitae" verificar que pueda modificar toda la información de la opción tipo "perfil profesional]]></summary>
+      <preconditions><![CDATA[*El usuario debe estar logueado en el ERP de Odoo con un rol de empleado regular.                       *Acceso al perfil del usuario.
+*Estar dentro la pestaña “Currriculm Vitae”]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-Iniciar sesión en el ERP de Odoo con credenciales de un empleado regular.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-dar clic el botón de usuario en el menú principal.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3-dar clic en la opción 'Mi perfil'.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4- dar clic en la pestaña ‘’Curriculum vitae”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-dar clic en el botón “Editar”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6-dar clic en una tarjeta de información de perfil profesional que haya registrado.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7-Verificar que en la pestaña: 'Currículum vitae' puedan modificarse toda la información de "perfil profesional" en                                                                                                                                                       los siguientes campos: *años de experiencia, *meses de experiencia, *describir sobre tus aptitudes, logros, experiencias anteriores y conocimientos adquiridos.  ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[8]]></step_number>
+          <actions><![CDATA[8-dar clic en el botón guardar en el formulario]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[9]]></step_number>
+          <actions><![CDATA[9 -dar clic en el botón guardar ]]></actions>
+          <expectedresults><![CDATA[Al ingresar al ERP odoo con credenciales de empleado regular al dar clic en el boton de usuario, clic en "Mi perfil", clic en la pestaña "curriculum vitae", clic en la opción tipo "Perfil profesional" permite que el empleado pueda modicar toda la información de los siguientes campos:   *años de experiencia, *meses de experiencia, *describir sobre tus aptitudes,logros, experiencias anteriores y conocomientos adquiridos, correctamente.           ]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="validar que no se pueda guardar información sin llenar un campo requerido">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Cuando un empleado haya ingresado al ERP odoo haya dado clic en el botón usuario, clic en la opción “Mi perfil", clic en la pestaña "currículum vitae" y clic en la opción "perfil profesional" validar que no se pueda guardar información sin ver llenado un campo requerido en la información de perfil profesional.]]></summary>
+      <preconditions><![CDATA[*El usuario debe estar logueado en el ERP de Odoo con un rol de empleado regular.                       *Acceso al perfil del usuario.
+*Estar dentro la pestaña “Currriculm Vitae”]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-Iniciar sesión en el ERP de Odoo con credenciales de un empleado regular.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-dar clic el botón de usuario en el menú principal.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3-dar clic en la opción 'Mi perfil'.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4- dar clic en la pestaña ‘’Curriculum vitae”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-dar clic en el botón “Editar”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6-dar clic en una tarjeta de información de perfil profesional que haya registrado.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7-no llenar un campo requerido]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[8]]></step_number>
+          <actions><![CDATA[8-dar clic en el botón guardar del formulario y verificar que no permita guardar información sin llenar un campo requerido.]]></actions>
+          <expectedresults><![CDATA[al ingresar al ERP odoo con credenciales de empleado regular al dar clic en el boton de usuario, clic en "Mi perfil", clic en la pestaña "curriculum vitae", clic en la opción "perfil profesional" y clic en el boton guardar, se verifica que no se guarda la información sin ver llenado uno o todos  los campos requeridos.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Modificación del Currículum Vitae, información &quot;habilidades&quot;">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Cuando un empleado haya ingresado al ERP odoo haya dado clic en el botón usuario, clic en la opción “Mi perfil" y clic en la pestaña "currículum vitae" verificar que pueda modificar toda la información de la opción tipo "habilidades". ]]></summary>
+      <preconditions><![CDATA[*El usuario debe estar logueado en el ERP de Odoo con un rol de empleado regular.                       *Acceso al perfil del usuario.
+*Estar dentro la pestaña “Currriculm Vitae”]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-Iniciar sesión en el ERP de Odoo con credenciales de un empleado regular.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-dar clic el botón de usuario en el menú principal.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3-dar clic en la opción 'Mi perfil'.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4- dar clic en la pestaña ‘’Curriculum vitae”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-dar clic en el botón “Editar”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6-dar clic en una tarjeta de información de perfil profesional que haya registrado.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7-Verificar que en la pestaña: 'Currículum vitae' puedan modificarse toda la información de "habilidades" en                                                                                                                                                      los siguientes campos: *tipo de habilidad, *habilidad, *nivel de habilidad, *progreso.                                                             8-dar clic en el botón guardar y cerrar en el formulario]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[8]]></step_number>
+          <actions><![CDATA[9 -dar clic en el botón guardar]]></actions>
+          <expectedresults><![CDATA[Al ingresar al ERP odoo con credenciales de empleado regular al dar clic en el boton de usuario, clic en "Mi perfil", clic en la pestaña "curriculum vitae", clic en la opción tipo "Habilidades" permite que el empleado pueda modicar toda la información de los siguientes campos*tipo de habilidad, *habilidad, *nivel de habilidad, *progreso, correctamente. ]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="validar que no se pueda guardar información sin llenar un campo requerido">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Cuando un empleado haya ingresado al ERP odoo haya dado clic en el botón usuario, clic en la opción “Mi perfil", clic en la pestaña "currículum vitae" y clic en la opción "Habilidades" validar que no se pueda guardar información sin ver llenado un campo requerido en la información de educación.]]></summary>
+      <preconditions><![CDATA[*El usuario debe estar logueado en el ERP de Odoo con un rol de empleado regular.                       *Acceso al perfil del usuario.
+*Estar dentro la pestaña “Currriculm Vitae”]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-Iniciar sesión en el ERP de Odoo con credenciales de un empleado regular.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-dar clic el botón de usuario en el menú principal.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3-Seleccionar la opción 'Mi perfil'.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-dar clic en la pestaña "currículum vitae"                           ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-dar clic en el tipo "habilidades"                                             ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6-dar clic en el botón guardar y verificar que no permita guardar información sin llenar un campo requerido.]]></actions>
+          <expectedresults><![CDATA[al ingresar al ERP odoo con credenciales de empleado regular al dar clic en el boton de usuario, clic en "Mi perfil", clic en la pestaña "curriculum vitae", clic en la opción "habilidades" y clic en el boton guardar, se verifica que no se guarda la información sin ver llenado uno o todos  los campos requeridos.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Modificación de la Información Privada">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Cuando un empleado haya ingresado al ERP odoo haya dado clic en el botón usuario, clic en la opción “Mi perfil" y clic en la pestaña "Información Privada" verificar que pueda modificar ciertos campos de la información personal, los campos que podría editar son: *correo personal, *teléfono personal, *sexo, *departamento de residencia, *ciudad de residencia, *Rh.]]></summary>
+      <preconditions><![CDATA[*El usuario debe estar logueado en el ERP de Odoo con una cuenta de empleado regular .   *Acceso al perfil del usuario.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-Iniciar sesión en el ERP de Odoo con credenciales de un empleado regular.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-dar clic el botón de usuario en el menú principal.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3-Seleccionar la opción 'Mi perfil'.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-dar clic en la pestaña "Información privada"                 ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-dar clic en el botón editar                                                          ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6-modificar uno o más campo, *correo personal, *teléfono personal, *sexo, *departamento de residencia, *ciudad de residencia, *Rh.                                                                                                                        7- dar clic en el botón guardar]]></actions>
+          <expectedresults><![CDATA[Al ingresar al ERP odoo con credenciales de empleado regular al dar clic en el boton de usuario, clic en "Mi perfil", clic en la pestaña "información privada", al modificar campos permitidos  *correo personal, *telefono personal,*sexo,*departameno de residencia,*ciudad de residencia,*Rh.   y dar clic en el boton guardar se valida que el empleado puede modificar informacion correctamente.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="validar que no se pueda modificar alguna información de &quot;información personal&quot;">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Cuando un empleado haya ingresado al ERP odoo haya dado clic en el botón usuario, clic en la opción “Mi perfil" y clic en la pestaña "Información Privada" verificar que no se pueda modificar ciertos campos de la información personal, los campos que no se podrían editar son: *tipo de documento, *número de documento, *EPS, *fondo de pensiones.]]></summary>
+      <preconditions><![CDATA[*El usuario debe estar logueado en el ERP de Odoo con una cuenta de empleado regular .   *Acceso al perfil del usuario.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-Iniciar sesión en el ERP de Odoo con credenciales de un empleado regular.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-dar clic el botón de usuario en el menú principal.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3-Seleccionar la opción 'Mi perfil'.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-dar clic en el botón editar ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-dar clic en la pestaña "Información privada"                                                                          ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6-validar que no se pueda modificar uno o más campos: *tipo de documento, *número de documento, *EPS, *fondo de pensiones.       ]]></actions>
+          <expectedresults><![CDATA[Al ingresar al ERP odoo con credenciales de empleado regular al dar clic en el boton de usuario, clic en "Mi perfil", clic en la pestaña "información privada", al intentar modficar los siguientes campos *tipo de documento,*número de docuemnto,*EPS,*fondo de pensiones, validamos que no se pueden modificar.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Modificación de la Información en el apartado &quot;Dirección&quot;">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Cuando un empleado haya ingresado al ERP odoo haya dado clic en el botón usuario, clic en la opción “Mi perfil" y clic en la pestaña "Información Privada" verificar que pueda modificar todos los campos en el apartado "Dirección" los campos son: Dirección principal (Nomenclatura), Barrio, Localidad o comuna, Complemento.]]></summary>
+      <preconditions><![CDATA[*El usuario debe estar logueado en el ERP de Odoo con una cuenta de empleado regular .   *Acceso al perfil del usuario.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-Iniciar sesión en el ERP de Odoo con credenciales de un empleado regular.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-dar clic el botón de usuario en el menú principal.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3-Seleccionar la opción 'Mi perfil'.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-dar clic en la pestaña "Información privada"                ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-dar clic en el botón editar                                                          ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6-modificar uno o más campos en el apartado Dirección: Dirección principal (Nomenclatura), Barrio, Localidad o comuna, Complemento.                                                                                                        ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7- dar clic en el botón guardar]]></actions>
+          <expectedresults><![CDATA[Al ingresar al ERP odoo con credenciales de empleado regular al dar clic en el boton de usuario, clic en "Mi perfil", clic en la pestaña "información privada", al modificar campos en el apartado "Direccion": *Dirección principal (Nomenclatura), *Barrio, *Localidad o comuna, Complemento  y dar clic en el boton guardar se valida que el empleado puede modificar informacion correctamente.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Modificación de la Información en el apartado &quot;Estado civil&quot;">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Cuando un empleado haya ingresado al ERP odoo haya dado clic en el botón usuario, clic en la opción “Mi perfil" y clic en la pestaña "Información Privada" verificar que pueda modificar todos los campos en el apartado "Estado civil" los campos son: *Estado civil.]]></summary>
+      <preconditions><![CDATA[*El usuario debe estar logueado en el ERP de Odoo con una cuenta de empleado regular .   *Acceso al perfil del usuario.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-Iniciar sesión en el ERP de Odoo con credenciales de un empleado regular.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-dar clic el botón de usuario en el menú principal.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3-Seleccionar la opción 'Mi perfil'.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4- dar clic en el botón editar                                                          ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-dar clic en la pestaña "Información privada"                 ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6-modificar uno o más campos en el apartado Estado civil: *estado civil.                                                                              ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7- dar clic en el botón guardar]]></actions>
+          <expectedresults><![CDATA[Al ingresar al ERP odoo con credenciales de empleado regular al dar clic en el boton de usuario, clic en "Mi perfil", clic en la pestaña "información privada", al modificar campos en el apartado "Estado civil": *Estado civil  y dar clic en el boton guardar se valida que el empleado puede modificar informacion correctamente.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Modificación de la Información en el apartado &quot;contacto de emergencia&quot;">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Cuando un empleado haya ingresado al ERP odoo haya dado clic en el botón usuario, clic en la opción “Mi perfil" y clic en la pestaña "Información Privada" verificar que pueda modificar todos los campos en el apartado " contacto de emergencia" los campos son: *Contacto de emergencia, *Parentesco, *Teléfono de emergencia]]></summary>
+      <preconditions><![CDATA[*El usuario debe estar logueado en el ERP de Odoo con una cuenta de empleado regular .   *Acceso al perfil del usuario.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-Iniciar sesión en el ERP de Odoo con credenciales de un empleado regular.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-dar clic el botón de usuario en el menú principal.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3-Seleccionar la opción 'Mi perfil'.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4- dar clic en el botón editar                                                           ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-dar clic en la pestaña "Información privada"                 ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6-modificar uno o más campos en el apartado Contacto de emergencia: *Contacto de emergencia, *Parentesco, *Teléfono de emergencia.                                                                                                       ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7- dar clic en el botón guardar]]></actions>
+          <expectedresults><![CDATA[Al ingresar al ERP odoo con credenciales de empleado regular al dar clic en el boton de usuario, clic en "Mi perfil", clic en la pestaña "información privada", al modificar campos en el apartado "Contacto de emegercia": *Contacto de emergencia, *Parentesco, *Telefono de emergencia.                                                          y dar clic en el boton guardar se valida que el empleado puede modificar informacion correctamente.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Modificación de la Información en el apartado &quot;Redes sociales&quot;">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Cuando un empleado haya ingresado al ERP odoo haya dado clic en el botón usuario, clic en la opción “Mi perfil" y clic en la pestaña "Información Privada" verificar que pueda modificar todos los campos en el apartado " Redes sociales" los campos son: *LinkedIn, *Facebook, *Instagram, *Skype, *Twitter ]]></summary>
+      <preconditions><![CDATA[*El usuario debe estar logueado en el ERP de Odoo con una cuenta de empleado regular .   *Acceso al perfil del usuario.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-Iniciar sesión en el ERP de Odoo con credenciales de un empleado regular.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-dar clic el botón de usuario en el menú principal.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3-Seleccionar la opción 'Mi perfil'.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4- dar clic en el botón editar                                                           ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-dar clic en la pestaña "Información privada"                  ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6-modificar uno o más campos en el apartado Redes sociales: * LinkedIn, *Facebook, *Instagram, *Skype, *Twitter                                                                                                        ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7- dar clic en el botón guardar]]></actions>
+          <expectedresults><![CDATA[Al ingresar al ERP odoo con credenciales de empleado regular al dar clic en el boton de usuario, clic en "Mi perfil", clic en la pestaña "información privada", al modificar campos en el apartado "Redes sociales": * Linkedin, *Facebook, *Instagram, *Skype, *Twitter                                                        y dar clic en el boton guardar se valida que el empleado puede modificar informacion correctamente.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="validar que no se pueda guardar información sin llenar un campo requerido">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Cuando un empleado haya  ingresado al ERP odoo  haya dado clic en el botón usuario, clic en la opción  "Mi perfil", clic en la pestaña "Información privada " validar que no se pueda guardar información sin ver llenado uno o más campos requeridos, los campos requeridos son:  Correo personal, Teléfono personal, Sexo, Departamento de residencia, Ciudad de residencia, RH, Dirección principal (Nomenclatura), Barrio, Localidad o comuna, Complemento, Estado civil, Contacto de emergencia, Parentesco, Teléfono de emergencia]]></summary>
+      <preconditions><![CDATA[*El usuario debe estar logueado en el ERP de Odoo con una cuenta de empleado regular .   *Acceso al perfil del usuario.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-Iniciar sesión en el ERP de Odoo con credenciales de un empleado regular.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-dar clic el botón de usuario en el menú principal.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3-Seleccionar la opción 'Mi perfil'.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-dar clic en el botón editar]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-dar clic en la pestaña "información privada"                                                                   ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6-dejar uno o más campos requeridos sin llenar                                                            ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7-dar clic en el botón guardar y verificar que no permita guardar información sin llenar un campo requerido, campos requeridos: Correo personal, Teléfono personal, Sexo, Departamento de residencia, Ciudad de residencia, RH, Dirección principal (Nomenclatura), Barrio, Localidad o comuna, Complemento, Estado civil, Contacto de emergencia, Parentesco, Teléfono de emergencia. ]]></actions>
+          <expectedresults><![CDATA[al ingresar al ERP odoo con credenciales de empleado regular al dar clic en el boton de usuario, clic en "Mi perfil", clic en la pestaña "informacion privada"  y clic en el boton guardar, se verifica que no se guarda la información sin ver llenado uno o todos  los campos requeridos.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="edicion de campo &quot;hijos&quot;">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Cuando un empleado haya ingresado al ERP odoo haya dado clic en el botón usuario, clic en la opción “Mi perfil", clic en la pestaña "Información privada " y clic en la pestaña " información familiar" validar que el campo "Hijos" pueda ser modificado.]]></summary>
+      <preconditions><![CDATA[*El usuario debe estar logueado en el ERP de Odoo con una cuenta de empleado regular .                *El usuario debe estar en la pestaña "Información familiar" de su perfil..]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-Iniciar sesión en el ERP de Odoo con credenciales de un empleado regular.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-dar clic el botón de usuario en el menú principal.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3-Seleccionar la opción 'Mi perfil'.      ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-dar clic en el botón editar                                            ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-dar clic en la pestaña "información familiar"                         ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6- modificar información registrada en el campo hijos, seleccionando una de las opciones que parece en la lista desplegable, Si, No.                                                     ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7- dar clic en el botón guardar.]]></actions>
+          <expectedresults><![CDATA[al ingresar al ERP odoo con credenciales de empleado regular al dar clic en el boton de usuario, clic en "Mi perfil", clic en la pestaña "informacion familiar"  y clic en el boton guardar, se verifica que se puede modificar el campo "hijos" correctamente.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Agregar Número de Hijos si presiona la opción Si">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Cuando un empleado haya  ingresado al ERP odoo  haya dado clic en el boton usuario, clic en la opcion  "Mi perfil", clic en la pestaña "Información familiar "Verificar que el empleado puede ingresar el número de hijo/s dado el caso que seleccione que si tiene hijo/s]]></summary>
+      <preconditions><![CDATA[•	El usuario debe estar logueado en el ERP de Odoo con una cuenta de empleado regular.
+•	El usuario debe estar en la pestaña "Información familiar" de su perfil.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1.Iniciar sesión en el ERP de Odoo con credenciales de un empleado regular.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2.dar clic en el  botón de usuario en el menú principal.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3.Seleccionar la opción 'Mi perfil'.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4.dar clic en la pestaña 'Información familiar'.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5.Seleccionar la opción 'Sí' en el campo 'Tiene hijo/s'.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6.Ingresar el número de hijos.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7.dar clic en el boton Guardar ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[8]]></step_number>
+          <actions><![CDATA[8.Verificar que la información se guarda correctamente.]]></actions>
+          <expectedresults><![CDATA[Al ingresar al ERP odoo con credenciales de empleado regular al dar clic en el boton de usuario, clic en "Mi perfil", clic en la pestaña "informacion familiar" el  empleado puede ingresar el número de hijos dado que selecciona la opción "Si" y guarda la información correctamente.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="validar que si presiona la opcion No, no se despligue nada.">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Cuando un empleado haya  ingresado al ERP odoo  haya dado clic en el boton usuario, clic en la opcion  "Mi perfil", clic en la pestaña "Información familiar " y al agregar en el campo "tiene hijo/s" la opción no, el sistema no le despliega nada]]></summary>
+      <preconditions><![CDATA[•El usuario debe estar logueado en el ERP de Odoo con una cuenta de empleado regular.
+•El usuario debe estar en la pestaña "Información familiar" de su perfil.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1.Iniciar sesión en el ERP de Odoo con credenciales de un empleado regular.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2.dar clic en el  botón de usuario en el menú principal.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3.Seleccionar la opción 'Mi perfil'.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4.dar clic en la pestaña 'Información familiar'.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5.Seleccionar la opción 'No' en el campo 'Tiene hijo/s'.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6.dar clic en el boton Guardar ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7.Verificar que la información se guarda correctamente.]]></actions>
+          <expectedresults><![CDATA[Al ingresar al ERP odoo con credenciales de empleado regular al dar clic en el boton de usuario, clic en "Mi perfil", clic en la pestaña "informacion familiar" dado que se seleccione la opción "No" se valida que el sistema no despliega mas información.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Agregar Información Familiar de los Hijos">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Cuando un empleado haya ingresado al ERP odoo haya dado clic en el botón usuario, clic en la opción “Mi perfil", clic en la pestaña "Información familiar " haya seleccionado la opción Si en el campo "Tiene hijo/s" entonces se le despliega otro campo "Número de hijos" cuando se llene este campo, debe llenar el formulario correspondiente de la información de cada hijo, por ejemplo, si tiene 2 hijos se debe llenar la información de los dos hijos. ]]></summary>
+      <preconditions><![CDATA[•El usuario debe estar logueado en el ERP de Odoo con una cuenta de empleado regular.
+•El usuario debe estar en la pestaña "Información familiar" de su perfil.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1.Iniciar sesión en el ERP de Odoo con credenciales de un empleado regular.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2.dar clic en el botón de usuario en el menú principal.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3.Seleccionar la opción 'Mi perfil'.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4.dar clic en la pestaña 'Información familiar'.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5.Seleccionar la opción 'Sí' en el campo 'Tiene hijo/s'.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6.Ingresar el número de hijos.                              ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7.agregar la información correspondiente de los hijos, en el formulario que tiene los siguientes campos: *Tipo de documento, *Número de documento, *Nombres, *Apellidos, *Relación, *teléfono, *fecha de nacimiento, *copia de identificación.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[8]]></step_number>
+          <actions><![CDATA[8.dar clic en el botón Guardar ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[9]]></step_number>
+          <actions><![CDATA[9.Verificar que la información se guarda correctamente.]]></actions>
+          <expectedresults><![CDATA[Al ingresar al ERP odoo con credenciales de empleado regular al dar clic en el boton de usuario, clic en "Mi perfil", clic en la pestaña "informacion familiar" y haya dado la opción "Si" en el campo "Tiene hijo/s" entonces se le despliega un campo más donde selecciona el número de hijos, una vez agregue esa información, debe llenar la otra información que es un formulario donde agrega la informacion de sus hijos, da clic en el boton gurdar entonces se valida que el sistema guarda correctamente la información.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Verificación de Información Errónea de los Hijos">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Cuando un empleado haya ingresado al ERP odoo haya dado clic en el botón usuario, clic en la opción “Mi perfil", clic en la pestaña "Información familiar " cuando el empleado haya agregado el número de hijos, verificar que el sistema no permita guardar la información y lance un mensaje de validación de error, si el número de registros no es igual al número de hijos seleccionados. por ejemplo, si selecciona que tiene 3 hijos, y agrega la información de dos hijos, el mensaje de validación que debe mostrarse es el siguiente "Usted tiene [número de hijos (3)] hijos, debe diligenciar la información familiar de todos ellos. " 
+Nota: Reemplazar el [número de hijos] por la cantidad de hijos del usuario "	]]></summary>
+      <preconditions><![CDATA[•	El usuario debe estar logueado en el ERP de Odoo con una cuenta de empleado regular.
+•	El usuario debe estar en la pestaña "Información familiar" de su perfil.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1.Iniciar sesión en el ERP de Odoo con credenciales de un empleado regular.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2.Dar el botón de usuario en el menú principal.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3.Seleccionar la opción 'Mi perfil'.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4.dar clic en la pestaña 'Información familiar'.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5.Seleccionar la opción 'Sí' en el campo 'Tiene hijo/s'.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6.Ingresar un número de hijos.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7.agregar información de los hijos, pero no llenar todos los registros ejemplo, si ingresa 3 hijos, agregar información solo de dos.                                                     ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[8]]></step_number>
+          <actions><![CDATA[8.dar clic en el botón Guardar                                                  ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[9]]></step_number>
+          <actions><![CDATA[9. verificar que el sistema muestre un mensaje informativo y no permitir guardar, mensaje de validación que debe mostrarse es el siguiente "Usted tiene [número de hijos (3)] hijos, debe diligenciar la información familiar de todos ellos. " ]]></actions>
+          <expectedresults><![CDATA[Al ingresar al ERP odoo con credenciales de empleado regular al dar clic en el boton de usuario, clic en "Mi perfil", clic en la pestaña "informacion familiar" y el empleado haya ingresado número de hijos que tiene, y al agregar la infomación de los hijos incompleta, ejemplo, el empleado registro que tiene 3 hjo y solo agraga la informacion de dos, el sistema no le permite guardar y lanza un mensaje de validación correctamente.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Agregar información familiar">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Cuando un empleado haya ingresado al ERP odoo haya dado clic en el botón usuario, clic en la opción “Mi perfil", clic en la pestaña "Información familiar ", clic en 'Agregar línea', llenar el formulario con los siguientes campos requeridos: *tipo de documento, *número de documento, * Nombres, *Apellidos, *sexo, *parentesco, *teléfono, *fecha de nacimiento, *copia de identificación(opcional), entonces el sistema debe guardar la información correctamente.]]></summary>
+      <preconditions><![CDATA[•	El usuario debe estar logueado en el ERP de Odoo con una cuenta de empleado regular.
+•El usuario debe estar en la pestaña "Información familiar" de su perfil.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-Iniciar sesión en el ERP de Odoo con credenciales de un empleado regular.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-dar clic el botón de usuario en el menú principal.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3-Seleccionar la opción 'Mi perfil'.                                                 ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[ 4-dar clic en la pestaña "informacion familiar"]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-dar clic en el botón 'Agregar línea'.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6-Completar los campos requeridos: Tipo de documento, Número de documento, Nombres, Apellidos, Sexo, Parentesco, Teléfono, Fecha de nacimiento, adjuntar un archivo en el campo 'Copia de identificación' (opcional).]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7-dar clic en el botón 'Guardar'.]]></actions>
+          <expectedresults><![CDATA[Al ingresar al ERP odoo con credenciales de empleado regular al dar clic en el boton de usuario, clic en "Mi perfil", clic en la pestaña "informacion familiar",clic en "agregar linea", llenar el formulario con lo campos requeridos se  valida que el sistema guarda la informacion correctamente.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="calculo de la edad">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[validar que cuando el empleado regular agregue la fecha de nacimiento de su familiar en el formulario de información familiar, el sistema haga el cálculo de la edad entre la fecha de nacimiento y la fecha actual y este cálculo se vea reflejado en el campo "edad " dentro del mismo formulario de información familiar.]]></summary>
+      <preconditions><![CDATA[•	El usuario debe estar logueado en el ERP de Odoo con una cuenta de empleado regular.
+•El usuario debe estar en la pestaña "Información familiar" de su perfil.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-Iniciar sesión en el ERP de Odoo con credenciales de un empleado regular.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-dar clic el botón de usuario en el menú principal.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3-Seleccionar la opción 'Mi perfil'.                                                  ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-dar clic en la pestaña "información familiar"]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-dar clic en el botón 'Agregar línea'.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6-Verificar que el campo 'Edad' se calcule automáticamente basado en la fecha de nacimiento ingresada con la fecha actual.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[8-dar clic en el botón 'Guardar'.]]></actions>
+          <expectedresults><![CDATA[al ingresar al ERP odoo con las credenciales de un empleado regular se puede validar que el sistema hace el calculo automatico del campo "edad" en el formulario de información familiar basado en la fecha de nacimiento ingresada y la fecha actual correctamente.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Visualización de Nota Informativa en Información Familiar">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que el sistema muestra una nota informativa sobre la funcionalidad de la tabla de información familiar, dentro de la pestaña "información familiar" dentro del perfil de un empleado regular.]]></summary>
+      <preconditions><![CDATA[•	El usuario debe estar logueado en el ERP de Odoo con una cuenta de empleado regular.
+•El usuario debe estar en la pestaña "Información familiar" de su perfil.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-Iniciar sesión en el ERP de Odoo con credenciales de un empleado regular.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-dar clic el botón de usuario en el menú principal.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3-Seleccionar la opción 'Mi perfil'.                                                 ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-dar clic en la pestaña "información familiar"    ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-verificar que exista la nota informativa después de la sección Hijos.  ]]></actions>
+          <expectedresults><![CDATA[El sistema debe mostrar una nota informativa sobre la funcionalidad de la tabla de "Información familiar" luego de la sección de 'Hijos'.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Ingresar información de intereses en la pesñata &quot;Hobbies&quot;">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que el sistema permite ingresar información sobre hobbies en la pestaña de "Intereses" al empleado regular cuando ingrese al ERP odoo.]]></summary>
+      <preconditions><![CDATA[•	El usuario debe estar logueado en el ERP de Odoo con una cuenta de empleado regular.                     •El usuario debe estar en la pestaña "Intereses" de su perfil.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-Iniciar sesión en el ERP de Odoo con credenciales de un empleado regular.                                               ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-dar clic el botón de usuario en el menú principal.           ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3-Seleccionar la opción 'Mi perfil'.   ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-dar clic en el botón editar                                                                     ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-dar clic en la pestaña "intereses"                                           ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6- dar clic en la pestaña Hobbie                                            ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7-dar clic en "Agregar línea"                                                      ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[8]]></step_number>
+          <actions><![CDATA[8-dar clic en la flecha de la lista desplegable                                                                  ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[9]]></step_number>
+          <actions><![CDATA[9- escoger un Hobbie                                                                        ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[10]]></step_number>
+          <actions><![CDATA[10-dar clic en el botón guardar ]]></actions>
+          <expectedresults><![CDATA[al ingresar al ERP odoo con credenciales de un empleado regular se puede validar que el sistema permite al empleado agregar su hobbie correctamente dentro de la pestaña intereses]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Ingresar información de intereses en la pesñata &quot;Agremiaciones&quot;">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que el sistema permite ingresar información sobre Agremiaciones en la pestaña de "Intereses" al empleado regular cuando ingrese al ERP odoo.]]></summary>
+      <preconditions><![CDATA[•	El usuario debe estar logueado en el ERP de Odoo con una cuenta de empleado regular.                     •El usuario debe estar en la pestaña "Intereses" de su perfil.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-Iniciar sesión en el ERP de Odoo con credenciales de un empleado regular.                                               ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-dar clic el botón de usuario en el menú principal.          ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3-Seleccionar la opción 'Mi perfil'.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-dar clic en el botón editar                                                                     ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-dar clic en la pestaña "intereses"                                           ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6- dar clic en la pestaña "Agremiaciones"                                             ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7-dar clic en "Agregar línea"                                                      ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[8]]></step_number>
+          <actions><![CDATA[8-llenar el campo Agremiación                                                  ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[9]]></step_number>
+          <actions><![CDATA[9-llenar el campo Descripción                                                                                                                            ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[10]]></step_number>
+          <actions><![CDATA[10-dar clic en el botón guardar]]></actions>
+          <expectedresults><![CDATA[al ingresar al ERP odoo con credenciales de un empleado regular se puede validar que el sistema permite al empleado agregar sus "Agremiaciones"  correctamente dentro de la pestaña intereses]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Ingresar información de mascotas">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que el sistema permite ingresar información de mascotas al empleado regular cuando ingresa desde su perfil desde el menú principal a la pestaña "Mascotas", permitiendole ingresar el numero de mascotas que tiene, el tipo de mascota y el nombre de ella.]]></summary>
+      <preconditions><![CDATA[•	El usuario debe estar logueado en el ERP de Odoo con una cuenta de empleado regular.           • El usuario debe estar en la pestaña "Mascotas" de su perfil.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-Iniciar sesión en el ERP de Odoo con credenciales de un empleado regular.                                               ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-dar clic el botón de usuario en el menú principal.          ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3-Seleccionar la opción 'Mi perfil'. ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-dar clic en el botón editar                                      ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-dar clic en la pestaña "Mascotas"                                       ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6-dar clic en la flecha para desplegar la lista de números                                                                                7-escoger el número de mascotas                                               ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[8-dar clic en Agregar línea                                                      ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[8]]></step_number>
+          <actions><![CDATA[9- llena el campo "Tipo de mascota"                                       ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[9]]></step_number>
+          <actions><![CDATA[10-llenar el campo "Nombre de mascota"                                 ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[10]]></step_number>
+          <actions><![CDATA[11- dar clic en el botón de guardar.]]></actions>
+          <expectedresults><![CDATA[al ingresar al ERP odo con credeciales de empeado regular podemos validar que se puede llena la información de mascotas correctamente.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Verificación de Información Errónea de las mascotas">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Cuando un empleado haya ingresado al ERP odoo haya dado clic en el botón usuario, clic en la opción “Mi perfil", clic en la pestaña "Mascotas " cuando el empleado haya agregado el número de mascotas, verificar que el sistema no permita guardar la información y lance un mensaje de validación de error, si el número de registros no es igual al número de mascotas seleccionadas. por ejemplo, si selecciona que tiene 2 mascotas, y agrega la información de solo una mascota, el mensaje de validación que debe mostrarse es el siguiente: Usted tiene [número de mascotas (2)] mascotas, debe diligenciar la información de todos ellas. 
+Nota: Reemplazar el [número de macotas] por la cantidad de mascotas del usuario "]]></summary>
+      <preconditions><![CDATA[•	El usuario debe estar logueado en el ERP de Odoo con una cuenta de empleado regular.           • El usuario debe estar en la pestaña "Mascotas" de su perfil]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1.Iniciar sesión en el ERP de Odoo con credenciales de un empleado regular.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2.Dar el botón de usuario en el menú principal.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3.Seleccionar la opción 'Mi perfil'.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4.dar clic en la pestaña 'Macotas'.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[6.Ingresar un número de mascotas.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[7.agregar información de las mascotas, pero no llenar todos los registros ejemplo, si ingresa 2 mascotas, agregar información solo de una mascota.                                                     ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[8.dar clic en el botón Guardar                                                  ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[8]]></step_number>
+          <actions><![CDATA[9. verificar que el sistema muestre un mensaje informativo y no permitir guardar, mensaje de validación que debe mostrarse es el siguiente Usted tiene [número de mascotas (2)] mascotas, debe diligenciar la información de todos ellas. ]]></actions>
+          <expectedresults><![CDATA[Al ingresar al ERP odoo con credenciales de empleado regular al dar clic en el boton de usuario, clic en "Mi perfil", clic en la pestaña "mascotas" y el empleado haya ingresado número de mascotas que tiene, y al agregar la infomación de las mascotas  incompleta, ejemplo, el empleado registro que tiene 2 mascotas y solo agraga la informacion de una, el sistema no le permite guardar y lanza un mensaje de validación correctamente.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="No Visualización de la Sección de Seguimiento">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que la sección de seguimiento de Odoo no se muestra en la página de perfil del empleado regular.]]></summary>
+      <preconditions><![CDATA[•El usuario debe estar logueado en el ERP de Odoo con una cuenta de empleado regular.           
+• El usuario debe estar en el perfil]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1.Iniciar sesión en el ERP de Odoo con credenciales de un empleado regular.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2.Dar el botón de usuario en el menú principal.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3.Seleccionar la opción 'Mi perfil'.                                                     ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4. Desplazarse hasta la parte final de la página.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5. Visualizar que en la parte final de la pagina del perfil del empleado regular no se pueda exista esta seccion de seguimiento.]]></actions>
+          <expectedresults><![CDATA[cuando ingresamos al ERP odoo con credenciales de empleado regular logramos visualizar que la sección de seguimiento no existe en la parte final de la pagina mi perfil.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="validar que el modulo empleados y &quot;Mi perfil&quot; contengan la  misma información. ">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[verificar que la información que esta en el modulo empleado sea la misma información que aparece en el perfil de un empleado regular.]]></summary>
+      <preconditions><![CDATA[•El usuario debe estar logueado en el ERP de Odoo con una cuenta de empleado regular.           
+• ver ingresado al ERP odoo con un usuario que tengo permisos para ver el modulo de empleados]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1- ingresar al ERP odoo como empleado regular .                                                                                                                        ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-ingresar al ERP odoo como jefe inmediato, director o gerente.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- visualizar toda la informacion del empeado regular en ambos perfiles.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4- verificar que en ambos perfiles tenga la misma información.]]></actions>
+          <expectedresults><![CDATA[al ingresar al sistema ERP odoo como empleado regular y tambien como jefe, director o gerente, se logra visualizar que la información de ambos roles son las mismas.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+</testsuite>

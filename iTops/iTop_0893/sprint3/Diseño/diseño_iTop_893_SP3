@@ -1,0 +1,882 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="">
+  <node_order><![CDATA[]]></node_order>
+  <details><![CDATA[]]></details>
+  <testsuite name="ED-004 - Seguimiento de compromisos evaluación de desempeño		">
+    <node_order><![CDATA[]]></node_order>
+    <details><![CDATA[]]></details>
+    <testcase internalid="" name="Verificación de la notificación de seguimiento a los 2 meses">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Este caso de prueba verifica que   el sistema debe generar una notificación por correo, en donde informen que se debe realizar el seguimiento. A partir de la fecha de creación de compromiso se inicia el conteo para las notificaciones, esta se debe enviar 1 mes y una semana antes de la fecha de seguimiento. la notificación debe ir redactada de la siguiente manera:  Asunto: Recordatorio - Seguimiento a compromisos 
+Mensaje: Queremos recordarte que estas a 1 mes y 1 semana de completar el tiempo establecido para cumplir con los compromisos de corto plazo de tu evaluación de desempeño.  Sigamos trabajando juntos para alcanzar nuestros objetivos. ¡Vamos por buen camino!]]></summary>
+      <preconditions><![CDATA[*Debe existir al menos un compromiso de evaluación de desempeño creado hace exactamente 1 mes y una semana .
+*El sistema debe estar configurado correctamente para enviar correos electrónicos de notificación.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-Verificar la recepción de la notificación por correo electrónico.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-Verificar la notificación llegue en el tiempo establecido:  A partir de la fecha de creación de compromiso se inicia el conteo para las notificaciones, esta se debe enviar 1 mes y una semana antes de la fecha de seguimiento.]]></actions>
+          <expectedresults><![CDATA[El sistema debe generar automáticamente una notificación por correo electrónico.
+El correo electrónico debe ser enviado a los evaluados y copia al evaluador.
+El correo electrónico debe contener el asunto: "Recordatorio - Seguimiento a compromisos".
+Asunto: Recordatorio - Seguimiento a compromisos 
+Mensaje: Queremos recordarte que estas a 1 mes y 1 semana de completar el tiempo establecido para cumplir con los compromisos de corto plazo de tu evaluación de desempeño.  Sigamos trabajando juntos para alcanzar nuestros objetivos. ¡Vamos por buen camino!]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Verificación de la notificación de seguimiento a los 4 meses">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Este caso de prueba verifica que el sistema debe generar una notificación por correo, en donde informen   que se debe realizar el seguimiento a mediano plazo. A partir de la fecha de creación de compromiso se inicia el conteo para las notificaciones, esta se debe enviar 3 semanas antes de la fecha límite el mensaje es el siguiente: Queremos recordarte que estas a 3 semanas de completar el tiempo establecido para cumplir con los compromisos de mediano plazo en tu evaluación de desempeño.  Sigamos trabajando juntos para alcanzar nuestros objetivos. ¡Vamos por buen camino!]]></summary>
+      <preconditions><![CDATA[*Debe existir al menos un compromiso de evaluación de desempeño creado hace exactamente 3 semanas.
+*El sistema debe estar configurado correctamente para enviar correos electrónicos de notificación.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-Verificar la recepción de la notificación por correo electrónico.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-Verificar la notificación llegue en el tiempo establecido:  A partir de la fecha de creación de compromiso se inicia el conteo para las notificaciones, esta se debe enviar 3 semanas antes de la fecha de seguimiento.]]></actions>
+          <expectedresults><![CDATA[El sistema debe generar automáticamente una notificación por correo electrónico.
+El correo electrónico debe ser enviado a los evaluados y copia al evaluador.
+El correo electrónico debe contener lo siguiente: Queremos recordarte que estas a 3 semanas de completar el tiempo establecido para cumplir con los compromisos de mediano plazo en tu evaluación de desempeño.  Sigamos trabajando juntos para alcanzar nuestros objetivos. ¡Vamos por buen camino!]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Notificación de Recordatorio a los 6 Meses">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Este caso de prueba verifica que el sistema genere una notificación por correo, en donde informen que se debe realizar el seguimiento. A partir de la fecha de creación de compromiso se inicia el conteo para las notificaciones, esta se debe enviar  1 mes antes de la fecha límite el mensaje es el siguiente: Queremos recordarte que estas a 1  mes de completar el tiempo establecido para cumplir con los compromisos de largo plazo en tu evaluación de desempeño.  Sigamos trabajando juntos para alcanzar nuestros objetivos. ¡Vamos por buen camino!]]></summary>
+      <preconditions><![CDATA[*Debe existir al menos un compromiso de evaluación de desempeño creado hace exactamente 5 meses.
+*El sistema debe estar configurado correctamente para enviar correos electrónicos de notificación.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-Verificar la recepción de la notificación por correo electrónico.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-Verificar la notificación llegue en el tiempo establecido:  A partir de la fecha de creación de compromiso se inicia el conteo para las notificaciones, esta se debe enviar 1 mes antes de la fecha de seguimiento.]]></actions>
+          <expectedresults><![CDATA[El sistema debe generar automáticamente una notificación por correo electrónico.
+El correo electrónico debe ser enviado a los evaluados y copia al evaluador.
+El correo electrónico debe contener : Queremos recordarte que estas a 1  mes de completar el tiempo establecido para cumplir con los compromisos de largo plazo en tu evaluación de desempeño.  Sigamos trabajando juntos para alcanzar nuestros objetivos. ¡Vamos por buen camino!]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+  <testsuite name="ED-008 - Notificación de no aceptación de compromiso">
+    <node_order><![CDATA[]]></node_order>
+    <details><![CDATA[]]></details>
+    <testcase internalid="" name=" Notificación de no aceptación de compromiso por parte del evaluado">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Este caso de prueba verifica que el sistema genere una notificación por correo electrónico al evaluador cuando el evaluado no acepte un compromiso de evaluación de desempeño.]]></summary>
+      <preconditions><![CDATA[*Debe existir al menos un compromiso de evaluación de desempeño que el evaluado pueda aceptar o rechazar.
+*El sistema debe estar configurado correctamente para enviar correos electrónicos de notificación.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-Verificar la recepción de la notificación por correo electrónico.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-Verificar que llegue la notificación al evaluador cuando el evaluado no acepte el compromiso. La notificación debe tener lo siguiente:                                                                                                                - Asunto: Tiene una novedad de compromiso no aceptado
+- Cuerpo: Evaluador NN, su colaborador NX no acepto el compromiso XY por favor ingrese a la evaluación y realice los ajustes pertinentes. ]]></actions>
+          <expectedresults><![CDATA[El sistema debe enviar automáticamente una notificación por correo electrónico al evaluador.
+La notificación debe tener las siguientes características:
+Asunto: "Tiene una novedad de compromiso no aceptado"
+Cuerpo del mensaje: "Evaluador NN, su colaborador NX no aceptó el compromiso XY. Por favor, ingrese a la evaluación y realice los ajustes pertinentes."]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+  <testsuite name="ED-009 -Notificación de activación de compromiso	">
+    <node_order><![CDATA[]]></node_order>
+    <details><![CDATA[]]></details>
+    <testcase internalid="" name="Notificación de activación de compromiso">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Este caso de prueba verifica que el sistema genere una notificación por correo electrónico al evaluado cuando se activa o se crea un nuevo compromiso en la evaluación de desempeño.]]></summary>
+      <preconditions><![CDATA[*Debe existir al menos un compromiso de evaluación de desempeño que pueda ser activado o creado.
+*El sistema debe estar configurado correctamente para enviar correos electrónicos de notificación.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-Verificar la recepción de la notificación por correo electrónico.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-Verificar que llegue la notificación al evaluado cuando el evaluador agregue un comprimiso.
+La notificación debe tener lo siguiente: 
+- Asunto: Se ha generado nuevo compromiso
+- Cuerpo: Evaluado NN, su evaluador a cargado un nuevo compromiso por favor revise. Recuerde que estos compromisos tienen una calificación en la evaluación de desarrollo laboral. ]]></actions>
+          <expectedresults><![CDATA[El sistema debe enviar automáticamente una notificación por correo electrónico al evaluado.
+La notificación debe tener las siguientes características:
+Asunto: "Se ha generado nuevo compromiso"
+Cuerpo del mensaje:                                                                   - Asunto: Se ha generado nuevo compromiso
+- Cuerpo: Evaluado NN, su evaluador ha cargado un nuevo compromiso por favor revise. Recuerde que estos compromisos tienen una calificación en la evaluación de desarrollo laboral. ]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+  <testsuite name="ED-010 -  Mensaje de validación por cambios de compromisos ">
+    <node_order><![CDATA[]]></node_order>
+    <details><![CDATA[]]></details>
+    <testcase internalid="" name="Validación de cambios en la tabla de objetivos de desarrollo laboral">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Este caso de prueba verifica que el sistema muestre un mensaje de validación cuando se presiona el botón guardar después de realizar cambios en la tabla de 'Objetivos de desarrollo laboral' de la evaluación de desempeño, para evitar errores o cambios accidentales.]]></summary>
+      <preconditions><![CDATA[*Debe existir al menos una evaluación de desempeño con compromisos en la tabla de 'Objetivos de desarrollo laboral'.
+*El usuario (evaluador o empleado) debe tener permisos para modificar la evaluación de desempeño.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-Iniciar sesión como evaluador o empleado con permisos para modificar evaluaciones de desempeño.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-Navegar a la evaluación de desempeño del evaluado. ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3-Realizar un cambio en la tabla de 'Objetivos de desarrollo laboral' (ej. editar un compromiso existente).]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-Presionar el botón "Guardar".]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-Verificar que salga una validación “¿Está seguro que desea guardar los cambios de los compromisos?"]]></actions>
+          <expectedresults><![CDATA[El sistema debe mostrar un mensaje de validación con las siguientes características:
+Cuerpo del mensaje: "¿Está seguro que desea guardar los cambios de los compromisos?"
+El usuario debe tener la opción de confirmar o cancelar la acción.
+Si el usuario confirma, los cambios deben ser guardados.
+Si el usuario cancela, los cambios no deben ser guardados.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+  <testsuite name="ED-011- Información de los check points">
+    <node_order><![CDATA[]]></node_order>
+    <details><![CDATA[]]></details>
+    <testcase internalid="" name="verificar que exitan los campos &quot;fecha de seguimiento y comentarios&quot;">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Este caso de prueba verifica que en la sección de los check points existan los campos “fecha de seguimiento y comentarios" dentro de la evaluación de desempeño de un colaborador en el módulo evaluación de desempeño.]]></summary>
+      <preconditions><![CDATA[*El usuario debe tener rol de evaluador.
+*Deben existir compromisos asignados a los empleados bajo el evaluador.
+*Los check points deben estar habilitados en la evaluación de desempeño.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-Iniciar sesión al ERP odoo como evaluador.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-Dar clic en el icono del menú principal.               ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3-Dar clic en el módulo Evaluación de desempeño.        ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-seleccionar y dar clic a un colaborador que está siendo evaluado.                                                              ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-Navegar hasta los Objetivos de desarrollo laboral y dar clic en el botón editar.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6-Localizar las tablas de check points en puntos de chequeo.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7- verificar que existan los campos 'Fecha de seguimiento' y 'Comentarios'.      ]]></actions>
+          <expectedresults><![CDATA[al ingresar como evaluador el sistema debe mostrar los campos  'Fecha de seguimiento' y 'Comentarios' correctamente  dentro la tabla de los check points en la evaluación de desempeño  de un colaborador en el modulo evalución de desempeño.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="agregar información en  los campos &quot;fecha de seguimiento y comentarios&quot;">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Este caso de prueba verifica que el sistema permita al evaluador guardar información en los check points en los campos "fecha de seguimiento y comentarios", para realizar seguimiento de corto, mediano y largo plazo de los compromisos del evaluado dentro de la evaluación de desempeño de un colaborador en el módulo evaluación de desempeño.]]></summary>
+      <preconditions><![CDATA[*El usuario debe tener rol de evaluador.
+*Deben existir compromisos asignados a los empleados bajo el evaluador.
+*Los check points deben estar habilitados en la evaluación de desempeño.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-Iniciar sesión al ERP odoo como evaluador.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-Dar clic en el icono del menú principal.               ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3-Dar clic en el módulo Evaluación de desempeño.        ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-seleccionar y dar clic a un colaborador que está siendo evaluado.                                                              ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-Localizar las tablas de check points en puntos de chequeo.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6-Ingresar información en los campos 'Fecha de seguimiento' y 'Comentarios'.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7- dar clic en el botón "Guardar " para guardar la información registrada.   ]]></actions>
+          <expectedresults><![CDATA[Al ingresar como evaluador el sistema 
+debe guardar la información, los datos ingresados deben ser almacenados correctamente y estar disponibles para futuras consultas dentro la tabla de los check points en la evaluación de desempeño  de un colaborador en el modulo evalución de desempeño.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="verificar que lo campos &quot;fecha de seguimiento y comentarios sean editables&quot;">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Este caso de prueba verifica que el sistema permita editar los campos "fecha de seguimiento y comentarios" dentro de la evaluación de desempeño de un colaborador en el módulo evaluación de desempeño.]]></summary>
+      <preconditions><![CDATA[*El usuario debe tener rol de evaluador.
+*Deben existir compromisos asignados a los empleados bajo el evaluador.
+*Los check points deben estar habilitados en la evaluación de desempeño.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-Iniciar sesión al ERP odoo como evaluador.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-Dar clic en el icono del menú principal.               ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3-Dar clic en el módulo Evaluación de desempeño.        ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-seleccionar y dar clic a un colaborador que está siendo evaluado.                                                              ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-Localizar las tablas de check points ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6-dar clic en el botón editar.                                  ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7- verificar que se puedan editar los campos 'Fecha de seguimiento' y 'Comentarios'.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[8]]></step_number>
+          <actions><![CDATA[8-Guardar la información.   ]]></actions>
+          <expectedresults><![CDATA[Al ingresar como evaluador el sistema le permite editar campos  'Fecha de seguimiento' y 'Comentarios' correctamente dentro la tabla de los check points en la evaluación de desempeño  de un colaborador en el modulo evalución de desempeño.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Visualización de tooltip en campo ‘comentarios’">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Este caso de prueba verifica que el sistema permita mostrar un tooltip cuando se pase el cursor por el campo "Comentario" con la siguiente información:  "Espacio para indicar nuevas fechas de compromiso u observaciones del seguimiento" dentro de la evaluación de desempeño de un colaborador en el módulo evaluación de desempeño.]]></summary>
+      <preconditions><![CDATA[*El usuario debe tener rol de evaluador.
+*Deben existir compromisos asignados a los empleados bajo el evaluador.
+*Los check points deben estar habilitados en la evaluación de desempeño.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-Iniciar sesión al ERP odoo como evaluador.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-Dar clic en el icono del menú principal.               ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3-Dar clic en el módulo Evaluación de desempeño.        ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-seleccionar y dar clic a un colaborador que está siendo evaluado.                                                              ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-Localizar las tablas de check points en puntos de chequeo.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6-Pasar el cursor por el campo "comentario".                       ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7-verificar la aparición de tooltip con el siguiente mensaje: “Espacio para indicar nuevas fechas de compromiso u observaciones del seguimiento"]]></actions>
+          <expectedresults><![CDATA[Al ingresar como evaluador el sistema permite mostrar un tooltip al pasar el cursor por el campo "comentario" con el siguiente mensaje:  "Espacio para indicar nuevas fechas de compromiso o observaciones del seguimiento".]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+  <testsuite name="ED-012-Automatización de fecha de seguimiento">
+    <node_order><![CDATA[]]></node_order>
+    <details><![CDATA[]]></details>
+    <testcase internalid="" name="verificar que exitan las tablas de check points de corto, mediano y largo plazo">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Este caso de prueba verifica que el sistema muestre las tres tablas de los check points cada una correspondiente a corto, mediano y largo plazo dentro de la evaluación de desempeño  de un colaborador en el modulo evalución de desempeño]]></summary>
+      <preconditions><![CDATA[*El usuario debe tener rol de evaluador.
+*Deben existir compromisos asignados a los empleados bajo el evaluador.
+*Los check points deben estar habilitados en la evaluación de desempeño.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-Iniciar sesión al ERP odoo como evaluador.               ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-Dar clic en el módulo Evaluación de desempeño.       ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3-seleccionar y dar clic a un colaborador que está siendo evaluado.                                                              ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-Dar clic en una evaluación de desempeño del evaluado.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-Localizar las tablas de check points.                                                                ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6-verificar que existan las tres tablas correspondientes cada una de ellas a corto, mediano y largo plazo. ]]></actions>
+          <expectedresults><![CDATA[Al ingresar como evaluador el sistema permite mostrar  las tres tablas de los check points cada una correspondiente a corto, mediano y largo plazo dentro de la evaluación de desempeño  de un colaborador en el modulo evalución de desempeño]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Automatización de Fecha de Seguimiento para Compromisos">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Este caso de prueba verifica que el sistema automatice la creación de fechas de seguimiento para compromisos a corto, mediano y largo plazo, generando registros únicos o múltiples según la fecha de creación de los compromisos dentro de la evaluación de desempeño de un colaborador en el módulo evaluación de desempeño.]]></summary>
+      <preconditions><![CDATA[*El usuario debe tener rol de evaluador.
+*Deben existir compromisos asignados a los empleados bajo el evaluador.
+*Los check points deben estar habilitados en la evaluación de desempeño.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-Iniciar sesión al ERP odoo como evaluador.              ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-Dar clic en el módulo Evaluación de desempeño.        ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3-seleccionar y dar clic a un colaborador que está siendo evaluado.                                                              ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-Dar clic en una evaluación de desempeño del evaluado.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-Localizar las tablas de check points.                                            ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6-verificar que se muestren los registros de fechas de compromisos dentro de las tablas de los check points a corto, mediano y largo plazo.]]></actions>
+          <expectedresults><![CDATA[Al ingresar como evaluador el sistema permite automatizar la creacion de fechas de seguimiento para compromisos a corto, mediano y largo plazo, generando registros únicos o múltiples según la fecha de creación de los compromisos  dentro de la evaluación de desempeño  de un colaborador en el modulo evalución de desempeño.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Fecha de Seguimiento a Corto Plazo- Compromiso con la Misma Fecha de Creación">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Este caso de prueba verifica que el sistema automatice la creación de fechas de seguimiento para compromisos a corto plazo, el sistema debe crear automáticamente un único registro con fecha igual a dos meses luego de la fecha de creación de los compromisos, así tenga asignados varios compromisos con la misma fecha de creación   dentro de la evaluación de desempeño de un colaborador en el módulo evaluación de desempeño..]]></summary>
+      <preconditions><![CDATA[*Deben existir compromisos asignados a los empleados bajo el evaluador.
+*Los check points deben estar habilitados en la evaluación de desempeño.                                *Existen varios compromisos con la misma fecha de creación.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-Iniciar sesión al ERP odoo como evaluador.              ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-Dar clic en el módulo Evaluación de desempeño.        ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3-seleccionar y dar clic a un colaborador que está siendo evaluado.                                                              ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-Dar clic en una evaluación de desempeño del evaluado.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-Localizar las tablas de check points.                                           ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6-Verificar los compromisos a corto plazo creados en la misma fecha.                                                                             ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[ 7-Verificar que se automatice la fecha de compromisos a corto plazo dentro de la tabla de los check points correspondiente a corto plazo.]]></actions>
+          <expectedresults><![CDATA[Al ingresar como evaluador el sistema permite verificar la automatización de la creacion de fechas de seguimiento para compromisos a corto plazo, el sistema crea automáticamente un único registro con fecha igual a dos meses luego de la fecha de creación de los compromisos, asi tenga  asignados varios compromisos con la misma fecha de creación]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Fecha de Seguimiento a corto Plazo-Compromisos con Fechas Diferentes">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Este caso de prueba verifica que el sistema automatice la creación de fechas de seguimiento para compromisos a corto plazo, el sistema debe crear el nuevo registro con fecha igual a dos meses luego de la fecha de creación. Entonces se deben visualizar tantos registros como fechas diferentes de creación de compromiso que existan. ]]></summary>
+      <preconditions><![CDATA[*Deben existir compromisos asignados a los empleados bajo el evaluador.
+*Los check points deben estar habilitados en la evaluación de desempeño.                                  *Existen compromisos con diferentes fechas de creación.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-Iniciar sesión al ERP odoo como evaluador.               ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-Dar clic en el módulo Evaluación de desempeño.        ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3-seleccionar y dar clic a un colaborador que está siendo evaluado.                                                              ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-Dar clic en una evaluación de desempeño del evaluado.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-Localizar las tablas de check points.                                  ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6-Verificar los compromisos a corto plazo creados en diferentes fechas.                                                                           ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7-crear un nuevo compromiso con fecha diferente a los que ya están registrados.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[8]]></step_number>
+          <actions><![CDATA[8-Verificar que se automatice todas las fechas diferentes de compromisos a corto plazo dentro de la tabla de los check points correspondiente a corto plazo.]]></actions>
+          <expectedresults><![CDATA[Al ingresar como evaluador el sistema permite verificar la automatización de la creacion de fechas de seguimiento para compromisos a corto plazo, el sistema al crear un nuevo registro con fecha diferente a las demas fechas de creacion de los compromisos se verifica que se automatiza la fecha de seguimiento  igual a dos meses luego de la fecha de creación del nuevo compromiso en la tabla de check point a corto plazo, se  visualizan tantos registros como fechas diferentes de creación de compromiso existan.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Fecha de Seguimiento a Mediano Plazo-  Compromiso con la Misma Fecha de Creación">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Este caso de prueba verifica que el sistema automatice la creación de fechas de seguimiento para compromisos a mediano plazo, el sistema debe crear automáticamente un único registro con fecha igual a cuatro meses luego de la fecha de creación de los compromisos, así tenga asignados varios compromisos con la misma fecha de creación   dentro de la evaluación de desempeño de un colaborador en el módulo evaluación de desempeño..]]></summary>
+      <preconditions><![CDATA[*Deben existir compromisos asignados a los empleados bajo el evaluador.
+*Los check points deben estar habilitados en la evaluación de desempeño.                                *Existen varios compromisos con la misma fecha de creación.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-Iniciar sesión al ERP odoo como evaluador.               ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-Dar clic en el módulo Evaluación de desempeño.       ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3-seleccionar y dar clic a un colaborador que está siendo evaluado.                                                              ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-Dar clic en una evaluación de desempeño del evaluado.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-Localizar las tablas de check points.                                           ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6-Verificar los compromisos a mediano plazo creados en la misma fecha.                                                                              ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7-Verificar que se automatice la fecha de compromisos a mediano plazo dentro de la tabla de los check points correspondiente a mediano plazo.]]></actions>
+          <expectedresults><![CDATA[Al ingresar como evaluador el sistema permite verificar la automatización de la creacion de fechas de seguimiento para compromisos a mediano plazo, el sistema crea automáticamente un único registro con fecha igual a cuantro meses luego de la fecha de creación de los compromisos, asi tenga  asignados varios compromisos con la misma fecha de creación]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Fecha de Seguimiento a Mediano Plazo- Compromisos con Fechas Diferentes">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Este caso de prueba verifica que el sistema automatice la creación de fechas de seguimiento para compromisos a mediano plazo, el sistema debe crear el nuevo registro con fecha igual a  cuatro meses luego de la fecha de creación. Entonces se deben visualizar tantos registros como fechas diferentes de creación de compromiso que existan. ]]></summary>
+      <preconditions><![CDATA[*Deben existir compromisos asignados a los empleados bajo el evaluador.
+*Los check points deben estar habilitados en la evaluación de desempeño.                                  *Existen compromisos con diferentes fechas de creación.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-Iniciar sesión al ERP odoo como evaluador.               ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-Dar clic en el módulo Evaluación de desempeño.        ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3-seleccionar y dar clic a un colaborador que está siendo evaluado.                                                              ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-Dar clic en una evaluación de desempeño del evaluado.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-Localizar las tablas de check points.                                  ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6-Verificar los compromisos a mediano plazo creados en diferentes fechas.                                                                           ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7-crear un nuevo compromiso con fecha diferente a los que ya están registrados.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[8]]></step_number>
+          <actions><![CDATA[8-Verificar que se automatice todas las fechas diferentes de compromisos a mediano plazo dentro de la tabla de los check points correspondiente a mediano plazo.]]></actions>
+          <expectedresults><![CDATA[Al ingresar como evaluador el sistema permite verificar la automatización de la creacion de fechas de seguimiento para compromisos a mediano plazo, el sistema al crear un nuevo registro con fecha diferente a las demas fechas de creacion de los compromisos se verifica que se automatiza la fecha de seguimiento  igual a cuatro meses luego de la fecha de creación del nuevo compromiso en la tabla de check point a mediano plazo, se  visualizan tantos registros como fechas diferentes de creación de compromiso existan.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Fecha de Seguimiento a Largo Plazo- Compromiso con la Misma Fecha de Creación">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Este caso de prueba verifica que el sistema automatice la creación de fechas de seguimiento para compromisos a largo plazo, el sistema debe crear automáticamente un único registro con fecha igual a seis meses luego de la fecha de creación de los compromisos, así tenga asignados varios compromisos con la misma fecha de creación   dentro de la evaluación de desempeño de un colaborador en el módulo evaluación de desempeño .]]></summary>
+      <preconditions><![CDATA[*Deben existir compromisos asignados a los empleados bajo el evaluador.
+*Los check points deben estar habilitados en la evaluación de desempeño.                                *Existen varios compromisos con la misma fecha de creación.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-Iniciar sesión al ERP odoo como evaluador.               ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-Dar clic en el módulo Evaluación de desempeño.        ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3-seleccionar y dar clic a un colaborador que está siendo evaluado.                                                              ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-Dar clic en una evaluación de desempeño del evaluado.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-Localizar las tablas de check points.                                           ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6-Verificar los compromisos a largo plazo creados en la misma fecha.                                                                              ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7-Verificar que se automatice la fecha de compromisos a largo plazo dentro de la tabla de los check points correspondiente a largo plazo.]]></actions>
+          <expectedresults><![CDATA[Al ingresar como evaluador el sistema permite verificar la automatización de la creacion de fechas de seguimiento para compromisos a largo plazo, el sistema crea automáticamente un único registro con fecha igual a seis meses luego de la fecha de creación de los compromisos, asi tenga  asignados varios compromisos con la misma fecha de creación]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Fecha de Seguimiento a Largo Plazo- Compromisos con Fechas Diferentes">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Este caso de prueba verifica que el sistema automatice la creación de fechas de seguimiento para compromisos a largo plazo, el sistema debe crear el nuevo registro con fecha igual a  seis meses luego de la fecha de creación. Entonces se deben visualizar tantos registros como fechas diferentes de creación de compromiso que existan. ]]></summary>
+      <preconditions><![CDATA[*Deben existir compromisos asignados a los empleados bajo el evaluador.
+*Los check points deben estar habilitados en la evaluación de desempeño.                                  *Existen compromisos con diferentes fechas de creación.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-Iniciar sesión al ERP odoo como evaluador.                    ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-Dar clic en el módulo Evaluación de desempeño.             ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3-seleccionar y dar clic a un colaborador que está siendo evaluado.                                                              ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-Dar clic en una evaluación de desempeño del evaluado.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-Localizar las tablas de check points.                                   ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6-Verificar los compromisos a largo plazo creados en diferentes fechas.                                                                           ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7-crear un nuevo compromiso con fecha diferente a los que ya estan registrados.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[8]]></step_number>
+          <actions><![CDATA[8-Verificar que se automatice todas las fechas diferentes de compromisos a largo plazo dentro de la tabla de los check points correspondiente a largo plazo. ]]></actions>
+          <expectedresults><![CDATA[Al ingresar como evaluador el sistema permite verificar la automatización de la creacion de fechas de seguimiento para compromisos a largo plazo, el sistema al crear un nuevo registro con fecha diferente a las demas fechas de creacion de los compromisos se verifica que se automatiza la fecha de seguimiento  igual a seis meses luego de la fecha de creación del nuevo compromiso en la tabla de check point a largo plazo, se  visualizan tantos registros como fechas diferentes de creación de compromiso existan.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+</testsuite>

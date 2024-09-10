@@ -1,0 +1,756 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="">
+  <node_order><![CDATA[]]></node_order>
+  <details><![CDATA[]]></details>
+  <testsuite name="003- Registrar centros de costos de Cliente y Servicios">
+    <node_order><![CDATA[]]></node_order>
+    <details><![CDATA[]]></details>
+    <testcase internalid="" name="Registro de Centros de Costos Cliente y Servicios">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que el sistema permita guardar correctamente la requisición del empleado, asegurando que  incluyen la opción "sin asignación" para cliente y "no aplica" para servicios  y que se indiquen las opciones adecuadas en caso de datos faltantes.]]></summary>
+      <preconditions><![CDATA[1.El usuario tiene acceso al sistema.
+2.El modulo  de reclutamiento,en el apartado requisiciones está disponible y accesible.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1°Iniciar sesión en el sistema como director de proyecto.]]></actions>
+          <expectedresults><![CDATA[*El sistema permite crear la requisición del empleado.
+*En el campo "Cliente" se indica la opción "Sin asignación".
+*En el campo "Centro de Costo Servicio" se indica la opción "No Aplica".
+Se crea correctamente la requisición del empleado..]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2°Navegar hasta el módulo de Reclutamiento.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3°Seleccionar la opción para crear una nueva requisición.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4°Completar los campos obligatorios para la requisición del empleado.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5°Presionar el botón para guardar la requisición.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6°Verificar que el sistema permita crear la requisición del empleado.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7°Verificar que en el campo "Cliente" se indique la opción "Sin asignación".]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[8]]></step_number>
+          <actions><![CDATA[8°Verificar que en el campo "Centro de Costo Servicio" se indique la opción "No Aplica".]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[9]]></step_number>
+          <actions><![CDATA[9°Verificar que se haya creado correctamente la requisición del empleado.            ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[10]]></step_number>
+          <actions><![CDATA[10. Repetir los pasos del 1 al 3.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[11]]></step_number>
+          <actions><![CDATA[11°No completar alguno de los campos obligatorios para la requisición del empleado.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[12]]></step_number>
+          <actions><![CDATA[12°Presionar el botón para guardar la requisición.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[13]]></step_number>
+          <actions><![CDATA[13°Verificar que el sistema no permita crear la requisición del empleado.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[14]]></step_number>
+          <actions><![CDATA[15°Verificar que se muestre un mensaje advirtiendo los campos requeridos que no han sido completados.]]></actions>
+          <expectedresults><![CDATA[*El sistema permite crear la requisición del empleado.
+*En el campo "Cliente" se indica la opción "Sin asignación".
+*En el campo "Centro de Costo Servicio" se indica la opción "No Aplica".
+Se crea correctamente la requisición del empleado..]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+  <testsuite name="006-Registrar asignación de equipos de empleados">
+    <node_order><![CDATA[]]></node_order>
+    <details><![CDATA[]]></details>
+    <testcase internalid="" name="Registro de Asignación de Equipos">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que el sistema registre correctamente la asignación de equipos para controlar que los empleados nuevos tengan la herramienta de trabajo asignada.]]></summary>
+      <preconditions><![CDATA[1.El usuario tiene acceso al sistema como Analista de Soporte.
+2.Se han creado empleados en el sistema.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1°Iniciar sesión en el sistema como Analista de Soporte.
+
+
+]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2°Navegar hasta la sección de gestión de empleados.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3°Seleccionar un empleado recién creado.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4°Verificar que el checkbox de asignación de equipo esté disponible.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5°Marcar el checkbox de asignación de equipo.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6°Guardar los cambios.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7°Verificar que el sistema guarde correctamente el registro de asignación de equipo.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[8]]></step_number>
+          <actions><![CDATA[8°Repetir los pasos del 2 al 6, esta vez sin marcar el checkbox de asignación de equipo.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[9]]></step_number>
+          <actions><![CDATA[9°Verificar que el sistema notifique al Analista de Soporte que un empleado nuevo requiere asignación de equipo.]]></actions>
+          <expectedresults><![CDATA[*Cuando se marca el checkbox de asignación de equipo, el sistema debe guardar correctamente el registro de asignación de equipo para el empleado.
+*Cuando no se marca el checkbox de asignación de equipo, el sistema debe notificar al Analista de Soporte sobre la necesidad de asignación de equipo para el empleado.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+  <testsuite name="007-Registrar Creación de empleado en WO/ Análista de nómina">
+    <node_order><![CDATA[]]></node_order>
+    <details><![CDATA[]]></details>
+    <testcase internalid="" name="Registro de Creación de Empleado en WO">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[ Verificar que el sistema registre correctamente la creación de un empleado en   WO para que entre a un proceso de ingreso.]]></summary>
+      <preconditions><![CDATA[1.El usuario tiene acceso al sistema como Analista de Nómina.
+2.Se han creado empleados en el sistema.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1°Iniciar sesión en el sistema como Analista de Nómina.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2°Navegar hasta la sección de gestión de empleados.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3°Seleccionar un empleado recién creado.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4°Verificar que el checkbox de asignación de equipo esté disponible.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5°Guardar los cambios.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6°Verificar que el sistema guarde correctamente el registro de creación de empleado en WO.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7°Repetir los pasos del 2 al 6, esta vez sin marcar el checkbox de creación de empleado en WO.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[8]]></step_number>
+          <actions><![CDATA[8°Verificar que el sistema notifique al Analista de Nómina sobre la necesidad de creación de empleado en WO para el empleado.]]></actions>
+          <expectedresults><![CDATA[*Cuando se marca el checkbox de creación de empleado en WO, el sistema debe guardar correctamente el registro de creación de empleado en WO.
+*Cuando no se marca el checkbox de creación de empleado en WO, el sistema debe notificar al Analista de Nómina sobre la necesidad de creación de empleado en WO para el empleado.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+  <testsuite name="008-Asignación de empleado al proyecto">
+    <node_order><![CDATA[]]></node_order>
+    <details><![CDATA[]]></details>
+    <testcase internalid="" name="Asignación de Empleado a un Proyecto">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que el sistema permita asignar un empleado a un proyecto correctamente, asegurando que cumple con los requisitos de tener el check de equipo asignado y creación de empleado en WO.]]></summary>
+      <preconditions><![CDATA[1.El usuario tiene acceso al sistema como director de proyecto.
+2.Se ha creado el empleado en el módulo de Reclutamiento y Selección (R&S).
+3.El empleado tiene marcado el check de equipo asignado y creación de empleado en WO según corresponda.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1°Iniciar sesión en el sistema como director de proyecto.
+
+]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2°Navegar hasta el módulo de proyectos.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3°Crear un nuevo proyecto o seleccionar un proyecto existente para asignar empleados.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4°En la ventana de creación o edición del proyecto, buscar la sección de asignación de empleados.
+
+]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5°Seleccionar el empleado creado en el módulo de R&S que cumple con los requisitos de tener el check de equipo asignado y creación de empleado en WO.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6°Guardar los cambios o presionar el botón de guardar.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7°Verificar que el sistema permita asignar el empleado al proyecto de manera exitosa.                                                                                                                    
+]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[8]]></step_number>
+          <actions><![CDATA[8°Repetir los pasos del 3 y 4.      ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[9]]></step_number>
+          <actions><![CDATA[9°Seleccionar el empleado creado en el módulo de R&S que no cumple con los requisitos de tener el check de equipo asignado y creación de empleado en WO.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[10]]></step_number>
+          <actions><![CDATA[10°Guardar los cambios o presionar el botón de guardar.]]></actions>
+          <expectedresults><![CDATA[*El sistema permite seleccionar y asignar al empleado al proyecto.
+*Se guarda correctamente la asignación del empleado al proyecto.   *Para asignacion no exitosa el sistema no permite asignar el empleado al proyecto.
+*Se muestra un mensaje informativo indicando que la asignación no fue exitosa y los checks de equipo asignado y creación de empleado en WO están pendientes por soporte TI y/o nómina, según corresponda.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+  <testsuite name="010-Registrar entrega de equipo del empleado">
+    <node_order><![CDATA[]]></node_order>
+    <details><![CDATA[]]></details>
+    <testcase internalid="" name="Registro de Entrega de Equipo">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que el sistema registre correctamente la entrega de equipo para controlar que los empleados con novedad de retiro o renuncia regresen el equipo.]]></summary>
+      <preconditions><![CDATA[1.El usuario tiene acceso al sistema como Analista de Soporte.
+2.Se ha registrado la novedad de retiro o renuncia para un empleado en el sistema.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1°Iniciar sesión en el sistema como Analista de Soporte.
+
+
+]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2°Navegar hasta la sección de gestión de empleados.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3°Seleccionar el empleado que ha sido retirado.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4°Verificar que el checkbox de devolución de equipo esté disponible.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5°Marcar el checkbox de devolución de equipo.
+
+]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6°Guardar los cambios.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7°Verificar que el sistema guarde correctamente el registro de devolución de equipo.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[8]]></step_number>
+          <actions><![CDATA[8°Verificar que el sistema inactiva al usuario.
+
+]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[9]]></step_number>
+          <actions><![CDATA[9°Repetir los pasos del 2 al 6, esta vez sin marcar el checkbox de devolución de equipo.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[10]]></step_number>
+          <actions><![CDATA[10°Verificar que el sistema notifique al Soporte que un empleado tiene una novedad de retiro o renuncia y requiere devolución de equipo.]]></actions>
+          <expectedresults><![CDATA[*Cuando se marca el checkbox de devolución de equipo, el sistema debe guardar correctamente el registro de devolución de equipo y debe inactivar al usuario.
+*Cuando no se marca el checkbox de devolución de equipo, el sistema debe notificar al Soporte que un empleado tiene una novedad de retiro o renuncia y requiere devolución de equipo.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+  <testsuite name="011-Registrar inactivación del empleado en WO">
+    <node_order><![CDATA[]]></node_order>
+    <details><![CDATA[]]></details>
+    <testcase internalid="" name=" Registro de Inactivación del Empleado en WO">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que el sistema registre correctamente la inactivación del empleado en el software contable WO, permitiendo controlar la inhabilitación del empleado en dicho sistema.]]></summary>
+      <preconditions><![CDATA[1.El usuario tiene acceso al sistema como Analista de Nómina.
+2.Se ha registrado el retiro o renuncia del empleado en el sistema.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1°Iniciar sesión en el sistema como Analista de Nómina.
+]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2°Navegar hasta la sección de gestión de empleados]]></actions>
+          <expectedresults><![CDATA[RE2]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3°Seleccionar el empleado que ha sido retirado.]]></actions>
+          <expectedresults><![CDATA[RE3]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[.4°Verificar que el checkbox de inactivación del empleado en WO esté disponible]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5°Marcar el checkbox de inactivación del empleado en WO.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[
+6°Guardar los cambios.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7°Verificar que el sistema guarde correctamente el registro de inactivación del empleado en WO.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[8]]></step_number>
+          <actions><![CDATA[8°Repetir los pasos del 2 al 6, esta vez sin marcar el checkbox de inactivación del empleado en WO.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[9]]></step_number>
+          <actions><![CDATA[
+9°Verificar que el sistema notifique a Nómina que un empleado tiene una novedad de retiro y debe registrar en WO.]]></actions>
+          <expectedresults><![CDATA[*Cuando se marca el checkbox de inactivación del empleado en WO, el sistema debe guardar correctamente el registro de inactivación del empleado en WO.                          *Cuando no se marca el checkbox de inactivación del empleado en WO, el sistema debe notificar a Nómina que un empleado tiene una novedad de retiro y debe registrar en WO.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+  <testsuite name="012-Registrar el 'archivo' del empleado en ODOO">
+    <node_order><![CDATA[]]></node_order>
+    <details><![CDATA[]]></details>
+    <testcase internalid="" name="Archivar empleado">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que el sistema permita registrar las renuncias de los empleados, retirándolos de la lista de activos y generando la novedad en el reporte de facturación.]]></summary>
+      <preconditions><![CDATA[1.El usuario tiene acceso al sistema como director de proyecto (Jefe inmediato).
+2.Se ha seleccionado la acción de archivar desde el módulo de empleado.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1°Verificar la bandeja de entrada del correo del Responsable la notificación que  puede archivar un Empleado.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2°Iniciar sesión en el sistema como Responsable Q-vision]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3°Navegar hasta el módulo de empleado.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4°Seleccionar el empleado que ha presentado su renuncia.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5°Buscar la opción para archivar al empleado.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6°Verificar que los checkboxes de soporte y nómina estén marcados.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7°Presionar el botón guardar en la ventana de Registrar Salida.     ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[8]]></step_number>
+          <actions><![CDATA[8°Verificar que el sistema realice las tareas correspondientes a las Historias de Usuario 9 y 10.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[9]]></step_number>
+          <actions><![CDATA[9°Verificar que el sistema guarde la novedad de renuncia del empleado y lo archive de la lista de activos.   ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[10]]></step_number>
+          <actions><![CDATA[10°Repetir los pasos del 3 y 4.  ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[11]]></step_number>
+          <actions><![CDATA[11°No marcar los checkboxes de soporte y nómina.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[12]]></step_number>
+          <actions><![CDATA[12°Presionar el botón guardar en la ventana de Registrar Salida.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[13]]></step_number>
+          <actions><![CDATA[13°Verificar que el sistema no archive al empleado.]]></actions>
+          <expectedresults><![CDATA[*El sistema realiza las acciones correspondientes a las Historias de Usuario 9 y 10.
+*El sistema guarda la novedad de renuncia del empleado.
+*El empleado se archiva de la lista de activos.
+*El usuario correspondiente se inactiva en el sistema. *De ser un empleado no archivado el sistema no archiva al empleado.
+*No se guarda la novedad de renuncia del empleado.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+  <testsuite name="013-Notificación semanal de las validaciones de las novedades (Ingreso, retiro y renuncia)">
+    <node_order><![CDATA[]]></node_order>
+    <details><![CDATA[]]></details>
+    <testcase internalid="" name=" Notificación Semanal de Novedades Pendientes de Validación">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que el sistema notifique semanalmente a los analistas de soporte y nómina sobre las novedades pendientes de validación, incluyendo ingreso, retiro y renuncia de empleados, cuando los checks correspondientes no se han actualizado.]]></summary>
+      <preconditions><![CDATA[El usuario tiene acceso al sistema como analista de soporte y nómina.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1°Esperar hasta que sea lunes a las 8 a.m.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2°Verificar la bandeja de entrada del correo del analista.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3°Comprobar si hay una notificación del sistema sobre novedades pendientes de validación.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4°Si la notificación está presente, revisar los detalles de las novedades pendientes, incluyendo ingreso, retiro y renuncia de empleados.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5°Verificar que los checks descritos en las Historias de Usuario 4, 5, 8 y 9 no se hayan actualizado para las novedades pendientes mencionadas.  ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[ 6° Repetir los pasos del 1 al 3.           ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[ 7°Verificar que no haya ninguna notificación del sistema sobre novedades pendientes de validación.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[8]]></step_number>
+          <actions><![CDATA[8°Verificar que los checks descritos en las Historias de Usuario 4, 5, 8 y 9 se hayan actualizado para las novedades pendientes mencionadas, si las hay.]]></actions>
+          <expectedresults><![CDATA[*El sistema envía una notificación al analista de soporte y nómina sobre las novedades pendientes de validación.
+*Se proporcionan detalles de las novedades pendientes, incluyendo ingreso, retiro y renuncia de empleados.                       *En caso de No notificar las novedades pendientes de validación el sistema no envía ninguna notificación al analista de soporte y nómina sobre novedades pendientes de validación.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+  <testsuite name="015-Reporte de facturación V0.1">
+    <node_order><![CDATA[]]></node_order>
+    <details><![CDATA[]]></details>
+    <testcase internalid="" name="Generar Reporte de Facturación de Cliente">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que el sistema genere correctamente un informe de facturación de cliente según los filtros seleccionados, incluyendo cliente, fecha desde y fecha hasta como obligatorios, y los demás filtros como opcionales.]]></summary>
+      <preconditions><![CDATA[1.El usuario tiene acceso al sistema como analista de nómina y facturación.
+2.Se han ingresado los datos necesarios en el sistema, incluyendo información de clientes, servicios, proyectos, tipos de novedades y empleados.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1°Iniciar sesión en el sistema como analista de nómina y facturación.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2°Navegar hasta la sección de generación de reportes.
+
+]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3°Seleccionar la opción para generar un reporte de facturación de cliente.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4°Completar los campos obligatorios: cliente, fecha desde y fecha hasta.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5°Opcionalmente, completar los demás filtros disponibles: servicio, proyecto, tipo de novedad, empleado.
+
+
+]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6°Presionar el botón para generar el informe.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7°Verificar que el sistema genere un informe de facturación de cliente basado en los filtros seleccionados.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[8]]></step_number>
+          <actions><![CDATA[8°Revisar el informe generado y verificar que contenga las columnas con los siguientes datos: Ciudad, Cliente, Centro de Costo Principal, Proyecto, Servicio, Centro de Costo Servicio, Director, Analista Asignado, Cargo, Tipo de Novedad, Fecha de Novedad, Tarifa Hora, Horas a Reportar. ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[9]]></step_number>
+          <actions><![CDATA[9°Repetir los pasos del 1 al 4    ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[10]]></step_number>
+          <actions><![CDATA[10°No completar alguno de los campos obligatorios: cliente, fecha desde o fecha hasta.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[11]]></step_number>
+          <actions><![CDATA[11°Presionar el botón para generar el informe.
+]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[12]]></step_number>
+          <actions><![CDATA[12°Verificar que el sistema no genere el informe.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[13]]></step_number>
+          <actions><![CDATA[13°Verificar que el sistema muestre un mensaje advirtiendo los campos requeridos que no han sido completados.]]></actions>
+          <expectedresults><![CDATA[*El sistema genera correctamente un informe de facturación de cliente.
+*El informe contiene las columnas especificadas con los datos requeridos.
+*Los datos del informe son consistentes con los filtros seleccionados.                  *en caso de no generar reporte de facturación de cliente el sistema no genera el informe de facturación de cliente.
+*Se muestra un mensaje al usuario indicando los campos requeridos que no han sido completados]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+</testsuite>

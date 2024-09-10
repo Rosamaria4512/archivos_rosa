@@ -1,0 +1,531 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="">
+  <node_order><![CDATA[]]></node_order>
+  <details><![CDATA[]]></details>
+  <testsuite name="3-002 Crear contacto Cliente / Analista de facturación ">
+    <node_order><![CDATA[]]></node_order>
+    <details><![CDATA[]]></details>
+    <testcase internalid="" name="Crear Contacto Cliente con Datos Básicos Correctos">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que el sistema permita crear un contacto cliente cuando se ingresen correctamente todos los datos básicos obligatorios en el módulo de contactos.]]></summary>
+      <preconditions><![CDATA[El usuario tiene acceso como analista de facturación y se dispone de datos básicos obligatorios para el nuevo contacto cliente]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1.validar que exista el Rol “Crear contactos” en Administrador para darle permiso al Analista de facturación, para que le permita contactos.
+
+]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2.Acceder como analista de Facturación.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3.Acceder módulo de contactos.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4.Seleccionar la opción para crear un nuevo contacto cliente.
+]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5.Completar todos los campos obligatorios con datos válidos.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[
+6.Presionar el botón "Guardar". ]]></actions>
+          <expectedresults><![CDATA[El sistema guarda los datos del nuevo contacto cliente correctamente y no permite asignar un proyecto hasta que se completen los campos de centro de costo cliente y servicio.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Intentar Crear Contacto Cliente con Datos Incompletos">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que el sistema no permita la creación de un nuevo contacto cliente si no se completan todos los campos obligatorios.]]></summary>
+      <preconditions><![CDATA[ El usuario tiene acceso como analista de facturación.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1.Acceder al módulo de contactos.
+
+
+
+
+]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2.Seleccionar la opción para crear un nuevo contacto cliente.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3.Completar solo algunos campos obligatorios con datos válidos.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4.Presionar el botón "Guardar".]]></actions>
+          <expectedresults><![CDATA[El sistema no guarda los datos del nuevo contacto cliente y muestra un mensaje de error indicando que no todos los campos obligatorios han sido completados.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Intentar Asignar Proyecto sin Centro de Costo Cliente y Servicio">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que el sistema no permita la asignación de un proyecto a un contacto cliente si no se han ingresado los centros de costo cliente y servicio correspondientes.]]></summary>
+      <preconditions><![CDATA[1.El usuario tiene acceso como analista de facturación.          2. Cliente creado sin asignación de centro de costo cliente y servicio.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1.Ingresar al detalle de un contacto cliente existente.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2.Intentar asignar un proyecto al cliente   ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3.Presionar el botón "Guardar".]]></actions>
+          <expectedresults><![CDATA[El sistema no permite la asignación del proyecto y muestra un mensaje indicando que no se puede asignar un proyecto hasta que se ingresen los centros de costo cliente y servicio.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+  <testsuite name="3-003-Asignar empleado a proyecto / Director de proyecto">
+    <node_order><![CDATA[]]></node_order>
+    <details><![CDATA[]]></details>
+    <testcase internalid="" name="Validar que el sistema muestre únicamente los empleados asociados al cliente.">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que el sistema muestre únicamente los empleados asociados al cliente cuando se ingresen los datos obligatorios en el módulo de configuración del proyecto.]]></summary>
+      <preconditions><![CDATA[1*El usuario tiene acceso al sistema como director de proyecto.
+2°Se dispone de un cliente registrado en el sistema.
+3°Existen empleados asociados al cliente.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1.Ingresar al módulo de proyectos.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2.Seleccionar la opción para crear un nuevo proyecto o escoger un proyecto ya existente.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3.Completar los datos obligatorios del proyecto.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4.Seleccionar el campo "usuarios internos permitidos".]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5.Verificar que el sistema muestre únicamente los empleados asociados al cliente en el campo de selección de usuarios internos. ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6. Dar click en guardar.]]></actions>
+          <expectedresults><![CDATA[El sistema muestra únicamente los empleados asociados al cliente en el campo de selección de usuarios internos, asegurando que solo se puedan asignar empleados relacionados con el cliente al proyecto.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Intentar Asignar Empleado a Proyecto sin Datos Obligatorios">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[ Verificar que el sistema no permita asignar un empleado al proyecto si no se completan los datos obligatorios del proyecto.]]></summary>
+      <preconditions><![CDATA[El usuario tiene acceso al sistema como director de proyecto.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1.Ingresar al módulo de proyectos.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2.Seleccionar la opción para crear un nuevo proyecto escoger un proyecto ya existente.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3.No completar todos los datos obligatorios del proyecto.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4.Intentar seleccionar el campo "usuarios internos permitidos”.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5. Intentar guardar los datos.]]></actions>
+          <expectedresults><![CDATA[El sistema no permite guadar la infomacion hasta que no esten llenos todos los campos obligatorios.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+  <testsuite name="3-004-Registrar tiempo de Almuerzo / Director de proyectos">
+    <node_order><![CDATA[]]></node_order>
+    <details><![CDATA[]]></details>
+    <testcase internalid="" name=" Cálculo Exitoso de Horas a Reportar">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que el sistema realice correctamente el cálculo de las horas a reportar al ingresar los datos obligatorios en la configuración del proyecto.]]></summary>
+      <preconditions><![CDATA[1.El usuario tiene acceso como director de proyecto.
+2.Se han ingresado los datos obligatorios en la configuración del proyecto.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1.Ingresar al módulo de proyectos.
+
+
+]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2.Acceder a la configuración del proyecto y escoger un proyecto ya existente o crear uno. ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3.Dar click en el apartado “Parametrización” y en “editar”.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4.Agregar una línea en la ventana de "Cargos y Tarifas".]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5.Ingresar los datos obligatorios: "Perfil Vendido", "Recurso", "Tarifa Hora", "Hora de Inicio", "Hora Final" y "Tiempo de Almuerzo".
+
+]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6.Presionar el botón "Guardar y Cerrar" o "Grabar y Nuevo".]]></actions>
+          <expectedresults><![CDATA[El sistema calcula co.rrectamente las horas a reportar según la fórmula especificada: Hora de Inicio + Hora Final - Tiempo de Almuerzo]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Advertencia por Falta de campos requeridos a la hora de guardar.">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que el sistema advierta sobre los campos obligatorios faltantes al intentar guardar la configuración del proyecto sin los datos requeridos.]]></summary>
+      <preconditions><![CDATA[El usuario tiene acceso como director de proyecto.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1.Ingresar al módulo de proyectos.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2.Acceder a la configuración del proyecto y escoger un proyecto ya existente o crear uno. ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3.Dar click en el apartado “Parametrización” y en “editar”.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4.Agregar una línea en la ventana de "Cargos y Tarifas".
+]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5.No ingresar al menos un dato obligatorio: "Perfil Vendido", "Recurso", "Tarifa Hora", "Hora de Inicio", "Hora Final" y "Tiempo de Almuerzo".]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[
+6.Intentar guardar la configuración del proyecto.]]></actions>
+          <expectedresults><![CDATA[El sistema muestra una advertencia indicando que faltan completar campos obligatorios antes de poder guardar la configuración del proyecto.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Ingresar Horas a Reportar con Formato Incorrecto">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que el sistema rechace el ingreso de horas a reportar con un formato incorrecto.]]></summary>
+      <preconditions><![CDATA[1.El usuario tiene acceso como director de proyecto.
+2.Se han ingresado los datos obligatorios en la configuración del proyecto..]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1.Ingresar al módulo de proyectos.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2.Acceder a la configuración del proyecto y escoger un proyecto ya existente o crear uno. ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3.Dar click en el apartado “Parametrización” y en “editar”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4.Agregar una línea en la ventana de "Cargos y Tarifas".]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5.Ingresar los datos obligatorios correctamente pero al menos un dato ingresarlo con valor numerico.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6.Intentar guardar la configuración del proyecto.]]></actions>
+          <expectedresults><![CDATA[El sistema muestra una advertencia indicando que faltan hay campos que estan llenos incorrectamente antes de poder guardar la configuración del proyecto.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Ingresar Horas a Reportar con varios dígitos.">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que el sistema no realice el cálculo de las horas a reportar si se ingresa un valor mayor a un dígito en el campo de horas a reportar.]]></summary>
+      <preconditions><![CDATA[ El usuario tiene acceso como director de proyecto.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1.Ingresar al módulo de proyectos..]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2.Acceder a la configuración del proyecto y escoger un proyecto ya existente o crear uno. ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3.Dar click en el apartado “Parametrización” y en “editar”.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4.Agregar una línea en la ventana de "Cargos y Tarifas".]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5.Ingresar los datos obligatorios correctamente.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6. ingresar en el campo ‘Tiempo de almuerzo’ más de un digito.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7. intentar dar click en guardar y cerrar.]]></actions>
+          <expectedresults><![CDATA[El sistema no realiza el cálculo de las horas a reportar y muestra un mensaje de error indicando El valor del campo 'Tiempo de almuerzo' debe ser un número de un solo dígito.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+  <testsuite name="3-010-Notificación sin asignación por regional ">
+    <node_order><![CDATA[]]></node_order>
+    <details><![CDATA[]]></details>
+    <testcase internalid="" name="Notificación Exitosa de Empleados sin Asignación por Regional">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que el sistema envíe correctamente la notificación de los empleados sin asignación a las gerentes regionales.]]></summary>
+      <preconditions><![CDATA[1.Existen empleados activos en el registro.
+2.Al menos un empleado tiene el dato de cliente indicado como "Sin Asignación" y no tiene un proyecto asociado.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1°Revisar el registro de empleados activos e Identificar un empleado con el cliente indicado como "Sin Asignación" y sin proyecto asociado.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2°Esperar al día lunes de la semana.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3°Verificar que llegue la notificación por medio del correo a los gerentes regionales.]]></actions>
+          <expectedresults><![CDATA[El sistema envía una notificación al correo de las gerentes regionales el día lunes de cada semana, indicando los empleados asociados al cliente "Sin Asignación" en su regional, junto con sus detalles de servicio, cargo, nombre del empleado y días asignados a ese cliente.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name=" Ausencia de Empleados sin Asignación por Regional">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que el sistema no envíe ninguna notificación si no hay empleados sin asignación en la regional.]]></summary>
+      <preconditions><![CDATA[ No existen empleados activos en el registro con el cliente indicado como "Sin Asignación" y sin proyecto asociado.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1°No encontrar empleados con el cliente indicado como "Sin Asignación" y sin proyecto asociado.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2.°Esperar al día lunes de la semana, no debe llegar ninguna notificación.]]></actions>
+          <expectedresults><![CDATA[El sistema no envía una notificación al correo de las gerentes regionales si no hay empleados asociados al cliente "Sin Asignación" en su regional.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+  <testsuite name="3-011-Noficiación de cierre informe parte de horas  ">
+    <node_order><![CDATA[]]></node_order>
+    <details><![CDATA[]]></details>
+    <testcase internalid="" name="Notificación Exitosa de Cierre de Informe de Parte de Horas">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que el sistema envíe correctamente la notificación al jefe inmediato para revisar y aprobar el informe de parte de horas cuando se cumpla la fecha 25 calendario de cada mes.]]></summary>
+      <preconditions><![CDATA[ Se ha cumplido la fecha 25 calendario de un mes.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1.Esperar a que se cumpla la fecha 25 calendario de un mes]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2.Validar que el proyecto notificado no tenga aprobacion.]]></actions>
+          <expectedresults><![CDATA[El sistema envía una notificación al correo del jefe inmediato informando sobre el cierre de mes y solicitando su aprobación en el informe de parte de horas para los proyectos a su cargo.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Ausencia de Notificación Antes de la Fecha 25">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que el sistema no envíe ninguna notificación antes de la fecha 25 calendario de cada mes.]]></summary>
+      <preconditions><![CDATA[No se ha cumplido la fecha 25 calendario de un mes.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[Esperar antes de que se cumpla la fecha 25 calendario de un mes.]]></actions>
+          <expectedresults><![CDATA[El sistema no envía ninguna notificación al correo del jefe inmediato antes de que se cumpla la fecha 25 calendario de un mes.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+</testsuite>

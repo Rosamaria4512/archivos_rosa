@@ -1,0 +1,757 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="">
+  <node_order><![CDATA[]]></node_order>
+  <details><![CDATA[]]></details>
+  <testsuite name=" ED-003-Activación de compromisos previos">
+    <node_order><![CDATA[]]></node_order>
+    <details><![CDATA[]]></details>
+    <testcase internalid="" name="Activación de compromiso previo">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Este caso de prueba verifica que cuando el líder evaluador ingresar al ERP odoo, da clic en el módulo Evaluación de desempeño y navega hasta el compromiso de un empleado, el sistema permite la activación de un compromiso previo desde el botón continuar.]]></summary>
+      <preconditions><![CDATA[*El evaluador debe tener acceso al sistema y a la sección de compromisos. 
+*el evaluador debe estar dentro del módulo Evaluación de desempeño
+*Debe existir un compromiso previo disponible para ser activado.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-Iniciar sesión en el sistema con credenciales de líder evaluador.                                                                ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2- dar clic en el icono del menú principal                      ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3-dar clic en el módulo evaluación de desempeño]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-dar clic en el botón editar             ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-seleccionar una evaluación de desempeño vigente en estado 'Evaluación líder'                                 ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6-Navegar a la sección de objetivos de desarrollo laboral.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7-Seleccionar un compromiso previo de la evaluación de desempeño inmediatamente anterior. .                                                 ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[8]]></step_number>
+          <actions><![CDATA[8.Presionar el botón continuar para activar y darle continuidad al compromiso]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[9]]></step_number>
+          <actions><![CDATA[9-verificar que quede en estado true el botón continuar.]]></actions>
+          <expectedresults><![CDATA[Al ingresar al sistema ERP odoo con credenciales de lider evaluador se valida que el puede activar un comprimiso previo desde el boton continuar correctamente.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Actualización de fecha y estado del compromiso">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Este caso de prueba verifica que cuando el líder evaluador ingresar al ERP odoo, da clic en el módulo Evaluación de desempeño y navega hasta el compromiso de un empleado, el sistema permite la activación de un compromiso previo desde el botón continuar, carga la fecha de compromiso de manera automática con la fecha del día en curso, y el estado del compromiso cambia a ‘En proceso'.]]></summary>
+      <preconditions><![CDATA[*El evaluador debe tener acceso al sistema y a la sección de compromisos. 
+*el evaluador debe estar dentro del módulo Evaluación de desempeño
+*el evaluador ya debe ver activado un compromiso previo.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-Iniciar sesión en el sistema con credeciales de lider  evaluador.                                                                                            ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2- dar clic en el icono del menú principal]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3-dar clic en el modulo evaluación de desempeño]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-dar clic en una evaluación de desempeño del empleado requerido                                                                                                ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-dar clic en el boton editar]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6-Navegar a la sección de compromisos.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7-Seleccionar un compromiso previo de la evaluación de desempeño inmediatamente anterior.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[8]]></step_number>
+          <actions><![CDATA[8-Presionar el botón continuar para activar y darle continuidad al compromiso.                                      .                                                                                  ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[9]]></step_number>
+          <actions><![CDATA[9- verificar que se actualice correctamete la fecha actual]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[10]]></step_number>
+          <actions><![CDATA[10-verificar que se actualice correcteamente el estado, debe quedar "En proceso"]]></actions>
+          <expectedresults><![CDATA[Al ingresar al sistema ERP odoo con credenciales de lider evaluador se valida que el sistema  carga la fecha de compromiso de manera automática con la fecha del día en curso, y el estado del compromiso cambia a 'En proceso', cuando el evaluador desde el boton continuar activa el compromiso correctamente]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Inactivación de compromiso">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Este caso de prueba verifica que cuando el líder evaluador ingresar al ERP odoo, da clic en el módulo Evaluación de desempeño y navega hasta el compromiso de un empleado el sistema no realiza ningún cambio en la fecha de compromiso ni en el estado si el compromiso no es activado.]]></summary>
+      <preconditions><![CDATA[*El evaluador debe tener acceso al sistema y a la sección de compromisos. 
+*el evaluador debe estar dentro del módulo Evaluación de desempeño
+*Debe existir un compromiso previo disponible para ser activado.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-Iniciar sesión en el sistema con credenciales de líder evaluador.                                                                  ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2- dar clic en el icono del menú principal                          ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3-dar clic en el módulo evaluación de desempeño]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-dar clic en el botón editar                                                ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-Navegar a la sección de compromisos.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6-Seleccionar un compromiso previo de la evaluación de desempeño inmediatamente anterior.                   ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7-No presionar el botón de continuidad.                               ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[8]]></step_number>
+          <actions><![CDATA[8-verificar que no se actualice ni la fecha ni el estado.]]></actions>
+          <expectedresults><![CDATA[Al ingresar al sistema ERP odoo con credenciales de lider evaluador se valida que el sistema no debe realizar ningún cambio en la fecha de compromiso ni en el estado del compromiso, si no se ha activado el compromiso correctamente.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+  <testsuite name=" ED-005 - No creación manual">
+    <node_order><![CDATA[]]></node_order>
+    <details><![CDATA[]]></details>
+    <testcase internalid="" name="Verificación de la eliminación del botón 'Crear'">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Este caso de prueba verifica que cuando el líder evaluador ingresar al ERP odoo, el botón 'Crear' no está presente en la interfaz del módulo de Evaluación de desarrollo laboral para evitar la creación manual de evaluaciones.]]></summary>
+      <preconditions><![CDATA[*El evaluador debe estar autenticado en el sistema                                 .*El evaluador debe tener acceso al sistema y al módulo de Evaluación de desarrollo laboral.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-Iniciar sesión en el sistema con credenciales de líder evaluador.                                                                                                                 ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2- dar clic en el icono del menú principal         ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3-dar clic en el módulo evaluación de desempeño                      ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-Observar la interfaz del módulo para verificar la presencia del botón 'Crear'.]]></actions>
+          <expectedresults><![CDATA[Al ingresar al sistema ERP odoo con credenciales de lider evaluador se valida que el botón 'Crear' no esta  presente en la interfaz del módulo de Evaluación de desarrollo laboral y por ende el evaluador no debe tener la opción de crear nuevas evaluaciones de desempeño de manera manual.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+  <testsuite name="ED-006-  Creación manual ">
+    <node_order><![CDATA[]]></node_order>
+    <details><![CDATA[]]></details>
+    <testcase internalid="" name="Verificación de la creación manual de evaluaciones de desempeño">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Este caso de prueba verifica que el administrador del módulo pueda crear manualmente evaluaciones de desempeño para asignar a colaboradores que faltaron en la creación automática de evaluaciones.]]></summary>
+      <preconditions><![CDATA[*El usuario debe tener acceso al sistema como administrador del módulo.
+*El usuario debe estar autenticado en el sistema.
+*Debe haber colaboradores nuevos que necesiten evaluaciones de desempeño.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-Iniciar sesión en el sistema con credenciales de administrador.                                                                  ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2- dar clic en el icono del menú principal                          ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3-dar clic en el módulo evaluación de desempeño    ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-Observar la interfaz del módulo para verificar la presencia del botón 'Crear'.    ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-dar clic en el botón 'Crear' para iniciar una nueva evaluación.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6-llenar todos los campos requeridos para la evaluación manual, los campos son los siguientes: 
+*Fecha campo [ tipo Date] 
+*Tipo con lista desplegable con opciones: Evaluación por periodos, Evaluación de desempeño *Nombre del empleado*Evaluador]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7-dar clic en botón cargar dimensiones ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[8]]></step_number>
+          <actions><![CDATA[8-dar clic en el botón Aceptar]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[9]]></step_number>
+          <actions><![CDATA[9-dar clic en el botón guardar la creación de la evaluación]]></actions>
+          <expectedresults><![CDATA[Al ingresar al sistema ERP odoo con credenciales de administrador el sistema debe permitir la creación manual de la evaluación de desempeño.
+La nueva evaluación debe ser creada sin arrastrar información previa de compromisos del colaborador.
+La evaluación debe aparecer en la lista de evaluaciones asignadas al colaborador.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Verificar que no se carguen  compromisos de años previos en la tabla de objetivos de desarrollo laboral">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Este caso de prueba se verifica que el administrador del módulo al momento de crear una evaluación manualmente en el módulo de evaluación de desempeño y al momento de guardar la nueva evaluación no se cargan compromisos de años previos en la tabla de objetivos de desarrollo laboral. ]]></summary>
+      <preconditions><![CDATA[*El usuario debe tener acceso al sistema como administrador del módulo.
+*El usuario debe estar autenticado en el sistema.
+*Debe haber colaboradores nuevos que necesiten evaluaciones de desempeño.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-Iniciar sesión en el sistema con credenciales de administrador.                                                                 ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[ 2- dar clic en el icono del menú principal                          ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3-dar clic en el módulo evaluación de desempeño    ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-dar clic en el botón 'Crear' para iniciar una nueva evaluación.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-llenar todos los campos requeridos para la evaluación manual, los campos son los siguientes:                                      *Fecha campo [ tipo Date]                                                                *Tipo con lista desplegable con opciones: Evaluación por periodos, Evaluación de desempeño *Nombre del empleado*Evaluador]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6-dar clic en botón cargar dimensiones ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7-dar clic en el botón Aceptar]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[8]]></step_number>
+          <actions><![CDATA[8-dar clic en el botón guardar la creación de la evaluación.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[9]]></step_number>
+          <actions><![CDATA[9- Verificar que no se carguen  compromisos de años previos en la tabla de objetivos de desarrollo laboral.]]></actions>
+          <expectedresults><![CDATA[Al ingresar al sistema ERP odoo con credenciales de administrador el sistema  permite la creación manual de evaluaciones de desempeño correctamnete.
+La evaluación debe ser creada y asignada correctamente a los colaboradores nuevos.
+La evaluación debe estar libre de información previa de compromisos del colaborador, reflejando que es una creación manual excepcional.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+  <testsuite name="ED-007 -Aceptación de compromiso">
+    <node_order><![CDATA[]]></node_order>
+    <details><![CDATA[]]></details>
+    <testcase internalid="" name="Verificación de la aceptación del compromiso">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Este caso de prueba verifica que el  empleado evaluado al ingresar al ERP odoo pueda aceptar compromisos agregados por el evaluador en su evaluación de desempeño, desde el modulo de Evaluación de desempeño, seleccionando la opción "Si" desde el campo "Aceptación del compromiso".]]></summary>
+      <preconditions><![CDATA[*El usuario debe estar autenticado en el sistema como evaluado.
+*El evaluador debe haber agregado compromisos a la evaluación de desempeño del evaluado]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-Iniciar sesión en el sistema con credenciales de empleado evaluado.                                                              ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[ 2- dar clic en el icono del menú principal                          ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3-dar clic en el módulo evaluación de desempeño    ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4- Dar clic en una evaluación de desempeño de empleado a evaluar.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5- dar clic en el botón editar.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6-navegar hasta el modulo Objetivos de desarrollo laboral]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7-dar clic en el campo “Aceptación del compromiso”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[8]]></step_number>
+          <actions><![CDATA[8- dar clic en la opción SI de la lista desplegable de ese campo.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[9]]></step_number>
+          <actions><![CDATA[9-dar clic en el botón guardar.]]></actions>
+          <expectedresults><![CDATA[Al ingresar al sistema ERP odoo con credenciales de evaluador el sistema debe permite seleccionar la opción 'Sí' en el campo 'Aceptación del compromiso'.
+La aceptación del compromiso se registra exitosamente en el sistema.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Verificación de la no aceptación del compromiso">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Este caso de prueba verifica que el empleado evaluado al ingresar al ERP odoo pueda rechazar compromisos agregados por el evaluador en su evaluación de desempeño, desde el módulo de Evaluación de desempeño, seleccionando la opción "No" desde el campo "Aceptación del compromiso".]]></summary>
+      <preconditions><![CDATA[*El usuario debe estar autenticado en el sistema como evaluado.
+*El evaluador debe haber agregado compromisos a la evaluación de desempeño del evaluado.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-Iniciar sesión en el sistema con credenciales de empleado evaluado.                                                                  ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2- dar clic en el icono del menú principal                          ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3-dar clic en el módulo evaluación de desempeño    ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4- Dar clic en una evaluación de desempeño de empleado a evaluar.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5- dar clic en el botón editar.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6-navegar hasta el modulo Objetivos de desarrollo laboral]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7-dar clic en el campo “Aceptación del compromiso”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[8]]></step_number>
+          <actions><![CDATA[8- dar clic en la opción NO de la lista desplegable de ese campo.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[9]]></step_number>
+          <actions><![CDATA[9-dar clic en el campo justificación.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[10]]></step_number>
+          <actions><![CDATA[10- dar una justificación del por que no acepta el compromiso.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[11]]></step_number>
+          <actions><![CDATA[11- dar clic en el botón guardar.]]></actions>
+          <expectedresults><![CDATA[Al ingresar al sistema ERP odoo con credenciales de empleado evaluado el sistema  permite seleccionar la opción 'No' en el campo 'Aceptación del compromiso'.
+La no aceptación del compromiso se registra exitosamente en el sistema.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+  <testsuite name="CP010- activación del campo &quot;Justificación&quot;">
+    <node_order><![CDATA[]]></node_order>
+    <details><![CDATA[]]></details>
+    <testcase internalid="" name="activación del campo &quot;Justificación&quot;">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Este caso de prueba verifica que el empleado evaluado al ingresar al ERP odoo al momento de seleccionar la opción NO en el campo "Aceptación del compromiso" se le activa el campo "Justificación" donde el podrá dar su justificación del por qué no acepta el compromiso.]]></summary>
+      <preconditions><![CDATA[*El usuario debe estar autenticado en el sistema como evaluado.
+*El evaluador debe haber agregado compromisos a la evaluación de desempeño del evaluado]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-Iniciar sesión en el sistema con credenciales de empleado evaluado.                                                                ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[  2- dar clic en el icono del menú principal                          ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3-dar clic en el módulo evaluación de desempeño    ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4- Dar clic en una evaluación de desempeño de empleado a evaluar.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5- dar clic en el botón editar.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6-navegar hasta el módulo Objetivos de desarrollo laboral]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7-dar clic en el campo “Aceptación del compromiso”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[8]]></step_number>
+          <actions><![CDATA[8- dar clic en la opción NO de la lista desplegable de ese campo.                                                                                  ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[9]]></step_number>
+          <actions><![CDATA[ 9-verificar que se active el campo "Justificación".]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[10]]></step_number>
+          <actions><![CDATA[10-dar clic en el campo justificación.                                        ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[11]]></step_number>
+          <actions><![CDATA[11. escribir la justificación del por qué no acepta el compromiso.                                                                     ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[12]]></step_number>
+          <actions><![CDATA[  12- dar clic en el botón guardar.]]></actions>
+          <expectedresults><![CDATA[Al ingresar al sistema ERP odoo con credenciales de empleado evaluado se valida que el sistema al momento de El   elegir la opción NO en el campo "Aceptacion del compromiso" automaticamente se le activa el campo "Justificación" entonces el ya podra justificar el por que no acepta el compromiso y permite guardar la información correctamente. ]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Justificación del por que no acepta compromiso">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Este caso de prueba verifica que el empleado evaluado al ingresar al ERP odoo pueda proporcionar una justificación, del porque no acepta el compromiso de su evaluación de desempeño, desde el módulo de Evaluación de desempeño, seleccionando la opción "No" desde el campo "Aceptación del compromiso".]]></summary>
+      <preconditions><![CDATA[*El usuario debe estar autenticado en el sistema como evaluado.
+*El evaluador debe haber agregado compromisos a la evaluación de desempeño del evaluado]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-Iniciar sesión en el sistema con credenciales de empleado evaluado.                                                                 ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[ 2- dar clic en el icono del menú principal                          ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3-dar clic en el módulo evaluación de desempeño    ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4- Dar clic en una evaluación de desempeño de empleado a evaluar.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5- dar clic en el botón editar.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6-navegar hasta el módulo Objetivos de desarrollo laboral]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7-dar clic en el campo “Aceptación del compromiso”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[8]]></step_number>
+          <actions><![CDATA[8- dar clic en la opción NO de la lista desplegable de ese campo.                                                                                   ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[9]]></step_number>
+          <actions><![CDATA[9-dar clic en el campo justificación.                                        ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[10]]></step_number>
+          <actions><![CDATA[10. escribir la justificación del por qué no acepta el compromiso.                                                                       ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[11]]></step_number>
+          <actions><![CDATA[11- dar clic en el botón guardar.]]></actions>
+          <expectedresults><![CDATA[Al ingresar al sistema ERP odoo con credenciales de empleado evaluado el sistema permite agregar una justificación en el campo 'Justifique su respuesta', cuando El selecciona la opción NO ,  la justificación queda  registrada exitosamente en el sistema. ]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="campo &quot;Justisficacion&quot; de modo lectura para el lider evaluador.">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Este caso de prueba verifica que el líder evaluador al ingresar al ERP odoo visualice el campo "Justificación" de un empleado a evaluar en modo lectura en el módulo evaluación de desempeño.]]></summary>
+      <preconditions><![CDATA[*El usuario debe estar autenticado en el sistema como evaluado.
+*El evaluador debe haber agregado compromisos a la evaluación de desempeño del evaluado]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-Iniciar sesión en el sistema con credenciales de líder evaluador]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2- dar clic en el icono del menú principal                          ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3-dar clic en el módulo evaluación de desempeño    ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4- Dar clic en una evaluación de desempeño de empleado a evaluar.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5- dar clic en el botón editar.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6-verificar que el campo “Justificación” este en modo lectura.]]></actions>
+          <expectedresults><![CDATA[Al ingresar al sistema ERP odoo con credenciales de lider evaluador el sistema le muestra el campo "Justificacion" de un emleado evaluado en solo lectura correctamente. ]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+</testsuite>

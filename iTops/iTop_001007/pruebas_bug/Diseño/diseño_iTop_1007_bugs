@@ -1,0 +1,425 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="">
+  <node_order><![CDATA[]]></node_order>
+  <details><![CDATA[]]></details>
+  <testsuite name="Ajuste 1- Agregar una notica en medio del recuadro azul luego de las funciones y antes del campo cliente que diga: *Aplica para proyectos dentro de Q-Vision*">
+    <node_order><![CDATA[]]></node_order>
+    <details><![CDATA[]]></details>
+    <testcase internalid="" name="verificar nota  en la seccion de experiencia.">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Este caso de prueba se asegura de validar que exista la siguiente nota “*Aplica para proyectos dentro de Q-Vision*" dentro de " Mi perfil- curriculum vitae-experiencia”, antes de la sección de proyectos y después de funciones.]]></summary>
+      <preconditions><![CDATA[*Se debe estar logueado en el sistema ERP Odoo.                       *Debe existir la sección expericia.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-Loguearse dentro del sistema Erp odoo como empleado.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-Dar clic en el usuario]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- Dar clic en la opción “Mi perfil”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-Dar clic en el botón “Agregar”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-Dar clic en el botón “Editar”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6- Verificar que exista la nota “*Aplica para proyectos dentro de Q-Vision*” después de funciones y antes de la sección de proyectos.]]></actions>
+          <expectedresults><![CDATA[El sistema debe mostrar una nota en la seccion de experiencia dentro de Q-Vision*" dentro de " Mi perfil- curriculum vitae-experiencia" que diga lo siguiente : "*Aplica para proyectos dentro de Q-Vision*" ]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+  <testsuite name="Ajuste 2-El campo de fecha fin de cliente se debe reconsiderar ya que puede darse la opción de que la persona este actualmente trabajando en el proyecto que esta relacionando">
+    <node_order><![CDATA[]]></node_order>
+    <details><![CDATA[]]></details>
+    <testcase internalid="" name="campo &quot;Fecha fin&quot; el campo no debe ser obligatorio.">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Este caso de prueba se asegura de validar que el campo "Fecha fin" dentro de Q-Vision*" dentro de " Mi perfil- curriculum vitae-experiencia" no sea obligatorio.]]></summary>
+      <preconditions><![CDATA[*Se debe estar logueado en el sistema ERP Odoo.                       *Debe existir la sección expericia.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-Loguearse dentro del sistema Erp odoo como empleado.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-Dar clic en el usuario]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- Dar clic en la opción “Mi perfil”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-Dar clic en el botón “Agregar”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-Dar clic en el botón “Editar”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6- Navegar hasta la sección de “Proyectos”.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7- Dar clic en “Agregar linea”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[8]]></step_number>
+          <actions><![CDATA[8- Verificar que el campo “Fecha fin” no sea obligatorio.]]></actions>
+          <expectedresults><![CDATA[Se debe validar que el campo "Fecha fin" dentro de Q-Vision*" dentro de " Mi perfil- curriculum vitae-experiencia" no sea obligatorio.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+  <testsuite name="C3. La opción de estudios complementarios, debe cambiarse el nombre de certificado a Certificación, ya que el significado de certificado tiene otro concepto (documento que evidencia que culmino/participo en algún curso u otro).">
+    <node_order><![CDATA[]]></node_order>
+    <details><![CDATA[]]></details>
+    <testcase internalid="" name="verificar que la opción &quot;Certificado&quot; cambie a &quot;Certificación&quot;">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Este caso de prueba se asegura de verificar que la opción "Certificado" cambie por "Certificacion" dentro de " Mi perfil- curriculum vitae-eduación".]]></summary>
+      <preconditions><![CDATA[*Se debe estar logueado en el sistema ERP Odoo.                       *Debe existir la sección eduacion.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-Loguearse dentro del sistema Erp odoo como empleado.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-Dar clic en el usuario]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- Dar clic en la opción “Mi perfil”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-Dar clic en el botón “Agregar”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-Dar clic en el botón “Editar”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6-Navegar hasta le campo “Formación” y seleccionar la opción “Complementaria.”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7-Desplegar la lista desplegable del campo “Tipo formación” ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[8]]></step_number>
+          <actions><![CDATA[8- Verificar que en esa lista desplegable se haya cambiado “Certificado” por “Certificación”.]]></actions>
+          <expectedresults><![CDATA[Se debe validar que  la opción "Certificado" cambie por "Certificacion" dentro de " Mi perfil- curriculum vitae-eduación".]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+  <testsuite name="Ajuste 4. Realizando una exploración, en el campo de Información de trabajo, aunque no se puede editar información (eso esta bien) resulta que los datos allí registrados se evidencian como vínculos, que al momento de cliquear lo va dirigiendo a otros espacios.">
+    <node_order><![CDATA[]]></node_order>
+    <details><![CDATA[]]></details>
+    <testcase internalid="" name="Verificar que informacion de &quot;Ubicacion&quot; sea de modo lectura.">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Este caso de prueba se asegura de verificar que desde "Mi perfil-curriculum vitae-Ubicación” la información este en modo lectura.]]></summary>
+      <preconditions><![CDATA[*Se debe estar logueado en el sistema ERP Odoo.                       *Debe estar dentro de Curriculum Vitae ]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-Loguearse dentro del sistema Erp odoo como empleado.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-Dar clic en el usuario]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- Dar clic en la opción “Mi perfil”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-Dar clic en la pestaña “Información del trabajo”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-Verificar que los campos “Departamento y Dirección laboral” sean de modo lectura.]]></actions>
+          <expectedresults><![CDATA[Se debe validar que desde "Mi perfil-curriculum vitae-Ubicacion"  la información este en modo lectura.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+  <testsuite name=" Ajuste 5.La ciudad laboral podria tener lista desplegable de la ciudades de Colombia.">
+    <node_order><![CDATA[]]></node_order>
+    <details><![CDATA[]]></details>
+    <testcase internalid="" name="Lista desplegable con todas las ciudades de Colombia.">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Este caso de prueba se asegura de validar que dentro de "Mi perfil-Curriculum Vitae-Experiencia" en el campo "Ciudad laboral" aparezca una lista desplegable con las ciudades de Colombia y debe ser un campo requerido. ]]></summary>
+      <preconditions><![CDATA[*Se debe estar logueado en el sistema ERP Odoo.                       *Debe estar dentro de Curriculum Vitae                                        *Debe estar dentro de "Educacion"]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-Loguearse dentro del sistema Erp odoo como empleado.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-Dar clic en el usuario]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- Dar clic en la opción “Mi perfil”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-Dar clic en el botón “Editar”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-Dar clic en el botón “Agregar” en experiencia]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6-Navegar hasta el campo “Ciudad laboral”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7- Desplegar la lista y verificar que se despliegue las ciudades de Colombia.]]></actions>
+          <expectedresults><![CDATA[En este caso de prueba se debe verificar que que dentro de "Mi perfil-Curriculum Vitae-Experiencia" en el campo "Ciudad laboral" aparezca una lista desplegable con las ciudades de Colombia y debe ser un campo requerido. ]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+  <testsuite name="Ajuste 6 .En el momento de guardar el registro de experiencia actual no me permitió continuar, sale un error “Campo invalido descripción” y no se activo el campo para registrar funciones">
+    <node_order><![CDATA[]]></node_order>
+    <details><![CDATA[]]></details>
+    <testcase internalid="" name="Verificar que exista el texto 'Funciones de Qvision. En construcción’'">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Este caso de prueba se asegura de verificar que exista el texto ‘Funciones de Q-Vision. En construcción’’ dentro de "Mi perfil-Curriculum Vitae-Experiencia", cuando el empleado seleccione empresa Q-Vision Technologies, en caso tal no existan funciones dentro del cargo que pertenece, el empleado.]]></summary>
+      <preconditions><![CDATA[*Se debe estar logueado en el sistema ERP Odoo.                       *Debe estar dentro de Curriculum Vitae                                        *Debe estar dentro de "Experiencia"]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-Loguearse dentro del sistema Erp odoo como empleado.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-Dar clic en el usuario]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- Dar clic en la opción “Mi perfil”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-Dar clic en el botón “Editar”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-Dar clic en el botón “Agregar” en experiencia]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6-Verificar que en la sección de funciones aparezca el siguiente texto:”‘Funciones de Q-Vision. En construcción’’]]></actions>
+          <expectedresults><![CDATA[En este caso de prueba se debe verificar que exista el texto  'Funciones de Qvision. En construcción’'  dentro de "Mi perfil-Curriculum Vitae-Experiencia", cuando el empleado seleccione empresa Q-Vision Technologies, en caso tal no existan funciones dentro del cargo que pertenece, el empleado.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+  <testsuite name="Ajuste 7. El campo de idiomas estará en los dos campos, ya que aparece también en habilidades.">
+    <node_order><![CDATA[]]></node_order>
+    <details><![CDATA[]]></details>
+    <testcase internalid="" name="Verificar que infomacion de &quot;idiomas&quot; este en el nuevo widget">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Este caso de prueba se asegura de verificar que se  quite idiomas de la sección de habilidades y pasar la información al nuevo widget dentro de "Mi perfil-Curriculum Vitae"]]></summary>
+      <preconditions><![CDATA[*Se debe estar logueado en el sistema ERP Odoo.                       *Debe estar dentro de Curriculum Vitae                                        *Debe estar dentro de "Experiencia"]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-Loguearse dentro del sistema Erp odoo como empleado.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-Dar clic en el usuario]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- Dar clic en la opción “Mi perfil”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-Verificar que los idiomas que aparecían en habilidades aparezcan en el nuevo widget de “Idiomas”]]></actions>
+          <expectedresults><![CDATA[El sistema debe mostrar que los idiomas de la sección de habilidades  se visualicen en el nuevo widget dentro de "Mi perfil-Curriculum Vitae"]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+  <testsuite name="Bug 1- El campo de RH no esta obligatorio ">
+    <node_order><![CDATA[]]></node_order>
+    <details><![CDATA[]]></details>
+    <testcase internalid="" name="Campo RH debe ser obligatorio">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Este caso de prueba se asegura de validar que el campo Rh dentro de "Mi perfil-Curriculum Vitae- Información privada" sea obligatorio, es decir que si no se agrega información en ese campo no se puede guardar la demás información.]]></summary>
+      <preconditions><![CDATA[*Se debe estar logueado en el sistema ERP Odoo.                       *Debe estar dentro de Curriculum Vitae                                        *Debe estar dentro de "Informacion privada"]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-Loguearse dentro del sistema Erp odoo como empleado.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-Dar clic en el usuario]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- Dar clic en la opción “Mi perfil”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-Dar clic en el botón “Editar”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-Navegar hasta la pestaña “Información privada”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6- Verificar que el campo “Rh” sea obligatorio.]]></actions>
+          <expectedresults><![CDATA[Se debe validar que el campo Rh  dentro de "Mi perfil-Curriculum Vitae- Información privada" sea obligatorio, es decir que si no se agrega informacion en ese campo no se puede guardar la demas informacion.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+</testsuite>

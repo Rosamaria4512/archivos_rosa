@@ -1,0 +1,906 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="">
+  <node_order><![CDATA[]]></node_order>
+  <details><![CDATA[]]></details>
+  <testsuite name="C2-El empleado puede descargar su hoja de vida pero solo en formato pdf">
+    <node_order><![CDATA[]]></node_order>
+    <details><![CDATA[]]></details>
+    <testcase internalid="" name="descargar hoja de vida ">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que cuando el usuario con perfil de empleado regular   ingrese al ERP odoo y navegue hasta "Mi perfil", exista el botón imprimir y al darle clic el sistema le permita descargar su hoja de vida.]]></summary>
+      <preconditions><![CDATA[*El usuario ha iniciado sesión como empleado regular. 
+*Existe su hoja de vida.
+*Existe el botón imprimir]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-ingresar al ERP odoo con credenciales de empleado regular                                                                                                                                                                                                                                                                          ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-dar clic en el usuario]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- dar clic en "Mi perfil"]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-dar clic en el icono de "imprimir"         ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5- verificar que si se descarga la hoja de vida del empleado]]></actions>
+          <expectedresults><![CDATA[Al ingresar al sistema ERP odoo con credenciales de empleado regular, se logra validar que el desde su perfil puede descargar su hoja de vida correctamente.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="descargar hoja de vida en formato pdf">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que cuando el usuario con perfil de empleado regular   ingrese al ERP odoo y navegue hasta "Mi perfil", el sistema le permita descargar su hoja de vida en un formato PDF.]]></summary>
+      <preconditions><![CDATA[*El usuario ha iniciado sesión como empleado regular. 
+*Existe su hoja de vida.
+*Existe el botón imprimir]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-ingresar al ERP odoo con credenciales de empleado regular       ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-dar clic en el usuario                                                                                                ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- dar clic en "Mi perfil"                                                                                                   ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-dar clic en el botón "imprimir"                                                                       ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5- verificar que si se descarga la hoja de vida del empleado en formato PDF]]></actions>
+          <expectedresults><![CDATA[Al ingresar al sistema ERP odoo con credenciales de empleado regular, se logra validar que el desde su perfil puede descargar su hoja de vida en formato PDF correctamente.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+  <testsuite name="C6-La hoja de vida debe contener información del perfil ">
+    <node_order><![CDATA[]]></node_order>
+    <details><![CDATA[]]></details>
+    <testcase internalid="" name="Verificar contenido del perfil en la hoja de vida">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Este caso de prueba se asegura de que la hoja de vida del colaborador contenga la información del perfil tal como fue ingresada por El mismo, cuando El la descargue desde el ERP odoo.]]></summary>
+      <preconditions><![CDATA[*El usuario ha iniciado sesión como empleado regular.                                     *El perfil debe incluir información sobre titulaciones, estudios terminados, experiencia profesional, conocimientos técnicos y habilidades blandas.                                     *El usuario ya debe haber descargado la hoja de vida desde el sistema]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-ingresar al ERP odoo con credenciales de empleado regular       ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-dar clic en el usuario                                                                                                ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- dar clic en "Mi perfil"                                                                                                   ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-dar clic en el botón "imprimir"     ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5- Verificar que la información del perfil esté completa y correctamente ingresada en la pestaña Curriculum vitae.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6- abrir la hoja de vida descargada]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7- verificar que en la hoja de vida contenga la misma información que el empleado registro en su perfil del sistema.]]></actions>
+          <expectedresults><![CDATA[Al ingresar al sistema con credenciales de empleado se valida que la hoja de vida muestra la información del perfil del colaborador exactamente como fue ingresada, incluyendo titulaciones, estudios terminados, experiencia profesional, conocimientos técnicos y habilidades blandas correctamente.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Verificar placeholder de orden en la hoja de vida">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Este caso de prueba se asegura de que el placeholder en la hoja de vida del colaborador cuando ingresa a su perfil en la pestaña curriculun vitae en la sección tipo "Perfil Profesional" muestra el orden correcto en el que se debe agregar la información del perfil. El placeholder debe ser el siguiente: 
+Perfil profesional (Titulación, estudios terminados), breve experiencia profesional, conocimientos o habilidades técnicas y por último habilidades blandas.]]></summary>
+      <preconditions><![CDATA[*El usuario ha iniciado sesión como empleado regular.                                         *El sistema debe estar configurado para mostrar un placeholder en la sección tipo "Perfil profesional" que esta dentro de la pestaña curriculum vitae.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-ingresar al ERP odoo con credenciales de empleado regular       ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-dar clic en el usuario                                                                                                ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- dar clic en "Mi perfil"]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4- dar clic en la pestaña “curriculum vitae”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5- dar clic en el botón agregar                                                                                                  ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6-Verificar que el placeholder está presente y visible en la opción tipo “Perfil profesional”.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7-Revisar que el placeholder muestra el siguiente orden:Perfil profesional (Titulación, estudios terminados) Breve experiencia profesional Conocimientos o habilidades técnicas Habilidades blandas]]></actions>
+          <expectedresults><![CDATA[Al ingresar al sistema con credenciales de empleado se valida que el placeholder en la sección de tipo "Perfil profesional "  en la pestaña curriculum vitae  muestra el orden correcto de la información, tal como se especifica: Perfil profesional (Titulación, estudios terminados), breve experiencia profesional, conocimientos o habilidades técnicas y habilidades blandas.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Verificar edición del perfil y actualización en la hoja de vida">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Este caso de prueba se asegura de que cualquier cambio realizado en el perfil del colaborador en la pestaña curriculum vitae se refleje correctamente en la hoja de vida descargada.]]></summary>
+      <preconditions><![CDATA[*El usuario ha iniciado sesión como empleado regular.    
+*La hoja de vida debe estar disponible y debe reflejar la información del perfil.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-Iniciar sesión en el sistema como colaborador.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-dar clic a la sección de perfil.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3-dar clic en el boton editar                                           ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-Editar una o más secciones del perfil (ej., agregar una nueva titulación o actualizar la experiencia profesional).]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-dar clic en el boton guardar  para                                         guardar los cambios realizados en el perfil.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6-Navegar a la sección de la hoja de vida.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7-Verificar que los cambios realizados en el perfil se reflejen correctamente en la hoja de vida.]]></actions>
+          <expectedresults><![CDATA[Al ingresar al sistema con credenciales de empleado se valida que los cambios realizados en el perfil del colaborador se reflejan inmediatamente y correctamente en la hoja de vida, manteniendo el orden especificado en el placeholder.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+  <testsuite name=" C9-La hoja de vida debe contener una sección para visualizar la educación ">
+    <node_order><![CDATA[]]></node_order>
+    <details><![CDATA[]]></details>
+    <testcase internalid="" name="Verificar la visualización de educación con formación terminada">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Este caso de prueba se asegura de que la hoja de vida muestra correctamente la sección de educación cuando el estado de formación es "culminado", debe contener los campos :Nombre de la Institución ,Título del programa, Estado de formación, 'Título adquirido, fecha inicio ,fecha finalización, Ciudad, formación, tipo de formación.]]></summary>
+      <preconditions><![CDATA[*El usuario ha iniciado sesión como empleado regular.                                    
+ *El colaborador debe haber ingresado información educativa con estado "terminada/culminada".]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-Iniciar sesión en el sistema como colaborador.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-Navegar a la sección de perfil y asegurarse de que hay al menos una formación ingresada con estado "terminada/culminada".]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3-Navegar a la sección de la hoja de vida.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-Verificar que la formación terminada/culminada se muestra con los campos: Título obtenido, Institución, Año finalización y Ciudad.]]></actions>
+          <expectedresults><![CDATA[Al ingresar al sistema con credenciales de empleado se valida que la hoja de vida muestra la formación terminada/culminada con los campos correctos: Título obtenido, Institución, Año finalización y Ciudad.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Verificar la obligatoriedad y funcionalidad del campo &quot;Ciudad&quot;">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Este caso de prueba se asegura de que el campo "Ciudad" en la sección de educación es obligatorio y se despliega como una lista con opciones de ciudades del país.]]></summary>
+      <preconditions><![CDATA[*El usuario ha iniciado sesión como empleado regular.                                             *El colaborador debe estar dentro de "Mi perfil"                                  *El colaborador debe estar en el proceso de agregar o editar información educativa.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-ingresar al ERP odoo con credenciales de empleado regular       ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-dar clic en el usuario                                                                                                ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- dar clic en "Mi perfil"]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4- dar clic en la pestaña “curriculum vitae”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5- dar clic en el botón editar para agregar o editar una formación.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6-verificar que exista el campo “Ciudad” y que tenga una lista desplegable con todas las ciudades de Colombia.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7-dar clic en el botón guardar.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[8]]></step_number>
+          <actions><![CDATA[8- validar que si se haya guardado la información de ese campo.]]></actions>
+          <expectedresults><![CDATA[Al ingresar al sistema con credenciales de empleado se valida que la el campo "Ciudad" es obligatorio y se presenta como una lista desplegable con opciones de ciudades. El sistema no permite guardar la formación sin seleccionar una ciudad y muestra un mensaje de error en tal caso. Al seleccionar una ciudad y guardar, la formación se guarda correctamente.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Verificar que no aparecen las opciones &quot;Bachiller&quot; ni &quot;Curso&quot; en el campo &quot;Nivel de estudio&quot;">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Este caso de prueba se asegura de que las opciones "Bachiller" y "Curso" no aparecen en la lista del campo "Nivel de estudio" dentro de la sección tipo "Educación" cuando se ingresa al Curriculum vitae desde mi perfil.]]></summary>
+      <preconditions><![CDATA[*El usuario ha iniciado sesión como empleado regular.                                             *El colaborador debe estar dentro de "Mi perfil"                                  *El colaborador debe estar en el proceso de agregar o editar información educativa.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-ingresar al ERP odoo con credenciales de empleado regular       ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-dar clic en el usuario                                                                                                ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- dar clic en "Mi perfil"]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4- dar clic en la pestaña “curriculum vitae”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5- dar clic en el botón editar para agregar o editar una formación.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6-Verificar las opciones disponibles en el campo "Nivel de estudio".]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7-Comprobar que las opciones "Bachiller" y "Curso" no están presentes en la lista.]]></actions>
+          <expectedresults><![CDATA[Al ingresar al sistema con credenciales de empleado se valida que las opciones "Bachiller" y "Curso" no aparecen en la lista del campo "Nivel de estudio".]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Verificar la aparición de &quot;Certificados&quot; en el campo &quot;Tipo de formación&quot; cuando se selecciona &quot;Complementaria&quot; en el campo&quot;Formación&quot;">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Este caso de prueba se asegura de que la opción "Certificados" aparece en el campo "Tipo de formación" cuando se selecciona "Complementaria" en el campo "Formación",dentro de la sección tipo "Educación" cuando se ingresa al Curriculum vitae desde mi perfil.]]></summary>
+      <preconditions><![CDATA[*El usuario ha iniciado sesión como empleado regular.                                             *El colaborador debe estar dentro de "Mi perfil"                                  *El colaborador debe estar en el proceso de agregar o editar información educativa.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-ingresar al ERP odoo con credenciales de empleado regular       ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-dar clic en el usuario                                                                                                ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- dar clic en "Mi perfil"]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4- dar clic en la pestaña “curriculum vitae”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5- dar clic en el botón editar para agregar o editar una formación.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6-Seleccionar la opción "Complementaria" en el campo "Formación".]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7-verificar que se active el campo “Tipo de formación”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[8]]></step_number>
+          <actions><![CDATA[8-Verificar que la opción "Certificado" aparece en el campo "Tipo de formación".]]></actions>
+          <expectedresults><![CDATA[Al ingresar al sistema con credenciales de empleado se valida que cuando se selecciona "Complementaria" en el campo "Formación", la opción "Certificados" aparece en el campo "Tipo de formación".]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+  <testsuite name="C 10-  La hoja de vida debe contener una sección para visulizar las certificaciones ">
+    <node_order><![CDATA[]]></node_order>
+    <details><![CDATA[]]></details>
+    <testcase internalid="" name="Verificar visualización de todas las certificaciones ingresadas">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Este caso de prueba verifica que todas las certificaciones ingresadas por el colaborador se muestran correctamente en la sección de certificaciones de la hoja de vida, desde "Mi perfil"]]></summary>
+      <preconditions><![CDATA[*El usuario ha iniciado sesión como empleado regular.                                             
+*El colaborador debe estar dentro de "Mi perfil"                                  
+*El colaborador debe haber ingresado una o más certificaciones en su perfil.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-Iniciar sesión en el sistema como colaborador.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-Navegar a la sección de perfil y asegurarse de que hay al menos una certificación ingresada.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3-Navegar a la sección de la hoja de vida.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-Verificar que todas las certificaciones ingresadas se muestran correctamente.]]></actions>
+          <expectedresults><![CDATA[Todas las certificaciones ingresadas por el colaborador se muestran en la sección de certificaciones de la hoja de vida.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Verificar la persistencia de datos de certificaciones después de cerrar sesión">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Este caso de prueba verifica que las certificaciones ingresadas por el colaborador persisten en el sistema después de cerrar y volver a iniciar sesión.]]></summary>
+      <preconditions><![CDATA[*El usuario ha iniciado sesión como empleado regular.                                             
+*El colaborador debe estar dentro de "Mi perfil"                                  
+*El colaborador debe haber ingresado una o más certificaciones en su perfil.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-ingresar al ERP odoo con credenciales de empleado regular        ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-dar clic en el usuario                                                                                                 ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- dar clic en "Mi perfil" ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4- dar clic en la pestaña “curriculum vitae” ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-Verificar que todas las certificaciones ingresadas se muestran correctamente, después de que se cerró y se abrió sesión nuevamente ]]></actions>
+          <expectedresults><![CDATA[Las certificaciones ingresadas persisten en el sistema después de cerrar y volver a iniciar sesión, y se muestran correctamente en la sección de certificaciones de la hoja de vida.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="carga masiva de metodologias al perfil profesional">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[en este caso de prueba se verifica que se haga una carga masiva de metodologías que aparecían en la sección de "Habilidades" ahora deben aparecer en la sección de educación dentro de curriculum vitae desde mi perfil. ]]></summary>
+      <preconditions><![CDATA[*El usuario ha iniciado sesión como empleado regular.                                             
+*El colaborador debe estar dentro de "Mi perfil"        ]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-ingresar al ERP odoo con credenciales de empleado regular       ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-dar clic en el usuario                                                                                                ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- dar clic en "Mi perfil"]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4- dar clic en la pestaña “curriculum vitae”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-verificar que las metodologías que estaban en la sección “habilidades” ahora estén en la sección “Educación”.]]></actions>
+          <expectedresults><![CDATA[Se verifica que se hizo la carga masiva de metodologías que aparecían en la sección de "Habilidades" ahora  aparecen en la sección de educación dentro de curriculum vitae desde mi perfil, correctamente.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+  <testsuite name="C 12-  El sistema debe contener una sección en experiencia donde se puedan ingresar proyectos">
+    <node_order><![CDATA[]]></node_order>
+    <details><![CDATA[]]></details>
+    <testcase internalid="" name="Verificar la creación de un proyecto en la sección de experiencia">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Este caso de prueba verifica que el colaborador puede crear un proyecto en la sección de experiencia, ingresando toda la información requerida, cuando este dentro de curriculum vitae desde "Mi perfil" .]]></summary>
+      <preconditions><![CDATA[*El usuario ha iniciado sesión como empleado regular.                                             
+*El colaborador debe estar dentro de "Mi perfil"                                  
+*El colaborador debe tener acceso a la sección de experiencia.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-ingresar al ERP odoo con credenciales de empleado regular       ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-dar clic en el usuario                                                                                                ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- dar clic en "Mi perfil"]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4- dar clic en la pestaña “curriculum vitae”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-dar clic en el botón editar]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6-dar clic a la sección tipo “experiencia” en el perfil.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7-Dar clic en “agregar línea” la opción para agregar un nuevo proyecto.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[8]]></step_number>
+          <actions><![CDATA[8-Ingresar la siguiente información en los campos correspondientes: Nombre de proyecto, Cliente ,Fecha inicio, Fecha fin, Detalle de funciones adicionales ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[9]]></step_number>
+          <actions><![CDATA[9-dar clic en el botón Guardar, para guardar el proyecto.]]></actions>
+          <expectedresults><![CDATA[Al ingresar al sistema con credenciales de empleado se valida que el proyecto se crea correctamente y se muestra en la sección de experiencia con todos los campos ingresados.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Verificar la visualización del tooltip en el campo 'Detalle de funciones adicionales'">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Este caso de prueba verifica que el tooltip con la información "Funciones específicas del cliente" se muestra correctamente cuando el usuario pasa el cursor sobre el campo 'Detalle de funciones adicionales', dentro de curriculum vitae dese mi perfil.]]></summary>
+      <preconditions><![CDATA[*El usuario ha iniciado sesión como empleado regular.                                             
+*El colaborador debe estar dentro de "Mi perfil"                                  
+*El colaborador debe tener acceso a la sección de experiencia.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-ingresar al ERP odoo con credenciales de empleado regular       ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-dar clic en el usuario                                                                                                ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- dar clic en "Mi perfil"]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4- dar clic en la pestaña “curriculum vitae”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-dar clic en el botón editar]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6-dar clic a la sección tipo “experiencia” en el perfil.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7-Dar clic en “agregar línea” la opción para agregar un nuevo proyecto.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[8]]></step_number>
+          <actions><![CDATA[8-Pasar el cursor sobre el campo 'Detalle de funciones adicionales' y verificar que se muestre el tooltip que debe contener la siguiente información: 'Funciones específicas del cliente']]></actions>
+          <expectedresults><![CDATA[Al ingresar al sistema con credenciales de empleado se valida el tooltip con la información "Funciones específicas del cliente" se muestra correctamente cuando el usuario pasa el cursor sobre el campo 'Detalle de funciones adicionales', dentro de curriculum vitae desde mi perfil.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Verificar la edición de un proyecto en la sección de experiencia">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Este caso de prueba verifica que el colaborador puede editar un proyecto existente en la sección de tipo "experiencia "y que los cambios se guardan correctamente, dentro de curriculum vitae desde mi perfil.]]></summary>
+      <preconditions><![CDATA[*El usuario ha iniciado sesión como empleado regular.                                             
+*El colaborador debe estar dentro de "Mi perfil"                                  
+*El colaborador debe tener acceso a la sección de experiencia.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-ingresar al ERP odoo con credenciales de empleado regular       ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-dar clic en el usuario                                                                                                ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- dar clic en "Mi perfil"]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4- dar clic en la pestaña “curriculum vitae”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-dar clic en el botón editar]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6-dar clic a la sección tipo “experiencia” en el perfil.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7-Dar clic en un proyecto existente para editar.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[8]]></step_number>
+          <actions><![CDATA[8-Realizar cambios en la información del proyecto.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[9]]></step_number>
+          <actions><![CDATA[9-Dar clic en el botón “Guardar” para guardar los cambios.]]></actions>
+          <expectedresults><![CDATA[Al ingresar al sistema con credenciales de empleado se valida los cambios realizados en el proyecto se guardan correctamente y se reflejan en la sección de experiencia, dentro de curriculum vitae desde mi perfil.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Verificar la eliminación de un proyecto en la sección de experiencia">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Este caso de prueba verifica que el colaborador puede eliminar un proyecto existente en la sección de experiencia y que el proyecto eliminado no se muestra más en la lista.]]></summary>
+      <preconditions><![CDATA[*El usuario ha iniciado sesión como empleado regular.                                             
+*El colaborador debe estar dentro de "Mi perfil"                                  
+*El colaborador debe tener acceso a la sección de experiencia.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-ingresar al ERP odoo con credenciales de empleado regular       ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-dar clic en el usuario                                                                                                ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- dar clic en "Mi perfil"]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4- dar clic en la pestaña “curriculum vitae”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-dar clic en el botón editar]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6-dar clic a la sección tipo “experiencia” en el perfil.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7-dar clic en un proyecto existente para eliminar.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[8]]></step_number>
+          <actions><![CDATA[8-Confirmar la eliminación del proyecto.]]></actions>
+          <expectedresults><![CDATA[Al ingresar al sistema con credenciales de empleado se valida que el proyecto se elimina correctamente y no se muestra más en la sección de experiencia, dentro de curriculum vitae desde mi perfil.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Verificar la visualización de proyectos en la sección de experiencia">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Este caso de prueba verifica que todos los proyectos ingresados por el colaborador se muestran correctamente en la sección de experiencia,dentro de curriculum vitae desde mi perfil.]]></summary>
+      <preconditions><![CDATA[*El usuario ha iniciado sesión como empleado regular.                                             
+*El colaborador debe estar dentro de "Mi perfil"                                  
+*El colaborador debe tener acceso a la sección de experiencia.                *El colaborador debe tener uno o más proyectos registrados.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-ingresar al ERP odoo con credenciales de empleado regular        ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-dar clic en el usuario                                                                                                 ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- dar clic en "Mi perfil" ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4- dar clic en la pestaña “curriculum vitae” ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-dar clic en una experiencia registrada con uno o más proyectos registrados. ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6-Verificar que todos los proyectos ingresados se muestran correctamente con la siguiente información: Cliente , Nombre de proyecto, Fecha inicio, Fecha fin, Detalle de funciones adicionales]]></actions>
+          <expectedresults><![CDATA[Al ingresar al sistema con credenciales de empleado se valida que todos los proyectos ingresados por el colaborador se muestran correctamente en la sección de experiencia con toda la información ingresada, dentro de curriculum vitae desde mi perfil.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+</testsuite>

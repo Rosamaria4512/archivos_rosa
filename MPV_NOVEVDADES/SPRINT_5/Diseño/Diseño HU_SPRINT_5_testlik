@@ -1,0 +1,1837 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="">
+  <node_order><![CDATA[]]></node_order>
+  <details><![CDATA[]]></details>
+  <testsuite name="propuesta 1">
+    <node_order><![CDATA[]]></node_order>
+    <details><![CDATA[]]></details>
+    <testcase internalid="" name="Verificar adición y edición de campo para &quot;novedad tiempo&quot;">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Este caso de prueba verifica que el campo necesario para seleccionar el tipo de novedad tiempo se ha agregado correctamente y se pueda editar la informacion de ese campo en el módulo de partes de hora.]]></summary>
+      <preconditions><![CDATA[En el sistema de Odoo el módulo de partes de hora está accesible, para el perfil de nómina.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1- Ingresar al sistema Odoo]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-Ingresar como usuario perfil de nomina]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3-Dar clic en el icono cuadrado al lado izquierdo de la pagina]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-Dar clic en el módulo partes de hora]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-Dar clic en el apartado “partes de hora”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6-Dar clic en el apartado “todas las partes de hora”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7-Verificar que exista el campo “novedad tiempo”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[8]]></step_number>
+          <actions><![CDATA[8-Dar clic en un registro de “novedad tiempo”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[9]]></step_number>
+          <actions><![CDATA[9-Dar clic en la flecha de la lista desplegable]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[10]]></step_number>
+          <actions><![CDATA[10-Seleccionar el valor deseado]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[11]]></step_number>
+          <actions><![CDATA[11-Dar clic en el botón guardar]]></actions>
+          <expectedresults><![CDATA[El sistema de Odoo en el modulo partes de hora, se verifica que  se encuntra el campo "novedad tiempo " y tambien se puede editar, dando al final un resultado exitoso al guardar tipo de hora adicional correctamente.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Verificar selección de &quot;Hora ordinaria adicional&quot;">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Este caso de prueba verifica que se puede seleccionar y guardar correctamente el tipo de hora extra "Hora ordinaria adicional".]]></summary>
+      <preconditions><![CDATA[*El módulo de partes de hora está accesible,  para el perfil de nomina.                                                                           *El campo para tipo de hora extra está presente.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-	Ingresar al sistema Odoo
+
+
+
+
+
+
+
+]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-	Ingresar como usuario perfil de nomina]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3-   Dar clic en el icono cuadrado al lado izquierdo de la pagina]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-	Dar clic en el módulo partes de hora]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-	Dar clic en el apartado “partes de hora”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6-	Dar clic en el apartado “todas las partes de hora”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7-	Verificar que exista el campo “novedad tiempo”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[8]]></step_number>
+          <actions><![CDATA[8-	Dar clic en un registro de “novedad tiempo”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[9]]></step_number>
+          <actions><![CDATA[9-	Dar clic en la flecha de la lista desplegable]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[10]]></step_number>
+          <actions><![CDATA[10-	Seleccionar la opción "Hora ordinaria adicional]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[11]]></step_number>
+          <actions><![CDATA[11-	Dar clic en el botón guardar]]></actions>
+          <expectedresults><![CDATA[ El sistema de Odoo en el modulo partes de hora, en el campo novedad tiempo la opción  "Hora ordinaria adicional" se selecciona y se guarda correctamente.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Verificar selección de &quot;Hora nocturna&quot;">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Este caso de prueba verifica que se puede seleccionar y guardar correctamente el tipo de hora extra "Hora nocturna".]]></summary>
+      <preconditions><![CDATA[*El módulo de partes de hora está accesible,  para el perfil de nomina.                                                                           *El campo para tipo de hora extra está presente.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-Ingresar al sistema Odoo]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-Ingresar como usuario perfil de nomina]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- Dar clic en el icono cuadrado al lado izquierdo de la pagina]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-Dar clic en el módulo partes de hora]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-Dar clic en el apartado “partes de hora”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6-Dar clic en el apartado “todas las partes de hora”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7-Verificar que exista el campo “novedad tiempo”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[8]]></step_number>
+          <actions><![CDATA[8-Dar clic en un registro de “novedad tiempo”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[9]]></step_number>
+          <actions><![CDATA[9-Dar clic en la flecha de la lista desplegable]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[10]]></step_number>
+          <actions><![CDATA[10-Seleccionar la opción “Hora nocturna”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[11]]></step_number>
+          <actions><![CDATA[11-Dar clic en el botón guardar]]></actions>
+          <expectedresults><![CDATA[ El sistema de Odoo en el modulo partes de hora, en el campo novedad tiempo la opción  "Hora nocturna" se selecciona y se guarda correctamente.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Verificar selección de &quot;Hora dominical y festivo&quot;">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Este caso de prueba verifica que se puede seleccionar y guardar correctamente el tipo de hora extra "Hora dominical y festivo".]]></summary>
+      <preconditions><![CDATA[*El módulo de partes de hora está accesible,  para el perfil de nomina.                                                                           *El campo para tipo de hora extra está presente.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-	Ingresar al sistema Odoo
+
+
+]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-	Ingresar como usuario perfil de nomina]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[
+3-  Dar clic en el icono cuadrado al lado izquierdo de la pagina]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-	Dar clic en el módulo partes de hora]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-	Dar clic en el apartado “partes de hora”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6-	Dar clic en el apartado “todas las partes de hora”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7-	Verificar que exista el campo “novedad tiempo”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[8]]></step_number>
+          <actions><![CDATA[8-	Dar clic en un registro de “novedad tiempo”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[9]]></step_number>
+          <actions><![CDATA[9-	Dar clic en la flecha de la lista desplegable]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[10]]></step_number>
+          <actions><![CDATA[10-	Seleccionar la opción “Hora dominical o festiva”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[11]]></step_number>
+          <actions><![CDATA[11-	Dar clic en el botón guardar]]></actions>
+          <expectedresults><![CDATA[ El sistema de Odoo en el modulo partes de hora, en el campo novedad tiempo la opción  "Hora dominical o festiva" se selecciona y se guarda correctamente.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Verificar selección de &quot;Hora dominical y festiva nocturna&quot;">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Este caso de prueba verifica que se puede seleccionar y guardar correctamente el tipo de hora extra "Hora dominical y festiva nocturna".]]></summary>
+      <preconditions><![CDATA[*El módulo de partes de hora está accesible,  para el perfil de nomina.                                                                           *El campo para tipo de hora extra está presente.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-	Ingresar al sistema Odoo
+
+
+
+
+]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-	Ingresar como usuario perfil de nomina]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[
+3- Dar clic en el icono cuadrado al lado izquierdo de la pagina]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-	Dar clic en el módulo partes de hora]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-	Dar clic en el apartado “partes de hora”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6-	Dar clic en el apartado “todas las partes de hora”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7-	Verificar que exista el campo “novedad tiempo”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[8]]></step_number>
+          <actions><![CDATA[8-	Dar clic en un registro de “novedad tiempo”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[9]]></step_number>
+          <actions><![CDATA[9-	Dar clic en la flecha de la lista desplegable]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[10]]></step_number>
+          <actions><![CDATA[10-	Seleccionar la opción “Hora dominical o festiva nocturna”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[11]]></step_number>
+          <actions><![CDATA[11-	Dar clic en el botón guardar]]></actions>
+          <expectedresults><![CDATA[ El sistema de Odoo en el modulo partes de hora, en el campo novedad tiempo la opción  "Hora dominical o festiva nocturna" se selecciona y se guarda correctamente.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Verificar adición y edición de campo &quot;manejo&quot; ">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Este caso de prueba verifica que el campo necesario para seleccionar el manejo del registro llamado "manejo" se ha agregado correctamente al módulo de partes de hora y también se puede editar la información.]]></summary>
+      <preconditions><![CDATA[*En el sistema de Odoo el módulo de partes de hora está accesible, para el usuario con perfil de director. ]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-Ingresar al sistema Odoo]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-Ingresar como usuario perfil de nomina]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3-  Dar clic en el icono cuadrado al lado izquierdo de la pagina]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-Dar clic en el módulo partes de hora]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-Dar clic en el apartado “partes de hora”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6-Dar clic en el apartado “todas las partes de hora”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7-Verificar que exista el campo “Manejo”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[8]]></step_number>
+          <actions><![CDATA[8-Dar clic en un registro de “Manejo”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[9]]></step_number>
+          <actions><![CDATA[9-Dar clic en la flecha de la lista desplegable]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[10]]></step_number>
+          <actions><![CDATA[10-Seleccionar el valor deseado]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[11]]></step_number>
+          <actions><![CDATA[11-Dar clic en el botón guardar]]></actions>
+          <expectedresults><![CDATA[El sistema de Odoo en el modulo partes de hora, se verifica que  se encuntra el campo "Manejo" y tambien se puede editar, dando al final un resultado exitoso al guardar tipo de modelo correctamente.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Verificar selección de &quot;Remunerado&quot;">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Este caso de prueba verifica que se puede seleccionar y guardar correctamente el manejo del registro "Remunerado".]]></summary>
+      <preconditions><![CDATA[*En el sistema de Odoo el módulo de partes de hora está accesible, para el usuario con perfil de director.
+*El campo para manejo del registro está presente.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-	Ingresar al sistema Odoo
+
+
+
+
+]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-	Ingresar como usuario perfil de nomina]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- Dar clic en el icono cuadrado al lado izquierdo de la pagina]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-	Dar clic en el módulo partes de hora]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-	Dar clic en el apartado “partes de hora"]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6-	Dar clic en el apartado “todas las partes de hora”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7-	Verificar que exista el campo “Manejo”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[8]]></step_number>
+          <actions><![CDATA[8-	Dar clic en un registro de “Manejo”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[9]]></step_number>
+          <actions><![CDATA[9-	Dar clic en la flecha de la lista desplegable]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[10]]></step_number>
+          <actions><![CDATA[10-	Seleccionar la opción “Remunerado”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[11]]></step_number>
+          <actions><![CDATA[11-	Dar clic en el botón guardar]]></actions>
+          <expectedresults><![CDATA[ El sistema de Odoo en el modulo partes de hora, en el "Manejo del Resgistro " se selecciona "Renumerado" y se guarda correctamente.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name=" Verificar selección de &quot;Compensatorio&quot;">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Este caso de prueba verifica que se puede seleccionar y guardar correctamente el manejo del registro "Compensatorio".]]></summary>
+      <preconditions><![CDATA[*En el sistema de Odoo el módulo de partes de hora está accesible, para el usuario con perfil de director.
+*El campo para manejo del registro está presente]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-Ingresar al sistema Odoo]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-Ingresar como usuario perfil de nomina]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3-  Dar clic en el icono cuadrado al lado izquierdo de la pagina]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-Dar clic en el módulo partes de hora]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-Dar clic en el apartado “partes de hora”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6-Dar clic en el apartado “todas las partes de hora”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7-Verificar que exista el campo “Manejo”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[8]]></step_number>
+          <actions><![CDATA[8-Dar clic en un registro de “Manejo”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[9]]></step_number>
+          <actions><![CDATA[9-Dar clic en la flecha de la lista desplegable]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[10]]></step_number>
+          <actions><![CDATA[10-Seleccionar la opción “Compensatorio”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[11]]></step_number>
+          <actions><![CDATA[11-Dar clic en el botón guardar]]></actions>
+          <expectedresults><![CDATA[ El sistema de Odoo en el modulo partes de hora, en el "Manejo del Registro " se selecciona "Compensatorio" y se guarda correctamente.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Verificar selección de &quot;Ninguno&quot;">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Este caso de prueba verifica que se puede seleccionar y guardar correctamente el manejo del registro "Ninguno".]]></summary>
+      <preconditions><![CDATA[*El módulo de partes de hora está accesible,  para el perfil de director.                                                                          *El campo para manejo del registro está presente]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-Ingresar al sistema Odoo]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-Ingresar como usuario perfil de nomina]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3-    Dar clic en el icono cuadrado al lado izquierdo de la pagina]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-Dar clic en el módulo partes de hora]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-Dar clic en el apartado “partes de hora”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6-Dar clic en el apartado “todas las partes de hora”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7-Verificar que exista el campo “Manejo”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[8]]></step_number>
+          <actions><![CDATA[8-Dar clic en un registro de “Manejo”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[9]]></step_number>
+          <actions><![CDATA[9-Dar clic en la flecha de la lista desplegable]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[10]]></step_number>
+          <actions><![CDATA[10-Seleccionar la opción “Ninguno”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[11]]></step_number>
+          <actions><![CDATA[11-Dar clic en el botón guardar]]></actions>
+          <expectedresults><![CDATA[ El sistema de Odoo en el modulo partes de hora, en el "Manejo del Registro " se selecciona "Ninguno" y se guarda correctamente.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Verificar adición de campo de &quot;observaciones&quot; en reporte de novedades">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Este caso de prueba verifica que el reporte de novedades contiene el campo de observaciones necesario para el detalle de la franja horaria laborada.]]></summary>
+      <preconditions><![CDATA[El perfil de Nomina tiene acceso al reporte de novedades.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-Ingresar al reporte de novedades como usuario con perfil de nomina]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-Llenar los campos requeridos:  Regional, Cliente, Servicio, Tipo de Novedad, Empleados, Procesado por nómina, fecha inicial, fecha final.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3-Dar clic en “ver informe”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-Visualizamos que aparece en campo “Observaciones”]]></actions>
+          <expectedresults><![CDATA[El reporte de novedades al que tiene acceso el perfil de nomina contiene el campo de observaciones]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Verificar visualización del detalle en reporte de novedades">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Este caso de prueba verifica que el detalle de la franja horaria laborada se visualiza correctamente en el campo de observaciones si es una novedad de tiempo adicional del reporte de novedades.]]></summary>
+      <preconditions><![CDATA[*El perfil de Nomina tiene aceso al reporte de novedades.                                                                                   
+*El reporte de novedades está generado con datos en el campo de observaciones. ]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1- Ingresar al reporte de novedades como usuario con perfil de nomina]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2- Llenar los campos requeridos: Regional, Cliente, Servicio, Tipo de Novedad, Empleados, Procesado por nómina, fecha inicial, fecha final.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- Dar clic en “ver informe”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4- Visualizamos que aparece el detalle de la franja horaria laborada de un colaborador en el campo “Observaciones” cuando este tiene tiempo adicional.]]></actions>
+          <expectedresults><![CDATA[El perfil de nomina al ingresar al reporte de novedades visualiza que el detalle de la franja horaria laborada se visualiza correctamente.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+  <testsuite name="Propuesta 2">
+    <node_order><![CDATA[]]></node_order>
+    <details><![CDATA[]]></details>
+    <testcase internalid="" name="Acceso a  Novedad  Tiempos">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que el usuario con perfil de nómina puede acceder a la sección de Novedad Tiempos desde el menú principal.]]></summary>
+      <preconditions><![CDATA[*El usuario con el perfil de nómina debe estar autenticado en el sistema de odoo.
+*El usuario con el perfil de nómina debe tener permisos de acceso al submódulo de novedades.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-se ingresa al sistema de odoo con el perfil de nomina]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-se dirige hasta la parte izquierda de la página y da clic en el icono que aparece]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- dar clic en el módulo de Novedades]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-dar clic en la sección Novedades Tiempos]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-visualiza toda la información correspondiente en la sección Novedades Tiempos.]]></actions>
+          <expectedresults><![CDATA[Al hacer clic en el botón de "Novedades  Tiempos" en el menú principal, en el submodulo de Novedades  debe mostrar la sección correspondiente a Novedad tiempos sin errores.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Acceso a Novedad ausencias">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que el perfil de nómina puede acceder a la sección de Novedad traslados desde el menú principal del módulo ‘Novedades’.]]></summary>
+      <preconditions><![CDATA[*El usuario con el  perfil de nomina  debe estar autenticado en el sistema de odoo.
+*El usuario con el perfil de nomina debe tener permisos de acceso al submódulo de novedades.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-se ingresa al sistema de odoo con el perfil de nomina]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-se dirige hasta la parte izquierda de la página y da clic en el icono que aparece]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- dar clic en el módulo de Novedades]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-dar clic en la sección Novedad ausencias]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-dar clic en la sección Ausencias]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6-visualiza toda la información correspondiente en la sección Ausencias.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7-dar clic en la sección Asignaciones]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[8]]></step_number>
+          <actions><![CDATA[8- visualiza toda la información correspondiente en la sección Asignaciones.]]></actions>
+          <expectedresults><![CDATA[Al hacer clic en la seccion "Novedad Ausencias" en el menú principal,se despliegan dos secciones más "Ausencias y Asignaciones" al hacer clic en cualquiera de las dos el sistema debe mostrar la informacion  correspondiente a cada seccion sin errores.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Acceso a Novedad Traslados">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que el usuario con perfil de nómina puede acceder a la sección Novedad Traslados el desde el menú principal del módulo ‘Novedades’.]]></summary>
+      <preconditions><![CDATA[*El usuario con el  perfil de nomina  debe estar autenticado en el sistema de odoo.
+*El usuario con el perfil de nomina debe tener permisos de acceso al submódulo de novedades.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1*se ingresa al sistema de odoo con el perfil de nomina]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2*se dirige hasta la parte izquierda de la página y da clic en el icono que aparece]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3* dar clic en el módulo de Novedades]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4*dar clic en la sección Novedades Traslados]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5*visualiza toda la información correspondiente en la sección Novedades Traslados.]]></actions>
+          <expectedresults><![CDATA[Al hacer clic en la seccion "Novedades Traslados" en el menú principal, el sistema debe mostrar la informacion correspondiente a Traslados sin errores.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Acceso a Novedades Ingresos /Retiros">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que el usuario con el perfil de nómina puede acceder a la sección de Ingresos o Retiros desde el menú principal del módulo ‘Novedades’.]]></summary>
+      <preconditions><![CDATA[*El usuario con el  perfil de nomina  debe estar autenticado en el sistema de odoo.
+*El usuario con el perfil de nomina debe tener permisos de acceso al submódulo de novedades.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-se ingresa al sistema de odoo con el perfil de nomina]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-se dirige hasta la parte izquierda de la página y da clic en el icono que aparece]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- dar clic en el módulo de Novedades]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-dar clic en la sección Novedades Ingresos/ Retiros]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-dar clic en la sección Novedades Ingresos]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6-visualiza toda la información correspondiente en la sección Novedades Ingresos.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7-dar clic en la sección Novedades Retiros]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[8]]></step_number>
+          <actions><![CDATA[8- visualiza toda la información correspondiente en la sección Novedades Retiros.]]></actions>
+          <expectedresults><![CDATA[Al hacer clic en la seccion" Novedades Ingresos /Retiros" en el menú principal, el sistema debe mostrar la secciónes Novedades ingresos y novedades retiros al hacr clic en una de las dos el sistema muestra la informacion correspondiente a cada novedad sin errores.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Verificar adición y edición de campo &quot;Procesados por Nomina&quot;">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Este caso de prueba verifica que el campo "procesados por nomina" se ha agregado correctamente en el submódulo Novedades y que la persona de nómina puede procesar el estado de la novedad, desplegando la lista y seleccionando una de las opciones.]]></summary>
+      <preconditions><![CDATA[*El usuario con el perfil de nómina debe estar autenticado en el sistema de odoo.
+*El usuario con el perfil de nómina debe tener permisos de acceso al submódulo de novedades.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-se ingresa al sistema de odoo con el perfil de nomina]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-se dirige hasta la parte izquierda de la página y da clic en el icono que aparece]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- dar clic en el módulo de Novedades]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4- visualizar campo “Procesado por nomina”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-hacer clic en un registro dentro del campo "procesado por nomina " 6-dar clic en una de las opciones "pendiente por procesar o procesado"]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[7- dar clic en el botón guardar.]]></actions>
+          <expectedresults><![CDATA[El usuario con perfil de nomina ingresa al sistema de odo, especificamente al submodulo de Novedades y visualiza que existe el campo "Procesados por Nomina" y  puede darle estado a la novedad correctamente ya sea que procese la novedad o no, seleccionando una opcion de la lista deplegable "Pendiente por porcesar o procesado"]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="visualizar el campo de &quot;Procesado por nomina &quot; ">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[en este caso de prueba se verificará que el usuario con perfil de nómina al ingresar al reporte de novedades visualice el campo "Procesado por nomina".]]></summary>
+      <preconditions><![CDATA[*El usuario con el perfil de nómina debe estar autenticado en el reporte de novedades.
+ *Debe haber novedades registradas en el sistema dentro del submódulo de novedades. ]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1- El usuario ingresa al reporte de novedades como perfil de nómina]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2- Da clic en la carpeta que dice “semilleros”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- Da clic en la carpeta al reporte “RDNQA”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4- Verifica que exista el campo “Procesado por nomina”]]></actions>
+          <expectedresults><![CDATA[El usuario con el perfil de nomina ingreso al sistema correctamente validando que existe el campo "Procesado por nomina" , y se pueda seleccionar las novedades procesadas y pendiente por procesar.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="filtrar las novedades procesadas ">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que el usuario con perfil de nómina pueda filtrar las novedades que han sido procesadas en el reporte de novedades]]></summary>
+      <preconditions><![CDATA[*El usuario con el  perfil de nomina  debe estar autenticado en el el reporte de novedades.
+ *Debe haber novedades registradas en el sistema dentro del submodulo de novedades.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1- El usuario ingresa al reporte de novedades como perfil de nómina]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2- Da clic en la carpeta que dice “semilleros”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- Da clic en la carpeta al reporte “RDNQA”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4- Llenar los campos “empleados”, “fecha inicial”, “fecha final”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5- En el campo” procesado por nomina” seleccionar “Procesada”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6- Dar clic en el botón “Ver informe”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7- Se valida que se filtra las novedades procesadas]]></actions>
+          <expectedresults><![CDATA[El usuario con el perfil de nomina  tiene un resutaltado exitoso al filtar las novedades procesadas.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="filtrar Novedades pendientes por procesar">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que el usuario con perfil de nómina pueda filtrar las novedades que no han sido procesadas en el reporte de novedades.]]></summary>
+      <preconditions><![CDATA[*El usuario con el  perfil de nomina  debe estar autenticado en el sistema de odoo.                              *Debe haber novedades registradas en el sistema dentro del submodulo de novedades.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1- El usuario ingresa al reporte de novedades como perfil de nómina]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2- Da clic en la carpeta que dice “semilleros”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- Da clic en la carpeta al reporte “RDNQA”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4- Llenar los campos “empleados”, “fecha inicial”, “fecha final”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5- En el campo” procesado por nomina” seleccionar “pendientes por procesar”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6- Dar clic en el botón “Ver informe”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7- Se valida que se filtra las novedades pendientes por procesar]]></actions>
+          <expectedresults><![CDATA[El usuario con el perfil de nomina  tiene un resutaltado exitoso al filtar las novedades no procesadas.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+  <testsuite name="Propuesta 3">
+    <node_order><![CDATA[]]></node_order>
+    <details><![CDATA[]]></details>
+    <testcase internalid="" name="Acceso a Parametrización de Proyectos">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[En este caso de prueba se verifica que el usuario con perfil de  director puede acceder a la sección de parametrización en el módulo de proyectos dentro del sistema de Odoo.]]></summary>
+      <preconditions><![CDATA[*El usuario con perfil de director debe estar autenticado en el sistema de odoo .
+*El director debe tener permisos de acceso al módulo de proyectos.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1- Ingresar al sistema Odoo]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2- Ingresar como usuario perfil de director]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- Dar clic en el icono cuadrado al lado izquierdo de la pagina]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4- Dar clic en el módulo proyecto]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5- Dar clic en el apartado “configuración”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6- Dar clic en el apartado “proyectos”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7- Dar clic en un proyecto]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[8]]></step_number>
+          <actions><![CDATA[8- Dar clic en la página “Parametrización”]]></actions>
+          <expectedresults><![CDATA[El usuario con perfil de director puede acceder a la sección de parametrización en el módulo de proyectos sin errores.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="visualizar adición del campo &quot;Tipo De tarifa &quot; Seleccionable con &quot;Tarifa mes y Tarifa hora&quot;">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[En este caso de prueba se verifica que  el usuario con el perfil de Director tenga acceso al campo 'Tipo de tarifa' en la sección de parametrización. Se verifica que este campo sea  seleccionable y muestre las opciones establecidas.]]></summary>
+      <preconditions><![CDATA[*El usuario con perfil de director debe estar autenticado en el sistema de odoo .
+*El director debe tener permisos de acceso al módulo de proyectos.                                                    *El director debe estar en la sección de parametrización del módulo de proyectos.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1- Ingresar al sistema Odoo]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2- Ingresar como usuario perfil de director]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- Dar clic en el icono cuadrado al lado izquierdo de la pagina]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4- Dar clic en el módulo proyecto]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5- Dar clic en el apartado “configuración”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6- Dar clic en el apartado “proyectos”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7- Dar clic en un proyecto]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[8]]></step_number>
+          <actions><![CDATA[8- Dar clic en la página “Parametrización”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[9]]></step_number>
+          <actions><![CDATA[9- Dar clic en el botón “Editar”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[10]]></step_number>
+          <actions><![CDATA[10- Visualizar campo “Tipo de tarifa”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[11]]></step_number>
+          <actions><![CDATA[11- verificar que haya una llista desplegable con los campos “Tarifa Hora”, “Tarifa Mes”]]></actions>
+          <expectedresults><![CDATA[El directo al ingresar al modulo de proyecto y al escoger un proyecto e irse a la seccion parametrizacion visualiza que si exite el campo "Tipo de traifa" y cuando este le da clic en el campo se despliega una lista donde esta la opción "Tarifa mes y Tarifa hora" entonces se puede escoger la requerida en el momento.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="cambio de formulario según tipo de tarifa ">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[En este caso de prueba se verificará que el formulario de cargos y tarifas cambia correctamente según el tipo de tarifa seleccionada y que el título del formulario identifica el tipo de tarifa.]]></summary>
+      <preconditions><![CDATA[*El usuario con perfil de director debe estar autenticado en el sistema de odoo .
+*El director debe tener permisos de acceso al módulo de proyectos.                                                                                *El director debe estar en la sección de parametrización del módulo de proyectos.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1- Ingresar al sistema Odoo]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2- Ingresar como usuario perfil de director]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- Dar clic en el icono cuadrado al lado izquierdo de la pagina]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4- Dar clic en el módulo proyecto]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5- Dar clic en el apartado “configuración”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6- Dar clic en el apartado “proyectos”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7- Dar clic en un proyecto]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[8]]></step_number>
+          <actions><![CDATA[8- Dar clic en la página “Parametrización”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[9]]></step_number>
+          <actions><![CDATA[9- Dar clic en el botón “Editar”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[10]]></step_number>
+          <actions><![CDATA[10- Selecciona opción “Tarifa hora” desde el campo “Tipo tarifa”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[11]]></step_number>
+          <actions><![CDATA[11- Dar clic el texto “Agregar línea”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[12]]></step_number>
+          <actions><![CDATA[12- verificar que el formulario a llenar sea de tarifa hora]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[13]]></step_number>
+          <actions><![CDATA[13- Selecciona opción “Tarifa mes” desde el campo “Tipo tarifa”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[14]]></step_number>
+          <actions><![CDATA[14- Dar clic el texto “Agregar línea”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[15]]></step_number>
+          <actions><![CDATA[15- verificar que el formulario a llenar sea de tarifa mes]]></actions>
+          <expectedresults><![CDATA[Cuando el usuario con el perfil de nomina al seleccionar 'Tarifa mes', el formulario debe cambiar y mostrar un título que indique 'Tarifa mes'. Al seleccionar 'Tarifa hora', el formulario debe cambiar y mostrar un título que indique 'Tarifa hora'.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="llenar formulario tarifa mes">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[En este caso de prueba se llenara el formulario tarifa mes donde tiene los siguientes campos requeridos :                             *perfil vendido *Recurso *Horas vendidas *Tarifa* Hora Inicio * Hora Final *Tiempo de almuerzo ]]></summary>
+      <preconditions><![CDATA[*El usuario con perfil de director debe estar autenticado en el sistema de odoo .
+*El director debe tener permisos de acceso al módulo de proyectos.                                                                                *El director debe estar en la sección de parametrización del módulo de proyectos.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1- Ingresar al sistema Odoo]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2- Ingresar como usuario perfil de director]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- Dar clic en el icono cuadrado al lado izquierdo de la pagina]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4- Dar clic en el módulo proyecto]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5- Dar clic en el apartado “configuración”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6- Dar clic en el apartado “proyectos”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7- Dar clic en un proyecto]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[8]]></step_number>
+          <actions><![CDATA[8- Dar clic en la página “Parametrización”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[9]]></step_number>
+          <actions><![CDATA[9- Dar clic en el botón “Editar”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[10]]></step_number>
+          <actions><![CDATA[10- Selecciona opción “Tarifa mes” desde el campo “Tipo tarifa”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[11]]></step_number>
+          <actions><![CDATA[11- Dar clic el texto “Agregar línea”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[12]]></step_number>
+          <actions><![CDATA[12 - llenar el formulario, con todos los campos requeridos: *perfil vendido *Recurso *Horas vendidas *Tarifa* Hora Inicio * Hora Final *Tiempo de almuerzo]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[13]]></step_number>
+          <actions><![CDATA[13- dar clic en Guardar y cerrar]]></actions>
+          <expectedresults><![CDATA[El usuario con perfil de nomina llena el formulario Tipo de mes con los campos requeridos *perfil vendido *Recurso *Horas vendidas *Tarifa* Hora Inicio * Hora Final *Tiempo de almuerzo  y al dar clic en el boton guardar y cerrar se guardara la informacion correctamente.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="llenar formulario tarifa hora">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[En este caso de prueba se llenará el formulario tarifa hora donde tiene los siguientes campos requeridos: *perfil vendido *Recurso *Tarifa* Hora Inicio * Hora Final *Tiempo de almuerzo ]]></summary>
+      <preconditions><![CDATA[*El usuario con perfil de director debe estar autenticado en el sistema de odoo .
+*El director debe tener permisos de acceso al módulo de proyectos.                                                                                *El director debe estar en la sección de parametrización del módulo de proyectos.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1- Ingresar al sistema Odoo]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2- Ingresar como usuario perfil de director]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- Dar clic en el icono cuadrado al lado izquierdo de la pagina]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4- Dar clic en el módulo proyecto]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5- Dar clic en el apartado “configuración”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6- Dar clic en el apartado “proyectos”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7- Dar clic en un proyecto]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[8]]></step_number>
+          <actions><![CDATA[8- Dar clic en la página “Parametrización”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[9]]></step_number>
+          <actions><![CDATA[9- Dar clic en el botón “Editar”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[10]]></step_number>
+          <actions><![CDATA[10- Selecciona opción “Tarifa hora” desde el campo “Tipo tarifa”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[11]]></step_number>
+          <actions><![CDATA[11- Dar clic el texto “Agregar línea”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[12]]></step_number>
+          <actions><![CDATA[12 - llenar el formulario, con todos los campos requeridos: *perfil vendido *Recurso *Tarifa* Hora Inicio * Hora Final *Tiempo de almuerzo]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[13]]></step_number>
+          <actions><![CDATA[13- dar clic en Guardar y cerrar]]></actions>
+          <expectedresults><![CDATA[El usuario con perfil de nomina llena el formulario Tipo de hora con los campos requeridos *perfil vendido *Recurso *Horas vendidas *Tarifa* Hora Inicio * Hora Final *Tiempo de almuerzo  y al dar clic en el boton guardar y cerrar se guardara la informacion correctamente.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Cálculo de Horas en Resumen Según Tipo de Tarifa">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que el cálculo de horas en el resumen del reporte de facturación varía correctamente según el tipo de tarifa vendida.]]></summary>
+      <preconditions><![CDATA[*El usuario con perfil de nómina debe estar autenticado en el reporte de facturación.                         * Debe haber datos de facturación registrados en el sistema con diferentes tipos de tarifa (mes y hora).]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1- Ingresar al reporte de facturación]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2- Llenar los campos requeridos para hacer la búsqueda del colaborador: Regional, cliente, servicio, proyecto, empleados, fecha inicial, fecha final.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- Dar clic en “ver informe”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4- Visualizar la diferencia de resultado de “Tarifa mes y tarifa hora”]]></actions>
+          <expectedresults><![CDATA[El cálculo de horas en el resumen del reporte de facturación se ajusta correctamente según el tipo de tarifa vendida. Para 'Tarifa mes', se debe mostrar un cálculo mensual; para 'Tarifa hora', se debe mostrar un cálculo por hora.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+  <testsuite name="Propuesta 4">
+    <node_order><![CDATA[]]></node_order>
+    <details><![CDATA[]]></details>
+    <testcase internalid="" name="Agregar Comentarios del Director en el Registro en el campo observaciones">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que el usuario con perfil de director puede agregar comentarios en el campo "observaciones"a un registro en el módulo de partes de hora.]]></summary>
+      <preconditions><![CDATA[El usuario debe tener permisos como perfil de director y debe haber un registro existente en el módulo de partes de hora.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1- Ingresar al sistema odoo]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2- Ingresar al sistema con perfil de director.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- Dar clic en el icono de cuadritos en la parte izquierda de la pagina]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4- Dar clic en el módulo “Partes de horas”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5- Dar clic en el campo “Observaciones”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6- Hacer un comentario en ese campo “Observaciones”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7- Dar clic en el botón guardar]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[8]]></step_number>
+          <actions><![CDATA[8- Ingresar al reporte de facturación]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[9]]></step_number>
+          <actions><![CDATA[9- Visualizar que los comentarios de odoo en el módulo partes de hora se muestren en el reporte de facturación.]]></actions>
+          <expectedresults><![CDATA[El usuario con perfil de director puede agregar y guardar comentarios en el registro. ]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Restringir Edición del Campo de Comentarios">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[ Verificar que solo el usuario con perfil de  director pueda editar el campo de comentarios en un registro del módulo de partes de hora.]]></summary>
+      <preconditions><![CDATA[ Existen usuarios con diferentes perfiles y un registro existente en el módulo de partes de hora en el sistema de Odoo.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1- Ingresar al sistema odoo]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2- Ingresar al sistema con un perfil diferente al de director.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- Dar clic en el icono de cuadritos en la parte izquierda de la pagina]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4- Dar clic en el módulo “Partes de horas”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5- Dar clic en el campo “Observaciones”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6- Validar que ese campo “Observaciones” no se pueda editar.]]></actions>
+          <expectedresults><![CDATA[Solo el usuario con el perfil de  director puede editar el campo de comentarios; otros usuarios no pueden modificar este campo.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="verificar que se Ocultan Columnas 'Facturable' y 'Aprobado' en el Reporte">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que las columnas 'Facturable' y 'Aprobado' no se muestran en el reporte de facturación.]]></summary>
+      <preconditions><![CDATA[Existe un reporte de facturación con registros agrupados mensualmente por analista.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1- Ingresar al reporte de facturación]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2- Llenar los campos requeridos para hacer la búsqueda del colaborador: Regional, cliente, servicio, proyecto, empleados, fecha inicial, fecha final.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- Dar clic en “ver informe”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4- Visualizar que las columnas “Facturable y aprobado” no se muestren en el reporte de facturación.]]></actions>
+          <expectedresults><![CDATA[Las columnas 'Facturable' y 'Aprobado' no se muestran en el reporte de facturación.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="verificar registros en  Reporte de Facturación sin Registro en Partes de Hora">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que el reporte de facturación muestra registros con horas en cero cuando no hay registros en el módulo de partes de hora.]]></summary>
+      <preconditions><![CDATA[*En el sistema de Odoo existen proyectos sin registros en el módulo de partes de horas.                                                         *El empleado debe estar asignado al proyecto y ser un recurso configurado en la sección de parametrización del proyecto, es decir, tener su registro de cargo y tarifa. 
+ ]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1- Ingresar al reporte de facturación]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2- Llenar los campos requeridos para hacer la búsqueda del colaborador: Regional, cliente, servicio, proyecto, empleados, fecha inicial, fecha final.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- Dar clic en “ver informe”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+</testsuite>

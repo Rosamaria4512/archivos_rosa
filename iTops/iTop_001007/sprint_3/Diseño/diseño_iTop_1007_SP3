@@ -1,0 +1,698 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="">
+  <node_order><![CDATA[]]></node_order>
+  <details><![CDATA[]]></details>
+  <testsuite name="C1- El jefe o director debe poder descargar la hoja de vida del empleado en formato .pdf">
+    <node_order><![CDATA[]]></node_order>
+    <details><![CDATA[]]></details>
+    <testcase internalid="" name="Descarga de Hoja de Vida en PDF">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[En este caso de prueba se verifica que el usuario con rol de jefe o director cuando ingrese al ERP odoo, navegue hasta el módulo "Empleados" y busque el empleado que requiere descargar su hoja de vida, se le permita visualizar el botón imprimir y al darle clic el sistema le permita descargar la hoja de vida del empleado en formato .pdf]]></summary>
+      <preconditions><![CDATA[*El usuario ha iniciado sesión como jefe o director al sistema.
+*El jefe o director debe tener acceso a la información del empleado en el sistema.
+*El sistema debe tener la funcionalidad de descarga de hojas de vida en formato .pdf habilitada.
+*Existe el botón imprimir. 
+*El jefe o director debe estar en el módulo "Empleados."]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-ingresar al ERP odoo con credenciales de jefe o director              ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-dar clic en el icono del menú principal]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- dar clic en el módulo empleados.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-Buscar el empleado al cual se desea descargar su hoja de vida en el buscador y presionar la tecla “Enter”.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5- dar clic sobre su usuario.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6-dar clic en el icono de "imprimir".                                                          ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7-Seleccionar la opción 'Imprimir HV '.                                                                   ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[8]]></step_number>
+          <actions><![CDATA[8- Verificar que si se descarga la hoja de vida del empleado en formato .pdf]]></actions>
+          <expectedresults><![CDATA[Al ingresar al sistema ERP odoo con credenciales de jefe o director , se debe  validar que el puede descargar la  hoja de vida de un colaborador correctamente, el sistema debe descargar un documento en formato .pdf.
+        ]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Verificación del Pie de Página del PDF">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Este caso de prueba se asegura de que la hoja de vida del colaborador descargada contenga un pie de página con un mensaje corporativo "Cobertura global sin fronteras Colombia-México-Panamá-Estados Unidos-España-Guatemala-Costa Rica-Salvador ", iconos de redes sociales, el teléfono y la página web.]]></summary>
+      <preconditions><![CDATA[*El sistema debe tener la funcionalidad de descarga de hojas de vida en formato .pdf habilitada, tanto para jefe inmediato, directores, como para empleados.                          
+ *Existe el botón imprimir.   ]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-ingresar al ERP odoo con credenciales de jefe o director              ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-dar clic en el icono del menú principal]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- dar clic en el módulo empleados.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-Buscar el empleado al cual se desea descargar su hoja de vida en el buscador y presionar la tecla “Enter”.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5- dar clic sobre su usuario.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6-dar clic en el icono de "imprimir".                                                          ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7-Seleccionar la opción 'Imprimir HV '.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[8]]></step_number>
+          <actions><![CDATA[8- Abrir el archivo .pdf descargado.                                                                    ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[9]]></step_number>
+          <actions><![CDATA[9-Verificar que el pie de página incluye: *Un mensaje corporativo “Cobertura global sin fronteras Colombia-México-Panamá-Estados Unidos-España-Guatemala-Costa Rica-Salvador “,                                                                            *Iconos de redes sociales (Facebook, Instagram, X, LinkedIn, YouTube)                                                                       *El teléfono y la página web.                                     ]]></actions>
+          <expectedresults><![CDATA[El documento en formato .pdf  debe conterner : el pie de página con un mensaje corporativo "Cobertura global sin fronteras  Colombia-Mexico-Panama-Estados Uidos-España-Guatemala-Costa Rica-Salvador ", iconos de redes sociales, el teléfono y la página web.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Verificación de fondo de los títulos de las secciones.">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[En este caso de prueba se verifica que el fondo que contiene los títulos de las secciones en la hoja de vida descargada sea del color que requiere la paleta de color #011E60 y la línea de fondo es de lado a lado de la hoja.]]></summary>
+      <preconditions><![CDATA[*El sistema debe tener la funcionalidad de descarga de hojas de vida en formato .pdf habilitada.               *Existe el botón imprimir.  ]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-ingresar al ERP odoo con credenciales de jefe o director              ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-dar clic en el icono del menú principal]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- dar clic en el módulo empleados.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-Buscar el empleado al cual se desea descargar su hoja de vida en el buscador y presionar la tecla “Enter”.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5- dar clic sobre su usuario.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6-dar clic en el icono de "imprimir".                                                          ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7-Seleccionar la opción 'Imprimir HV '.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[8]]></step_number>
+          <actions><![CDATA[8- Abrir el archivo .pdf descargado.                                                                    ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[9]]></step_number>
+          <actions><![CDATA[9-Verificar que el fondo de los títulos contenga el color perteneciente a la paleta de colores de la compañía Q-Vision #011E60 y que la línea este de lado a lado de la hoja.            ]]></actions>
+          <expectedresults><![CDATA[Se debe verificar que el fondo de los titulos sea #011E60 de la paleta de colores de la compañía de Q-Vision y que esas lineas sean de lado a lado de la hoja.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Verificación de tipo y tamaño de letra en el formato pdf de la hoja de vida descargada.">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[En este caso de prueba se verifica que el tipo de letra que se maneje en la hoja de vida en el .PDF sea Aptos y su tamaño varía de la siguiente forma:
+El nombre es de tamaño 20
+El cargo, correo y ciudad de tamaña 14
+Títulos de tamaño 12 
+Párrafos de tamaño 12 
+ ]]></summary>
+      <preconditions><![CDATA[*El sistema debe tener la funcionalidad de descarga de hojas de vida en formato .pdf habilitada.               *Existe el botón imprimir.    ]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-ingresar al ERP odoo con credenciales de jefe o director              ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-dar clic en el icono del menú principal]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- dar clic en el módulo empleados.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-Buscar el empleado al cual se desea descargar su hoja de vida en el buscador y presionar la tecla “Enter”.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5- dar clic sobre su usuario.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6-dar clic en el icono de "imprimir".                                                          ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7-Seleccionar la opción 'Imprimir HV '.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[8]]></step_number>
+          <actions><![CDATA[8- Abrir el archivo .pdf descargado.                                                                    ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[9]]></step_number>
+          <actions><![CDATA[9-Verificar que el tipo de letra sea Aptos y/o Calibri en la hoja de vida descargada y el tamaño de la letra varía de la siguiente forma:                                                                                                         El nombre es de tamaño 20                                                                         El cargo, correo y ciudad de tamaña 14                                             Títulos de tamaño 12                                                                             Párrafos de tamaño 12 ]]></actions>
+          <expectedresults><![CDATA[Se debe visualizar que el tipo de letra en la hoja de vida descargada en el pdf debe ser  Aptos y/o Calibri y el tamaño de la letra varía de la siguiente forma:
+El nombre es de tamaño 20
+El cargo, correo y ciudad de tamaña 14
+Títulos de tamaño 12 
+Párrafos de tamaño 12 ]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Verificar lo que va en mayúsculas y minúsculas en el pdf de la hoja de vida descargada.">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[En este caso de prueba se verifica que: 
+•	El nombre del colaborador debe ir su nombre completo, tipo color negro, en negrilla, centrado y mayúscula.                                                                                
+•	El cargo, correo, ciudad - departamento deben ir en el mismo párrafo separado por una barra vertical '|’, centrados y la primera letra en mayúscula el resto en minúscula.                               
+•	Los títulos de las secciones van alineados a la izquierda, letra mayúscula, tipo de color blanco y en negrilla.                                                                           
+•	La información que va dentro de las secciones depende de la sección algunos serán párrafos, otros serán listas, pero toda la información de cualquier sección en tipo de color negro.    ]]></summary>
+      <preconditions><![CDATA[*El usuario ha iniciado sesión como jefe o director al sistema.
+*El jefe o director debe tener acceso a la información del empleado en el sistema.
+*El sistema debe tener la funcionalidad de descarga de hojas de vida en formato .pdf habilitada.               *Existe el botón imprimir.    ]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-ingresar al ERP odoo con credenciales de jefe o director              ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-dar clic en el icono del menú principal]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- dar clic en el módulo empleados.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-Buscar el empleado al cual se desea descargar su hoja de vida en el buscador y presionar la tecla “Enter”.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5- dar clic sobre su usuario.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6-dar clic en el icono de "imprimir".                                                          ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7-Seleccionar la opción 'Imprimir HV '.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[8]]></step_number>
+          <actions><![CDATA[8- Abrir el archivo .pdf descargado.                                                                    ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[9]]></step_number>
+          <actions><![CDATA[9-Verificar que la hoja de vida descargada cumpla estas condiciones:                                                                                               
+•	El nombre del colaborador debe ir su nombre completo, tipo color negro, en negrilla, centrado y mayúscula.                                                                                
+•	El cargo, correo, ciudad - departamento deben ir en el mismo párrafo separado por una barra vertical '|’, centrados y la primera letra en mayúscula el resto en minúscula.                               
+•	Los títulos de las secciones van alineados a la izquierda, letra mayúscula, tipo de color blanco y en negrilla.                                                                           
+•	La información que va dentro de las secciones depende de la sección algunos serán párrafos, otros serán listas, pero toda la información de cualquier sección en tipo de color negro.  ]]></actions>
+          <expectedresults><![CDATA[Se debe verificar que la hoja de vida descargada se visualice de la siguiente manera:                                       •	El nombre del colaborador debe ir su nombre completo, tipo color negro, en negrilla, centrado y mayúscula.                                                                                
+•	El cargo, correo, ciudad - departamento deben ir en el mismo párrafo separado por una barra vertical '|’, centrados y la primera letra en mayúscula el resto en minúscula.                               
+•	Los títulos de las secciones van alineados a la izquierda, letra mayúscula, tipo de color blanco y en negrilla.                                                                           
+•	La información que va dentro de las secciones depende de la sección algunos serán párrafos, otros serán listas, pero toda la información de cualquier sección en tipo de color negro.               ]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Verificación de organización de secciones en la Hoja de vida descargada.">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[En este caso de prueba es para verificar la organización de secciones en la hoja de vida cuando esta se descargue en .PDF, la secciones de deben visualizar en el siguiente orden:  * PERFIL PROFESIONAL *HABILIDADES TECNICAS *HABILIDADES BLANDAS *EDUCACION *IDIOMAS *HISTORIAL LABORAL, el título de cada sección debe ir en mayúscula.]]></summary>
+      <preconditions><![CDATA[*El sistema debe tener la funcionalidad de descarga de hojas de vida en formato .pdf habilitada, tanto para Jefe inmediato, directores, como para empleados.                                  *Existe el botón imprimir.   ]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-ingresar al ERP odoo con credenciales de jefe o director               ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-dar clic en el icono del menú principal ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- dar clic en el módulo empleados. ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-Buscar el empleado al cual se desea descargar su hoja de vida en el buscador y presionar la ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[tecla “Enter”. ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[5- dar clic sobre su usuario. ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[6-dar clic en el icono de "imprimir".                                                           ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[8]]></step_number>
+          <actions><![CDATA[7-Seleccionar la opción 'Imprimir HV '.                                                                    ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[9]]></step_number>
+          <actions><![CDATA[8- Abrir el archivo .pdf descargado.                                                                                ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[10]]></step_number>
+          <actions><![CDATA[9-Validar que el orden de las secciones en la hoja de vida descarga, la secciones de deben visualizar en el siguiente orden:  * PERFIL PROFESIONAL *HABILIDADES TECNICAS *HABILIDADES BLANDAS *EDUCACION *IDIOMAS *HISTORIAL LABORAL. ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[11]]></step_number>
+          <actions><![CDATA[10- Verificar que los títulos de cada sección estén en mayúscula. ]]></actions>
+          <expectedresults><![CDATA[Al descargar la hoja de vida del sistema, las secciones se deben visualizar en el siguiente orden * PERFIL PROFESIONAL *HABILIDADES TECNICAS *HABILIDADES BLANDAS *EDUCACION *IDIOMAS *HISTORIAL LABORAL y los titulos de cada seccion se deben mostrar en letra mayuscula.           ]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+  <testsuite name="C3. Como empleado debo poder editar la información relacionada a mi curriculum vitae ">
+    <node_order><![CDATA[]]></node_order>
+    <details><![CDATA[]]></details>
+    <testcase internalid="" name="Verificar edición de informacion y actualización en &quot;Curriculum Vitae&quot;">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Este caso de prueba se asegura de que el colaborador cuando ingrese al sistema a editar  información  en curriculum vitae desde su perfil, lo pueda hacer correctamente, se asegura también de que estos cambios que realice los pueda guardar correctamente.]]></summary>
+      <preconditions><![CDATA[*El usuario ha iniciado sesión como empleado regular.                                              *debe exitir información en curriculum vitae                                      *el sistema debe permitir editar informacion                       *existe el boton editar]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-Iniciar sesión en el sistema como colaborador.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-dar clic en el Usuario]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3. dar clic en “Mi perfil”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4- dar clic en el botón editar                                                                                                                          5-Editar una o más secciones del perfil (ej., agregar una nueva titulación o actualizar la experiencia profesional).]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[6-dar clic en el botón “guardar” para guardar los cambios realizados en el perfil.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[7- verificar que se guardan los cambios correctamente.]]></actions>
+          <expectedresults><![CDATA[Se valida que el sistema permite editar y guardar la informacion que el colaborarador desee correctamente.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+  <testsuite name="C4.Las actualizaciones realizadas en el perfil por el colaborador deben verse reflejadas en la hoja de vida que descarga el jefe o director ">
+    <node_order><![CDATA[]]></node_order>
+    <details><![CDATA[]]></details>
+    <testcase internalid="" name="Verificar  actualización de información de &quot;Curriculum Vitae&quot; en hoja de vida descargada en .PDF">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Este caso de prueba se asegura de que el colaborador cuando edite y guarde nueva información de curriculum vitae en el sistema, esta nueva información de actualización debe visualizarse en la hoja de vida descargada por el Jefe o Director correctamente.]]></summary>
+      <preconditions><![CDATA[*El usuario ha iniciado sesión como Director, Jefe o empleado.                                                                           *Debe existir el botón "Imprimir"
+*La hoja de vida debe estar descargada.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-ingresar al ERP odoo con credenciales de jefe o director              ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-dar clic en el icono del menú principal]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- dar clic en el módulo empleados.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-Buscar el empleado al cual se desea descargar su hoja de vida en el buscador y presionar la tecla “Enter”.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5- dar clic sobre su usuario.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6-dar clic en el icono de "imprimir".                                                          ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7-Seleccionar la opción 'Imprimir HV '.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[8]]></step_number>
+          <actions><![CDATA[8- Abrir el archivo .pdf descargado.                                                                    ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[9]]></step_number>
+          <actions><![CDATA[9-Verificar que los cambios que se han realizado en el sistema “Curriculum vitae” se vean reflejados también en la hoja de vida descargada en .PDF]]></actions>
+          <expectedresults><![CDATA[Se debe validar en la hoja de vida descargada en .PDF por el Jefe o Director  que se visualicen los cambios de información  realizados en el sistema por el colaborador.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Visualización y No Impresión de &quot;Otros Conocimientos&quot;">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Este caso de prueba se asegura de validar que cuando el Jefe o Director descargue la hoja de vida de un colaborador no se visualice la información ingresada en el sistema en el campo “Otro conocimiento” en la hoja de vida descargada. ]]></summary>
+      <preconditions><![CDATA[*El usuario ha iniciado sesión como Director, Jefe o empleado.                                                                           *Debe existir el botón "Imprimir"
+*La hoja de vida debe estar descargada.
+*Existe el campo "Otros conocimientos"  ]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-ingresar al ERP odoo con credenciales de empleado.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-dar clic en el usuario     ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- dar clic en "Mi perfil" ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4- dar clic en el boton "Editar"]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-dar clic en el boton "agregar" dentro a seccion "Hablidades" ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6- En el campo "Tipo habilidad" seleccionar la categoria "Otros conocimientos"]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7-llenar los campos "Habilidad", "nivel habilidad" ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[8]]></step_number>
+          <actions><![CDATA[8-Dar clic en el boton "Guardar y cerrar"   ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[9]]></step_number>
+          <actions><![CDATA[9- imprimir la hoja de vida desde el boton "Imprimir"    ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[10]]></step_number>
+          <actions><![CDATA[10-verificar que la categoria "Otros conocimientos" no se ea reflejada en la hoja de vida descargada.]]></actions>
+          <expectedresults><![CDATA[Al ingresar al sistema se debe validar que  la categoría 'Otros conocimientos' se muestra en la interfaz de Odoo dentro de la seccion "Habilidades" en el campo "Tipo de habilidades" y la categoría 'Otros conocimientos' no se incluye en la impresión de la hoja de vida.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+  <testsuite name="C5.El encabezado debe tener nombre completo, cargo en qv, correo, ciudad - departamento ">
+    <node_order><![CDATA[]]></node_order>
+    <details><![CDATA[]]></details>
+    <testcase internalid="" name="Verificación del Encabezado del PDF">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[En este caso de prueba se asegura que el encabezado del PDF descargado por el Jefe o Director contenga el logotipo de Q-vision al lado izquierdo de la plantilla, el nombre completo del colaborador,  cargo en qv, correo, ciudad – departamento.]]></summary>
+      <preconditions><![CDATA[*El usuario ha iniciado sesión como Jefe o Director al sistema.
+*El jefe o director debe tener acceso a la información del empleado en el sistema.
+*El sistema debe tener la funcionalidad de descarga de hojas de vida en formato .pdf habilitada. *Existe el botón imprimir.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-ingresar al ERP odoo con credenciales de jefe o director              ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-dar clic en el icono del menú principal]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- dar clic en el módulo empleados.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-Buscar el empleado al cual se desea descargar su hoja de vida en el buscador y presionar la tecla “Enter”.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5- dar clic sobre su usuario.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6-dar clic en el icono de "imprimir".                                                          ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7-Seleccionar la opción 'Imprimir HV '.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[8]]></step_number>
+          <actions><![CDATA[8- Abrir el archivo .pdf descargado.                                                                    ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[9]]></step_number>
+          <actions><![CDATA[9- Verificar que estas estas características se visualicen en el encabezado de la siguiente manera: El logotipo de Q-Vision debe ir al lado izquierdo de la plantilla, el nombre del colaborador debe ser completo en letras mayúsculas, centrado, en tipo de letra Apto y/o calibri y tamaño de letra 20, el cargo en Qv, el correo y la ciudad - departamento deben ir en el mismo párrafo, tamaño de letra 14 separado por línea vertical | y centrados.]]></actions>
+          <expectedresults><![CDATA[se debe validar que al descargar la hoja de vida en formato .pdf, en el  encabacezado se debe visualizar con las siguientes caracteristicas: El logotipo de Qvision debe ir  al lado izquierdo de la plantilla, el nombre del colaborador debe ser completo en letras mayusculas, centrado en tipo de letra Apto y/o Calibri tamaño de letra 20, el cargo en qv, el correo y la ciudad - departamento deben ir en el mismo parrafo separado por una linea vertical "|" y centrados]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+</testsuite>

@@ -1,0 +1,449 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="">
+  <node_order><![CDATA[]]></node_order>
+  <details><![CDATA[]]></details>
+  <testsuite name="Ajuste- Requerimiento “Ajuste cambio en el campo, entrevista técnica”">
+    <node_order><![CDATA[]]></node_order>
+    <details><![CDATA[]]></details>
+    <testcase internalid="" name="Verificar  existencia de tres campos nuevos en la pestaña de entrevista tecnica.">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Este caso de prueba se asegura de validar que en el modulo reclutamiento-postulaciones , en el estado "En entrevista tecnica o psicotencnica" en la pestaña "Entrevista",después de RESPONSABLE  existan 3 (tres) campos abiertos para escribir la información:
+o	Cargo del entrevistador
+o	Observaciones generales
+o	Porcentaje de ajuste (Espacio con posibilidad de colocar numero del 1 al 100%)]]></summary>
+      <preconditions><![CDATA[*Debe estar logueado dentro del sistema ERP Odoo.                                         *deben haber permisos para navegar dentro del modulo "Reclutamiento".                           
+*Debe existir una postulacion.                                    *Debe estar dentro del estado "En entrevista tecnica o psicotencnica" *Debe existar la pestaña "Entrevista"]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-Iniciar sesión como evaluador al sistema Erp Odoo]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-Dar clic en el icono que aparece en la parte superior del sistema.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- Dar clic en el módulo Reclutamiento.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-Dar clic en el apartado “Postulaciones”.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5- Dar clic en la opción “Todas las postulaciones”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6- Dar clic en un colaborador que este en estado “En entrevista técnica o psicotécnica”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7-Dar clic en el botón “Editar”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[8]]></step_number>
+          <actions><![CDATA[8-Dar clic en la pestaña “Entrevistas”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[9]]></step_number>
+          <actions><![CDATA[9-Verificar que después de RESPONSABLE existan 3 (tres) campos abiertos para escribir la información:                                     o	Cargo del entrevistador
+o	Observaciones generales
+o	Porcentaje de ajuste (Espacio con posibilidad de colocar número del 1 al 100%)]]></actions>
+          <expectedresults><![CDATA[Se debe validar que exitan estos tres campos:                                                                        o	Cargo del entrevistador
+o	Observaciones generales
+o	Porcentaje de ajuste (Espacio con posibilidad de colocar numero del 1 al 100%) después de RESPONSABLE, dentro de la pestaña "Entrevista" en el modulo reclutamiento-postulacion.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="verificar que ya no exista el campo &quot;Cargar resultado&quot;">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Este caso de prueba se asegura de validar que en el módulo reclutamiento-postulaciones, en el estado "En entrevista técnica o psicotécnica" en la pestaña "Entrevista”, después de RESPONSABLE no exista el campo "Cargar resultado"]]></summary>
+      <preconditions><![CDATA[*Debe estar logueado dentro del sistema ERP Odoo.                                         
+*Debe haber permisos para navegar dentro del módulo "Reclutamiento".                           
+*Debe existir una postulación.                                    
+*Debe estar dentro del estado "En entrevista técnica o psicotécnica" 
+*Debe existir la pestaña "Entrevista"*Debe estar logueado dentro del sistema ERP Odoo.                                         
+*Debe haber permisos para navegar dentro del módulo "Reclutamiento".                           
+*Debe existir una postulación.                                    
+*Debe estar dentro del estado "En entrevista técnica o psicotécnica" 
+*Debe existir la pestaña "Entrevista"]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-Iniciar sesión como evaluador al sistema Erp Odoo]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-Dar clic en el icono que aparece en la parte superior del sistema.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- Dar clic en el módulo Reclutamiento.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-Dar clic en el apartado “Postulaciones”.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5- Dar clic en la opción “Todas las postulaciones”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6- Dar clic en un colaborador que este en estado “En entrevista técnica o psicotécnica”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7-Dar clic en el botón “Editar”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[8]]></step_number>
+          <actions><![CDATA[8-Dar clic en la pestaña “Entrevistas”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[9]]></step_number>
+          <actions><![CDATA[9-Verificar que después de RESPONSABLE no exista el campo "Cargar resultado"]]></actions>
+          <expectedresults><![CDATA[se debe validar que le campo "Cargar resultado"no exista después de RESPONSABLE, dentro de la pestaña "Entrevista" en el modulo reclutamiento-postulacion.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="verificar que permita descargar en PDF">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Este caso de prueba se asegura de validar que en el módulo reclutamiento-postulaciones, en el estado "En entrevista técnica o psicotécnica" en la pestaña "Entrevista" al dar clic en el botón "Exportar PDF" el sistema permita descargar el pdf de manera correcta.]]></summary>
+      <preconditions><![CDATA[*Debe estar logueado dentro del sistema ERP Odoo.                                         
+*Debe haber permisos para navegar dentro del módulo "Reclutamiento".                           
+*Debe existir una postulación.                                    
+*Debe estar dentro del estado "En entrevista técnica o psicotécnica" 
+*Debe existir la pestaña "Entrevista"]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-Iniciar sesión como evaluador al sistema Erp Odoo]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-Dar clic en el icono que aparece en la parte superior del sistema.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- Dar clic en el módulo Reclutamiento.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-Dar clic en el apartado “Postulaciones”.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5- Dar clic en la opción “Todas las postulaciones”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6- Dar clic en un colaborador que este en estado “En entrevista técnica o psicotécnica”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7-Dar clic en el botón “Editar”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[8]]></step_number>
+          <actions><![CDATA[8-Dar clic en la pestaña “Entrevistas”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[9]]></step_number>
+          <actions><![CDATA[9-Verificar que al dar clic en el botón "Exportar PDF" el sistema permita descargar el pdf de manera correcta.]]></actions>
+          <expectedresults><![CDATA[Se debe validar que al darle clic en el boton "Exportar PDF" el sistema permita descargar el archivo PDF correctamente dentro del modulo reclutamiento-postulaciones , en el estado "En entrevista tecnica o psicotencnica" en la pestaña "Entrevista".]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="verificar que el PDF contenga la informacion requerida">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Este caso de prueba se asegura de validar que el PDF descargado contenga la siguiente informacion: 
+o	Fecha
+o	Entrevistador
+o	Cargo del entrevistador
+o	Nombre del candidato
+o	Cargo al cual aplica
+o	Observaciones generales
+o	Porcentaje de ajuste
+o	Si Aprueba o no]]></summary>
+      <preconditions><![CDATA[*Debe existir un archivo de PDF descargado.                          *Debe haber informacion en el archivo]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-Iniciar sesión como evaluador al sistema Erp Odoo ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-Dar clic en el icono que aparece en la parte superior del sistema. ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- Dar clic en el módulo Reclutamiento. ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-Dar clic en el apartado “Postulaciones”. ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5- Dar clic en la opción “Todas las postulaciones” ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6- Dar clic en un colaborador que este en estado “En entrevista técnica o psicotécnica” ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7-Dar clic en el botón “Editar” ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[8]]></step_number>
+          <actions><![CDATA[8-Dar clic en la pestaña “Entrevistas” ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[9]]></step_number>
+          <actions><![CDATA[9-Verificar que que el PDF descargado contenga la siguiente información:                                                                                   o Fecha 
+o Entrevistador 
+o Cargo del entrevistador 
+o Nombre del candidato 
+o Cargo al cual aplica 
+o Observaciones generales 
+o Porcentaje de ajuste 
+o Si Aprueba o no ]]></actions>
+          <expectedresults><![CDATA[Se debe validar  que la informacion que aparece en el archivo pdf sea la requerida.                                                          o	Fecha
+o	Entrevistador
+o	Cargo del entrevistador
+o	Nombre del candidato
+o	Cargo al cual aplica
+o	Observaciones generales
+o	Porcentaje de ajuste
+o	Si Aprueba o no]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Verificar que el rango de porcentaje sea enre 1 a 100 %">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Este caso de prueba se asegura de validar que en el módulo reclutamiento-postulaciones, en el estado "En entrevista técnica o psicotécnica" en la pestaña "Entrevista" el porcentaje de ajuste este en un rango de 1 a 100%.]]></summary>
+      <preconditions><![CDATA[*Debe estar logueado dentro del sistema ERP Odoo.                                             
+*Debe existir una postulación.                                   
+*Debe haber permisos para navegar dentro del módulo "Reclutamiento".                           
+*Debe existir una postulación.                                    
+*Debe estar dentro del estado "En entrevista técnica o psicotécnica" *Debe existir la pestaña "Entrevista"]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-Iniciar sesión como evaluador al sistema Erp Odoo]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-Dar clic en el icono que aparece en la parte superior del sistema.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- Dar clic en el módulo Reclutamiento.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-Dar clic en el apartado “Postulaciones”.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5- Dar clic en la opción “Todas las postulaciones”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6- Dar clic en un colaborador que este en estado “En entrevista técnica o psicotécnica”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7-Dar clic en el botón “Editar”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[8]]></step_number>
+          <actions><![CDATA[8-Dar clic en la pestaña “Entrevistas”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[9]]></step_number>
+          <actions><![CDATA[9-Verificar que el porcentaje de ajuste este en un rango de 1 a 100%.]]></actions>
+          <expectedresults><![CDATA[Se debe verificar que en el porcentaje de ajuste que aparece dentro modulo reclutamiento-postulaciones , en el estado "En entrevista tecnica o psicotencnica" en la pestaña "Entrevista" sea entre 1 a 100%.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Verificar que no deje guardar el rango si no está dentro del porcentaje 1 a 100 %">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Este caso de prueba se asegura de validar que en el módulo reclutamiento-postulaciones, en el estado "En entrevista técnica o psicotécnica" en la pestaña "Entrevista" el porcentaje de ajuste si no está en  un rango de 1 a 100%, no permita guardar la información en el sistema]]></summary>
+      <preconditions><![CDATA[*Debe estar logueado dentro del sistema ERP Odoo.                                             
+*Debe existir una postulación.                                   
+*Debe haber permisos para navegar dentro del módulo "Reclutamiento".                           
+*Debe existir una postulación.                                    
+*Debe estar dentro del estado "En entrevista técnica o psicotécnica" *Debe existir la pestaña "Entrevista"]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-Iniciar sesión como evaluador al sistema Erp Odoo]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-Dar clic en el icono que aparece en la parte superior del sistema.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- Dar clic en el módulo Reclutamiento.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-Dar clic en el apartado “Postulaciones”.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5- Dar clic en la opción “Todas las postulaciones”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6- Dar clic en un colaborador que este en estado “En entrevista técnica o psicotécnica”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7-Dar clic en el botón “Editar”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[8]]></step_number>
+          <actions><![CDATA[8-Dar clic en la pestaña “Entrevistas”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[9]]></step_number>
+          <actions><![CDATA[9-Verificar que " el porcentaje de ajuste si no está en un rango de 1 a 100%, no permita guardar la información en el sistema]]></actions>
+          <expectedresults><![CDATA[Se debe verificar que el sistema no permita guardar informacion si  el porcentaje de ajuste que aparece dentro modulo reclutamiento-postulaciones , en el estado "En entrevista tecnica o psicotencnica" en la pestaña "Entrevista" no esta entre 1 a 100%.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+</testsuite>

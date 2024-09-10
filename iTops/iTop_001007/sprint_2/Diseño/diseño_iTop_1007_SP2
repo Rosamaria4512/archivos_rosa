@@ -1,0 +1,1620 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="">
+  <node_order><![CDATA[]]></node_order>
+  <details><![CDATA[]]></details>
+  <testsuite name="C1-El jefe o director debe poder descargar la hoja de vida del empleado en formato .pdf">
+    <node_order><![CDATA[]]></node_order>
+    <details><![CDATA[]]></details>
+    <testcase internalid="" name="Descarga de Hoja de Vida en PDF">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[ En este caso de prueba se verifica que el usuario con rol de jefe o director   ingrese al ERP odoo y navegue hasta "Mi perfil", exista el botón imprimir y al darle clic el sistema le permita descargar  la hoja de vida del empleado en formato .pdf con el encabezado y pie de página correctos.]]></summary>
+      <preconditions><![CDATA[*El usuario ha iniciado sesión como jefe o dorector al sistema.
+*El jefe o director debe tener acceso a la información del empleado en el sistema.
+*El sistema debe tener la funcionalidad de descarga de hojas de vida en formato .pdf habilitada.*Existe el botón imprimir.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-ingresar al ERP odoo con credenciales de jefe o director                                                                                                                                                                                                                                                                          .                                                                   ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-dar clic en el usuario  ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- dar clic en "Mi perfil"]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-dar clic en el icono de "imprimir".]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-Seleccionar la opción 'Imprimir ']]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6- verificar que si se descarga la hoja de vida del empleado en formato .pdf]]></actions>
+          <expectedresults><![CDATA[Al ingresar al sistema ERP odoo con credenciales de jefe o director , se logra validar que el desde su perfil puede descargar la  hoja de vida de un colaborador correctamente.                                                                                      El sistema descarga un documento en formato .pdf.
+        ]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Verificación del Encabezado del PDF">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[En este caso de prueba se verificar que el encabezado del PDF descargado por el jefe o director  contenga el logotipo de Qvision.]]></summary>
+      <preconditions><![CDATA[*El usuario ha iniciado sesión como jefe o dorector al sistema.
+*El jefe o director debe tener acceso a la información del empleado en el sistema.
+*El sistema debe tener la funcionalidad de descarga de hojas de vida en formato .pdf habilitada.*Existe el botón imprimir.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-ingresar al ERP odoo con credenciales de jefe o director                                                                                                                                                                                                                                                                                                                                        ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-dar clic en el usuario   ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- dar clic en "Mi perfil" ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-dar clic en el icono de "imprimir".  ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-Seleccionar la opción 'Imprimir '. ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6- Abrir el archivo .pdf descargado.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7-Verificar que el logotipo de Qvision está presente en el encabezado del documento.]]></actions>
+          <expectedresults><![CDATA[Se verifica que el documento en formato .pdf  tiene el logotipo de Qvision como encabezado.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Verificación del Pie de Página del PDF">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Este caso de prueba se asegura de que la hoja de vida del colaborador descargada contenga un pie de página con un mensaje corporativo "Cobertura global sin fronteras Colombia-México-Panamá-Estados Unidos-España-Guatemala-Costa Rica-Salvador ", iconos de redes sociales, el teléfono y la página web.]]></summary>
+      <preconditions><![CDATA[*El usuario ha iniciado sesión como jefe o dorector al sistema.
+*El jefe o director debe tener acceso a la información del empleado en el sistema.
+*El sistema debe tener la funcionalidad de descarga de hojas de vida en formato .pdf habilitada.*Existe el botón imprimir.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-ingresar al ERP odoo con credenciales de jefe o director              ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-dar clic en el usuario                                                                                                 ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- dar clic en "Mi perfil"                                                                                                   ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-dar clic en el icono de "imprimir".                                                          ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-Seleccionar la opción 'Imprimir '.                                                                   ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6- Abrir el archivo .pdf descargado.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7-Verificar que el pie de página incluye:                                       *Un mensaje corporativo “Cobertura global sin fronteras Colombia-México-Panamá-Estados Unidos-España-Guatemala-Costa Rica-Salvador “,                                                                            *Iconos de redes sociales (Facebook, Instagram, X, LinkedIn, YouTube)                                                                       *El teléfono y la página web.                                   ]]></actions>
+          <expectedresults><![CDATA[Se verifica el documento en formato .pdf   tiene  el pie de página con un mensaje corporativo "Cobertura global sin fronteras  Colombia-Mexico-Panama-Estados Uidos-España-Guatemala-Costa Rica-Slavador ", iconos de redes sociales, el teléfono y la página web.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Verificación de Enlaces en Iconos de Redes Sociales">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[ En este caso de prueba se verifica que los iconos de redes sociales en el pie de página del PDF tengan enlaces a las respectivas páginas.]]></summary>
+      <preconditions><![CDATA[*El usuario ha iniciado sesión como jefe o director al sistema.
+*El jefe o director debe tener acceso a la información del empleado en el sistema.
+*El sistema debe tener la funcionalidad de descarga de hojas de vida en formato .pdf habilitada.               *Existe el botón imprimir.                       
+*Los iconos de redes sociales deben tener enlaces configurados.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-ingresar al ERP odoo con credenciales de jefe o director              ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-dar clic en el usuario                                                                                                 ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- dar clic en "Mi perfil"                                                                                                   ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-dar clic en el icono de "imprimir".                                                          ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-Seleccionar la opción 'Imprimir '.                                                                   ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6- Abrir el archivo .pdf descargado.                                                                               ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7-Verificar que existan los iconos de redes sociales en el pie de página.                                                                                                                                   ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[8]]></step_number>
+          <actions><![CDATA[8-Hacer clic en cada uno de los iconos de redes sociales en el pie de página.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[9]]></step_number>
+          <actions><![CDATA[9-Verificar que cada icono redirige a la página correcta de la red social correspondiente.]]></actions>
+          <expectedresults><![CDATA[Se verifica  que existen los iconos de redes sociales en la hoja de vida y cada icono de red social en el pie de página  tiene un enlace funcional que redirige a la página correspondiente de la red social.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+  <testsuite name="C7- La hoja de vida debe contener una sección de habilidades técnicas y habilidades blandas">
+    <node_order><![CDATA[]]></node_order>
+    <details><![CDATA[]]></details>
+    <testcase internalid="" name="Visualización y No Impresión de &quot;Otros Conocimientos&quot;">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Este caso de prueba se asegura de validar que cuando el jefe o director desde el módulo Evaluación de desempeño, mi perfil al seleccionar la categoría 'Otros conocimientos' dentro del campo “Tipo habilidades " se muestre en el sistema Odoo pero no se imprima en la hoja de vida.]]></summary>
+      <preconditions><![CDATA[*El usuario ha iniciado sesión como empleado.
+*El sistema debe tener la funcionalidad de descarga de hojas de vida en formato .pdf habilitada.               *Existe el botón imprimir.          
+*Existe el campo "Tipo habilidades"  ]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-ingresar al ERP odoo con credenciales de empleado.                                                                                                                                                                                                                                                                                                                          6- En el campo "Tipo habilidad" seleccionar la categoria "Otros conocimientos"                                                                                                                                                                                       ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-dar clic en el usuario  ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- dar clic en "Mi perfil"]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4- dar clic en el boton "Editar"]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-dar clic en el boton "agregar" dentro a seccion "Hablidades"    ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[7-llenar los campos "Habilidad", "nivel habilidad"  ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[8-Dar clic en el boton "Guardar y cerrar"  ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[8]]></step_number>
+          <actions><![CDATA[9- imprimir la hoja de vida desde el boton "Imprimir"     ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[9]]></step_number>
+          <actions><![CDATA[10-verificar que la categoria "Otros conocimientos" no se ea reflejada en la hoja de vida descargada.]]></actions>
+          <expectedresults><![CDATA[Al ingresar al sistema se valida que  La categoría 'Otros conocimientos' se muestra en la interfaz de Odoo dentro de la seccion "Habilidades" en el campo "Tipo de habilidades" y la categoría 'Otros conocimientos' no se incluye en la impresión de la hoja de vida.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Exclusión de 'Certificados' e 'Idiomas' como Tipos de Habilidad">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Este caso de prueba se asegura de verificar que los tipos de habilidad 'Certificados' e 'Idiomas' no aparezcan en la sección de "Habilidades" en la lista desplegable de 'Tipo de habilidad', en la sección de crear habilidades desde mi perfil.]]></summary>
+      <preconditions><![CDATA[*El usuario ha iniciado sesión como empleado regular.                                    
+ *El colaborador debe estar en “mi perfil”                                *Existe el campo "Tipo hablidades"  ]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-ingresar al ERP odoo con credenciales de empleado.              ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-dar clic en el usuario                                                                                                 ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- dar clic en "Mi perfil"                                                                      ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4- dar clic en el botón "Editar"                                                        ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-dar clic en el botón "agregar" dentro de la sección "Habilidades"                                                                                   ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6- En el campo "Tipo habilidad" verificar que en la lista desplegable no aparezcan ni "Idiomas" ni "Certificados".  ]]></actions>
+          <expectedresults><![CDATA[Al ingresar al sistema se valida que la  lista desplegable en el campo "Tipo habilidad" dentro de la sección "Habilidades"no contine'Certificados' ni 'Idiomas' como opciones.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Visualización del formulario de habilidades">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[En este caso de prueba se verifica que el sistema muestra un formulario con los campos 'Tipo de habilidad', 'Habilidad', 'Nivel' y 'Progreso' dentro de la sección "Habilidades", desde mi perfil.]]></summary>
+      <preconditions><![CDATA[*El usuario ha iniciado sesión como empleado regular.                                    
+*El colaborador debe estar en “mi perfil”  
+*Existe el campo "Tipo habilidades"]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-ingresar al ERP odoo con credenciales de empleado.              ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-dar clic en el usuario                                                                                                 ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- dar clic en "Mi perfil"                                                                      ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4- dar clic en el botón "Editar"                                                        ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-dar clic en el botón "agregar" dentro de la sección "Habilidades"                                                                                              ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6-Verificar que los campos 'Tipo de habilidad', 'Habilidad', 'Nivel' y 'Progreso' están presentes.  ]]></actions>
+          <expectedresults><![CDATA[Al ingresar al sistema se valida que el formulario que esta dentro la sección "Habilidades" muestra los campos 'Tipo de habilidad', 'Habilidad', 'Nivel' y 'Progreso'.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="opciones de &quot;Tipo de habilidad&quot;">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Este caso de prueba se asegura de que el campo  'Tipo de habilidad' sea una lista desplegable con las siguientes  opciones: Habilidades blandas - Gerente general y CTO, Habilidades blandas - Gerentes regionales,Habilidades blandas - Líderes, Directores, coordinadores y senior, Habilidades blandas - Analistas (administrativos) y semisenior, Habilidades blandas - Auxiliares, asistentes y junior, Herramientas, Bases de datos, Lenguajes de programación, Metodologías, Otros conocimientos]]></summary>
+      <preconditions><![CDATA[*El usuario ha iniciado sesión como empleado regular.                                             *El colaborador debe estar dentro de "Mi perfil"                                   *Existe el campo "Tipo hablidades"  ]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-ingresar al ERP odoo con credenciales de empleado.              ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-dar clic en el usuario                                                                                                 ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- dar clic en "Mi perfil"                                                                      ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4- dar clic en el botón "Editar"                                                        ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-dar clic en el botón "agregar" dentro de la sección "Habilidades"                                                                                   ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6- En el campo "Tipo habilidad" verificar que existan las siguientes opciones en la lista desplegable :  Habilidades blandas - Gerente general y CTO, Habilidades blandas - Gerentes regionales, Habilidades blandas - Líderes, Directores, coordinadores y senior, Habilidades blandas - Analistas (administrativos) y semisenior, Habilidades blandas - Auxiliares, asistentes y junior, Herramientas, Bases de datos, Lenguajes de programación, Metodologías, Otros conocimientos]]></actions>
+          <expectedresults><![CDATA[al ingresar al sistema con credenciales de empleado se valida que la lista desplegable  dentro del campo "Tipo habilidad" en la sección "Habilidades" contiene todas las opciones: :  Habilidades blandas - Gerente general y CTO, Habilidades blandas - Gerentes regionales,Habilidades blandas - Líderes, Directores, coordinadores y senior, Habilidades blandas - Analistas (administrativos) y semisenior, Habilidades blandas - Auxiliares, asistentes y junior, Herramientas, Bases de datos, Lenguajes de programación, Metodologías, Otros conocimientos]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Opciones del campo 'Habilidad' de las habilidades de tipo Metodologías, herramientas, lenguaje de programación, base de datos, otros conocimientos.">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Este caso de prueba se asegura de que el campo ‘Habilidad' al seleccionar habilidades tipo metodologías, herramientas, Bases de datos, Lenguajes de programación se muestre el listado de las siguientes habilidades ya existentes en el ambiente de pruebas:  
+
+Metodologias:
+*ISTQB 
+*Adaptive Software Development (ASD) 
+*Agile Inception 
+*CMMI 
+*COBIT 
+*Design Sprint 
+*eXtreme 
+*Programming (XP) 
+*Feature-Driven Development (FDD) 
+*ITIL 
+*Kanban 
+*PERT 
+*PRINCE2 
+*Project Management 
+*Professional (PMP) 
+*Scrum Developers 
+*Scrum Fundamentos 
+*Scrum Master 
+*Scrum Product Owner 
+*Scrumban 
+*Test-Driven Development (TDD) 
+*TOGAF 
+*Scrum 
+*Kanban 
+*Lean 
+*Extreme Programming (XP) 
+*Crystal 
+*Dynamic Systems Development Method (DSDM) 
+*Feature-Driven Development (FDD) 
+*Agile Unified Process (AUP) 
+*Scrum of Scrums 
+*SAFe (Scaled Agile Framework) 
+*LeSS (Large-Scale Scrum) 
+*Nexus 
+*DaD (Disciplined Agile Delivery) 
+*Agile Modeling 
+*Agile Data 
+*Enterprise Scrum 
+*Holacracy 
+*Sociocracy 
+*Dual Track Scrum 
+*Rapid Application 
+*Development (RAD) 
+*Rational Unified Process (RUP) 
+*Spiral 
+*Systems Development Life Cycle (SDLC) 
+*Waterfall Model 
+*V-Model 
+*Incremental Model 
+*Iterative Model 
+*Prototype Model 
+*RAD 
+*Model 
+*Software Prototyping 
+*Six Sigma 
+*Management 3.0 
+*matriz de Eisenhower 
+*PMO 
+*Design Thinking 
+*tradicional
+
+Herramientas:
+Amazon AI services
+Amazon Web Services
+Android Studio OS
+Api Umbrella OS
+Appium OS
+Atom OS
+Automation Anywhere
+Azure
+Azure AI services
+Azure DevOps
+Bamboo
+Bizagi
+Bonita Software
+Brakets OS
+Cucumber OS
+Docker
+Eclipse OS
+Google AI services
+Google Cloud
+Google Developers
+Gradle OS
+Intellij Idea Community
+Intellij Idea Ultimate
+Jbehave OS
+Jenkins OS
+Jmeter OS
+Junit OS
+Kubernetes OS
+Maven OS
+NetBeans OS
+Pentaho
+PHP Storm
+Postman OS
+Power Bi Premium
+PowerBi Pro
+Pull Over Macro
+Pycharm OS 
+Pycharm Profesional
+Rational IBM
+Rocket Bot (Develop)
+Rocket Bot (Docker on Premise)
+Rocket Bot (Server)
+Sauce Labs (Live Testing)
+Sauce Labs (Real Device Cloud)
+Sauce Labs (Virtual Cloud)
+Selenium OS
+Serenity OS
+Soap UI OS
+Soap UI Pro
+Sublime Text OS
+Swagger
+Tableu Creator
+Tableu Explorer
+Tableu Viewer
+Tensor flow OS
+UI Path
+Visual Studio Comunity OS
+Visual Studio Enterprise
+Visual Studio Profesional
+VS Code OS
+Watson
+Weka OS
+Xcode OS
+GitHub
+GitLab
+OutSystems
+ServiceNow App Engine
+CloudBees
+Visual Studio
+Salesforce Platform
+Xcode
+AWS Cloud
+CircleCI
+Quickbase
+Postman
+Syncfusion Essential Studio Enterprise Edition
+Neptune DXP
+Airtable
+Jenkins
+Eclipse
+
+Lenguajes de programación:
+.NET
+C#
+C++
+Elixir
+Erlang
+Go
+Haskell
+Java
+JavaScript
+Kotlin
+Lava
+Lenguaje de programación R
+Matlab
+Objective-C
+Pascal
+Perl
+PHP
+Postscript
+Python
+Ruby
+Rust
+Scala
+Scheme
+SQL
+Swift
+TypeScript
+Visual Basic
+R
+Bash/Shell (todos los shells)
+C
+HTML/CSS
+Groovy
+Lua
+Dart
+Julia
+Shell
+COBOL
+Fortran
+Assembly
+VBA
+XML
+
+Bases de datos:
+Cassandra
+DB2
+Firebird
+IBM Informix
+IMS
+MariaDB
+Microsoft Access
+Microsoft SQL Server
+MongoDB
+MySQL
+NoSQL
+Oracle
+PostgreSQL
+Redis
+SQL Server
+Sybase ASE
+Elasticsearch
+IBM Db
+SQLite
+Snowflake
+Splunk
+Microsoft Azure Synapse Analytics
+Couchbase Server
+IBM Cloud Databases
+IBM Cloudant
+Amazon DynamoDB
+InterSystems IRIS
+Astra DB
+
+Otros conocimientos:
+Contabilidad básica
+Análisis financiero
+Presupuesto personal
+Planificación financiera
+Inversiones en acciones
+Inversiones en bonos
+Gestión de cartera de inversiones
+Evaluación de riesgos financieros
+Valoración de empresas
+Modelado financiero
+Finanzas corporativas
+Gestión de efectivo
+Análisis de estados financieros
+Finanzas internacionales
+Tributación
+Auditoría
+Control de costos
+Gestión de activos fijos
+Finanzas públicas
+Banca y servicios financieros
+Derivados financieros
+Gestión de riesgos empresariales
+Gestión de crédito
+Planificación de pensiones
+Análisis de crédito
+Fusiones y adquisiciones
+Gestión de tesorería
+Arbitraje financiero
+Banca de inversión
+Finanzas personales
+Gestión de deudas
+Financiamiento de proyectos
+Evaluación de inversiones
+Análisis de mercado de capitales
+Gestión de recursos humanos
+Evaluación de créditos hipotecarios
+Gestión de riesgo cambiario
+Finanzas de bienes raíces
+Valoración de derivados
+Contabilidad de costos
+Cálculo de depreciación
+Análisis de flujo de efectivo
+Estrategias de inversión a largo plazo
+Planificación de jubilación anticipada
+Análisis de desempeño financiero
+Finanzas sostenibles
+Regulación financiera
+Seguros y reaseguros
+Gestión de portafolio de seguros
+Cobertura de riesgos
+Impuestos internacionales
+Planificación de sucesión
+Financiamiento de comercio internacional
+Inversión socialmente responsable (ISR)Valoración de startups
+Crowdfunding financiero
+Gestión de activos digitales
+Tecnología financiera (fintech)
+Análisis de criptomonedas
+Contabilidad forense
+Cumplimiento normativo
+Estrategias de negociación financiera
+Finanzas islámicas
+Consultoría financiera
+Gestión de activos alternativos
+Financiamiento de energías renovables
+Análisis de riesgo país
+Estrategias de diversificación de inversiones
+Análisis de datos financieros
+Financiamiento de bienes raíces comerciales
+Análisis de rentabilidad
+Financiamiento de proyectos de infraestructura
+Planificación fiscal
+Control de fraudes financieros
+Reestructuración financiera
+Valoración de arte y coleccionables
+Planificación de herencia
+Evaluación de inversiones en tecnología
+Evaluación de contratos financieros
+Control de costos de producción]]></summary>
+      <preconditions><![CDATA[*El usuario ha iniciado sesión como empleado regular.                                             *El colaborador debe estar dentro de "Mi perfil"                                   *Existe el campo "Tipo hablidades"                                   *Deben existir habilidades configuradas en el sistema.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-ingresar al ERP odoo con credenciales de empleado.              ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-dar clic en el usuario                                                                                                 ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- dar clic en "Mi perfil"                                                                      ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4- dar clic en el botón "Editar"                                                        ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-dar clic en el botón "agregar" dentro la sección "Hablidades"      ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6- Verificar que las opciones del campo 'Habilidad'  al seleccionar habilidades tipo metodologías, herramientas, Bases de datos, Lenguajes de programación se muestre el listado de las siguientes habilidades ya existentes en el ambiente de pruebas:                                                                             
+
+Metodologias:
+*ISTQB 
+*Adaptive Software Development (ASD) 
+*Agile Inception 
+*CMMI 
+*COBIT 
+*Design Sprint 
+*eXtreme 
+*Programming (XP) 
+*Feature-Driven Development (FDD) 
+*ITIL 
+*Kanban 
+*PERT 
+*PRINCE2 
+*Project Management 
+*Professional (PMP) 
+*Scrum Developers 
+*Scrum Fundamentos 
+*Scrum Master 
+*Scrum Product Owner 
+*Scrumban 
+*Test-Driven Development (TDD) 
+*TOGAF 
+*Scrum 
+*Kanban 
+*Lean 
+*Extreme Programming (XP) 
+*Crystal 
+*Dynamic Systems Development Method (DSDM) 
+*Feature-Driven Development (FDD) 
+*Agile Unified Process (AUP) 
+*Scrum of Scrums 
+*SAFe (Scaled Agile Framework) 
+*LeSS (Large-Scale Scrum) 
+*Nexus 
+*DaD (Disciplined Agile Delivery) 
+*Agile Modeling 
+*Agile Data 
+*Enterprise Scrum 
+*Holacracy 
+*Sociocracy 
+*Dual Track Scrum 
+*Rapid Application 
+*Development (RAD) 
+*Rational Unified Process (RUP) 
+*Spiral 
+*Systems Development Life Cycle (SDLC) 
+*Waterfall Model 
+*V-Model 
+*Incremental Model 
+*Iterative Model 
+*Prototype Model 
+*RAD 
+*Model 
+*Software Prototyping 
+*Six Sigma 
+*Management 3.0 
+*matriz de Eisenhower 
+*PMO 
+*Design Thinking 
+*tradicional
+
+Herramientas:
+Amazon AI services
+Amazon Web Services
+Android Studio OS
+Api Umbrella OS
+Appium OS
+Atom OS
+Automation Anywhere
+Azure
+Azure AI services
+Azure DevOps
+Bamboo
+Bizagi
+Bonita Software
+Brakets OS
+Cucumber OS
+Docker
+Eclipse OS
+Google AI services
+Google Cloud
+Google Developers
+Gradle OS
+Intellij Idea Community
+Intellij Idea Ultimate
+Jbehave OS
+Jenkins OS
+Jmeter OS
+Junit OS
+Kubernetes OS
+Maven OS
+NetBeans OS
+Pentaho
+PHP Storm
+Postman OS
+Power Bi Premium
+PowerBi Pro
+Pull Over Macro
+Pycharm OS 
+Pycharm Profesional
+Rational IBM
+Rocket Bot (Develop)
+Rocket Bot (Docker on Premise)
+Rocket Bot (Server)
+Sauce Labs (Live Testing)
+Sauce Labs (Real Device Cloud)
+Sauce Labs (Virtual Cloud)
+Selenium OS
+Serenity OS
+Soap UI OS
+Soap UI Pro
+Sublime Text OS
+Swagger
+Tableu Creator
+Tableu Explorer
+Tableu Viewer
+Tensor flow OS
+UI Path
+Visual Studio Comunity OS
+Visual Studio Enterprise
+Visual Studio Profesional
+VS Code OS
+Watson
+Weka OS
+Xcode OS
+GitHub
+GitLab
+OutSystems
+ServiceNow App Engine
+CloudBees
+Visual Studio
+Salesforce Platform
+Xcode
+AWS Cloud
+CircleCI
+Quickbase
+Postman
+Syncfusion Essential Studio Enterprise Edition
+Neptune DXP
+Airtable
+Jenkins
+Eclipse
+
+Lenguajes de programación:
+.NET
+C#
+C++
+Elixir
+Erlang
+Go
+Haskell
+Java
+JavaScript
+Kotlin
+Lava
+Lenguaje de programación R
+Matlab
+Objective-C
+Pascal
+Perl
+PHP
+Postscript
+Python
+Ruby
+Rust
+Scala
+Scheme
+SQL
+Swift
+TypeScript
+Visual Basic
+R
+Bash/Shell (todos los shells)
+C
+HTML/CSS
+Groovy
+Lua
+Dart
+Julia
+Shell
+COBOL
+Fortran
+Assembly
+VBA
+XML
+
+Bases de datos:
+Cassandra
+DB2
+Firebird
+IBM Informix
+IMS
+MariaDB
+Microsoft Access
+Microsoft SQL Server
+MongoDB
+MySQL
+NoSQL
+Oracle
+PostgreSQL
+Redis
+SQL Server
+Sybase ASE
+Elasticsearch
+IBM Db
+SQLite
+Snowflake
+Splunk
+Microsoft Azure Synapse Analytics
+Couchbase Server
+IBM Cloud Databases
+IBM Cloudant
+Amazon DynamoDB
+InterSystems IRIS
+Astra DB
+
+Otros conocimientos:
+Contabilidad básica
+Análisis financiero
+Presupuesto personal
+Planificación financiera
+Inversiones en acciones
+Inversiones en bonos
+Gestión de cartera de inversiones
+Evaluación de riesgos financieros
+Valoración de empresas
+Modelado financiero
+Finanzas corporativas
+Gestión de efectivo
+Análisis de estados financieros
+Finanzas internacionales
+Tributación
+Auditoría
+Control de costos
+Gestión de activos fijos
+Finanzas públicas
+Banca y servicios financieros
+Derivados financieros
+Gestión de riesgos empresariales
+Gestión de crédito
+Planificación de pensiones
+Análisis de crédito
+Fusiones y adquisiciones
+Gestión de tesorería
+Arbitraje financiero
+Banca de inversión
+Finanzas personales
+Gestión de deudas
+Financiamiento de proyectos
+Evaluación de inversiones
+Análisis de mercado de capitales
+Gestión de recursos humanos
+Evaluación de créditos hipotecarios
+Gestión de riesgo cambiario
+Finanzas de bienes raíces
+Valoración de derivados
+Contabilidad de costos
+Cálculo de depreciación
+Análisis de flujo de efectivo
+Estrategias de inversión a largo plazo
+Planificación de jubilación anticipada
+Análisis de desempeño financiero
+Finanzas sostenibles
+Regulación financiera
+Seguros y reaseguros
+Gestión de portafolio de seguros
+Cobertura de riesgos
+Impuestos internacionales
+Planificación de sucesión
+Financiamiento de comercio internacional
+Inversión socialmente responsable (ISR)Valoración de startups
+Crowdfunding financiero
+Gestión de activos digitales
+Tecnología financiera (fintech)
+Análisis de criptomonedas
+Contabilidad forense
+Cumplimiento normativo
+Estrategias de negociación financiera
+Finanzas islámicas
+Consultoría financiera
+Gestión de activos alternativos
+Financiamiento de energías renovables
+Análisis de riesgo país
+Estrategias de diversificación de inversiones
+Análisis de datos financieros
+Financiamiento de bienes raíces comerciales
+Análisis de rentabilidad
+Financiamiento de proyectos de infraestructura
+Planificación fiscal
+Control de fraudes financieros
+Reestructuración financiera
+Valoración de arte y coleccionables
+Planificación de herencia
+Evaluación de inversiones en tecnología
+Evaluación de contratos financieros
+Control de costos de producción]]></actions>
+          <expectedresults><![CDATA[al ingresar al sistema se valida que las habilidades de tipo Metodologías, Herramientas, Bases de datos y Lenguajes de programación deben mostrar el listado de habilidades existentes en el ambiente de pruebas.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+  <testsuite name="C8-La hoja de vida debe contener una sección de idiomas">
+    <node_order><![CDATA[]]></node_order>
+    <details><![CDATA[]]></details>
+    <testcase internalid="" name="Visualización de Idiomas fuera de la Sección de Habilidades">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Este caso de prueba se asegura de verificar que el idioma aparezca fuera de la sección de habilidades en la hoja de vida, dentro de “curriculum vitae” en el módulo evaluación de desempeño.]]></summary>
+      <preconditions><![CDATA[*El usuario ha iniciado sesión como empleado regular. 
+*El colaborador debe estar dentro del módulo Evaluación de desempeño.                                   
+*El colaborador debe estar en “mi perfil”  
+*Existe la sección "habilidades"]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-ingresar al ERP odoo con credenciales de empleado.              ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-dar clic en el usuario                                                                                                 ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- dar clic en "Mi perfil"                                                                      ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4- dar clic en el botón "Editar"                                                      ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-Verificar la ubicación de la información de idiomas y niveles en la hoja de vida, debe estar por fuera de la sección de “Habilidades”.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6- verificar que la información de idiomas y nivel este en una sección de “Idiomas”]]></actions>
+          <expectedresults><![CDATA[Al ingresar al sistema se valida la información de idiomas y niveles debe aparecer en una sección independiente  llamada "Idiomas", fuera de la sección de habilidades en la hoja de vida.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Visualización de botón &quot;crear una nueva entrada &quot; en la sección idiomas.">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Este caso de prueba se asegura de verificar que exista el botón "crear nueva entrada" fuera de la sección habilidades en la hoja de vida y dentro de la sección “Idiomas”, al darle clic al botón deberá abrir un  formulario de "Crear idioma" con los campos "Idioma" y "Nivel".]]></summary>
+      <preconditions><![CDATA[*El usuario ha iniciado sesión como empleado regular. 
+*El colaborador debe estar dentro del módulo Evaluación de desempeño.                                   
+*El colaborador debe estar en “mi perfil”  
+*Existe la sección "Idiomas".]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-ingresar al ERP odoo con credenciales de empleado.              ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-dar clic en el usuario                                                                                                 ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- dar clic en "Mi perfil"                                                                      ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4- dar clic en el botón "Editar"                                                      ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-Verificar que exista el botón “crear una nueva entrada” dentro de la sección “Idiomas”.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6-dar clic en el botón “crear una nueva entrada”.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7-verificar que abra el formulario de “crear idioma” con los campos "Idioma" y "Nivel".    ]]></actions>
+          <expectedresults><![CDATA[Al ingresar al sistema se valida que existe el botón "crear nueva entrada" de idiomas y al darle clic abre el formulario para llenar información de idiomas.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="verificar que se guarde informacion de idiomas">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Este caso de prueba se asegura que el sistema permita guardar la información que el empleado agrega en la categoría "Idiomas" cuando de clic en el botón guardar, dentro de “Mi perfil”,” curriculum vitae” en el módulo “Evaluación de desarrollo laboral”.]]></summary>
+      <preconditions><![CDATA[*El usuario ha iniciado sesión como empleado regular. 
+*El colaborador debe estar dentro del módulo Evaluación de desempeño.                                   
+*El colaborador debe estar en “mi perfil”  
+*Existe la sección "Idiomas"]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-ingresar al ERP odoo con credenciales de empleado.              ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-dar clic en el usuario                                                                                                 ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- dar clic en "Mi perfil"     ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-dar clic en el botón “Editar”                                                                  ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5- dar clic en el botón "crear nueva entrada"                                                                                              6-llenar los campos "Idioma" y "Nivel"                                             ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[7-dar clic en el botón "Guardar y cerrar".]]></actions>
+          <expectedresults><![CDATA[Al ingresar al sistema se valida que el sistema permite guardar la información ingresada en la categoria "Idiomas" por el usuario correctamente.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="verificar validación que no permita guardar dos niveles en el mismo idioma.">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Este caso de prueba se asegura que el sistema permita mostrar una validación que no permita guardar idioma con dos niveles en la  categoría "Idiomas" cuando de clic en el botón guardar, dentro de “Mi perfil”,” curriculum vitae” en el módulo “Evaluación de desarrollo laboral”.]]></summary>
+      <preconditions><![CDATA[*El usuario ha iniciado sesión como empleado regular. 
+*El colaborador debe estar dentro del módulo Evaluación de desempeño.                                   
+*El colaborador debe estar en “mi perfil”  
+*Existe la sección "Idiomas"]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-ingresar al ERP odoo con credenciales de empleado.              ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-dar clic en el usuario                                                                                                 ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- dar clic en "Mi perfil"     ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-dar clic en el botón “Editar”               ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-dar clic en el botón “Agregar”                                                   ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6-llenar los campos "Idioma" y "Nivel".]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7- dar clic en el botón guardar y cerrar para intentar guardar otro nivel diferente.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[8]]></step_number>
+          <actions><![CDATA[8-verificar que el sistema muestre validación.]]></actions>
+          <expectedresults><![CDATA[Al ingresar al Erp se valida que el sistema no permite guardar la información ingresada en la categoria "Idiomas" por el usuario cuando se colocan dos niveles en un mismo idioma.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+  <testsuite name=" C11. La hoja de vida debe contener una sección para visualizar la experiencia ">
+    <node_order><![CDATA[]]></node_order>
+    <details><![CDATA[]]></details>
+    <testcase internalid="" name="Presencia de la Sección de Experiencia">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[En este caso de prueba se va a verificar que hay una sección independiente para la experiencia laboral, con todos los registros ingresados por el colaborador dentro de “Mi perfil”,” curriculum vitae” en el módulo “Evaluación de desarrollo laboral”.]]></summary>
+      <preconditions><![CDATA[*El usuario ha iniciado sesión como empleado regular. 
+*El colaborador debe estar dentro del módulo Evaluación de desempeño.                                   
+*El colaborador debe estar en “mi perfil”  
+*Existe la sección "Experiencia"]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-ingresar al ERP odoo con credenciales de empleado.              ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-dar clic en el usuario                                                                                                 ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- dar clic en "Mi perfil"     ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-Verificar que exista la sección “Experiencia".]]></actions>
+          <expectedresults><![CDATA[Al ingresar al sistema se valida la información de experiencia debe aparecer en una sección independiente  llamada "Experiencia".]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Funciones para Experiencia en Q-vision">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[En este caso de prueba se va a verificar que las funciones para la experiencia laboral en Q-vision se  cargan automáticamente en el sistema en el espacio “Funciones”, las funciones se cargan dependiendo el cargo del colaborador, dentro de “Mi perfil”,” curriculum vitae” en el módulo “Evaluación de desarrollo laboral”.]]></summary>
+      <preconditions><![CDATA[*El usuario ha iniciado sesión como empleado regular. 
+*El colaborador debe estar dentro del módulo Evaluación de desempeño.                                   
+*El colaborador debe estar en “mi perfil”  
+*Existe la sección "Experiencia"]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-ingresar al ERP odoo con credenciales de empleado.              ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-dar clic en el usuario                                                                                                 ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- dar clic en "Mi perfil"     ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-dar clic en el botón “Editar”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-dar clic en el botón “Agregar” en “Experiencia”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6-seleccionar “Tipo experiencia”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7- seleccionar en el campo “Empresa” “Q-Vision Technologies”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[8]]></step_number>
+          <actions><![CDATA[8- Verificar que cuando se escoge en “empresa” “Q-Vision Technologies” se carguen las funciones dependiendo el cargo del colaborador.]]></actions>
+          <expectedresults><![CDATA[ Las funciones asociadas a la experiencia laboral en Q-vision se muestran correctamente en el sistema al momento de escoger en "Empresa" "Q-Vision Technologies"]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Nota Informativa en el Formulario de Experiencia">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[En este caso de prueba se va a verificar que en odoo el formulario de experiencia debe contar con nota informativa en la parte superior que diga lo siguiente: ' Ingrese únicamente la información relevante a su perfil profesional actual'. ]]></summary>
+      <preconditions><![CDATA[*El usuario ha iniciado sesión como empleado regular. 
+*El colaborador debe estar dentro del módulo Evaluación de desempeño.                                   
+*El colaborador debe estar en “mi perfil”  
+*Existe la sección "Experiencia"]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-ingresar al ERP odoo con credenciales de empleado.               ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-dar clic en el usuario                                                                                                  ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- dar clic en "Mi perfil"      ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-dar clic en el botón “Editar” ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-dar clic en el botón “Agregar” en “Experiencia” ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6- Verificar que el formulario contiene una nota informativa en la parte superior con el texto: "Ingrese únicamente la información relevante a su perfil profesional actual". ]]></actions>
+          <expectedresults><![CDATA[El formulario de experiencia laboral en Odoo contiene la nota informativa en la parte superior con el texto especificado, que dice lo siguiente : Ingrese únicamente la información relevante a su perfil profesiona actual'. ]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="informacion de experiencia si se escoge &quot;Otra&quot;">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[En este caso de prueba se va a verificar que cuando el colaborador seleccione la opción "Otra" en el campo "Empresa" el sistema habilite los siguientes campos para llenar: Nombre de la empresa, Cargo, fecha de inicio, fecha de finalización Sector, Ciudad laboral, Funciones y permitir guardar la información registrada correctamente.]]></summary>
+      <preconditions><![CDATA[*El usuario ha iniciado sesión como empleado regular. 
+*El colaborador debe estar dentro del módulo Evaluación de desempeño.                                   
+*El colaborador debe estar en “mi perfil”  
+*Existe la sección "Experiencia"]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-ingresar al ERP odoo con credenciales de empleado.              ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-dar clic en el usuario                                                                                                 ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- dar clic en "Mi perfil"     ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-dar clic en el botón “Editar”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-dar clic en el botón “Agregar” en “Experiencia”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6- seleccionar tipo “Experiencia”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7-en el campo Empresa seleccionar la opción “Otra”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[8]]></step_number>
+          <actions><![CDATA[8-Verificar que se habiliten los siguientes campos:  Nombre de la empresa, Cargo, fecha de inicio, fecha de finalización Sector, Ciudad laboral, Funciones.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[9]]></step_number>
+          <actions><![CDATA[9-llenar los campos que se habilitan.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[10]]></step_number>
+          <actions><![CDATA[10-dar clic en el botón “Guardar y cerrar”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[11]]></step_number>
+          <actions><![CDATA[11-verificar que se guarde toda la información que el colaborador ingrese.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[12]]></step_number>
+          <actions><![CDATA[12- dar clic en el botón “Guardar”]]></actions>
+          <expectedresults><![CDATA[El formulario de experiencia laboral en Odoo contiene el campo 'Empresa' de tipo desplegable con las opciones 'Qvision Technologies' y 'Otra'.
+Al seleccionar 'Otra', el sistema le habilita los siguientes campos: Nombre de la empresa, Cargo, fecha de inicio, fecha de finalizacion Sector, Ciudad laboral,Funciones y permie guardar la informacion registrada correctamente.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="verificar campos en modo lectura ">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[En este caso de prueba se verifica que al seleccionar 'Q-vision Technologies' en el campo "Empresa",  el sistema carga automaticamente  las funciones asociadas al cargo,  el nombre de "Q-Vision Technologies" en el campo 'Nombre de la empresa'  y el Cargo, esto se visualiza en modo de  solo lectura.]]></summary>
+      <preconditions><![CDATA[*El usuario ha iniciado sesión como empleado regular. 
+*El colaborador debe estar dentro del módulo Evaluación de desempeño.                                   
+*El colaborador debe estar en “mi perfil”  
+*Existe la sección "Experiencia"]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-ingresar al ERP odoo con credenciales de empleado.              ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-dar clic en el usuario                                                                                                 ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- dar clic en "Mi perfil"     ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-dar clic en el botón “Editar”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-dar clic en el botón “Agregar” en “Experiencia”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6- seleccionar tipo “Experiencia”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7-en el campo Empresa seleccionar la opción “Q-Vision Technologies”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[8]]></step_number>
+          <actions><![CDATA[8-Verificar que cuando se seleccione la opción “Q-Vision Technologies”  se carguen automáticamente los campos “Nombre de la empresa” y “Cargo”  en modo lectura.]]></actions>
+          <expectedresults><![CDATA[ Los campos “Nombre de la empresa” y “Cargo”  en modo lectura se cargan automaticamente cuando se seleccióna la opción “Q-Vision Technologies” en el campo "Empresa" y se cargan en modo lectura.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+</testsuite>

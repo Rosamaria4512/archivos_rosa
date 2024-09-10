@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="">
+  <node_order><![CDATA[]]></node_order>
+  <details><![CDATA[]]></details>
+  <testsuite name="Bug 1-Relacionar el tiempo de seguimiento en meses">
+    <node_order><![CDATA[]]></node_order>
+    <details><![CDATA[]]></details>
+    <testcase internalid="" name="Verificar  texto en el tiempo de seguimiento en meses.">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[En este caso de prueba se validará que en el campo "Seguimiento" dentro del módulo evaluación de desempeño- objetivos de desarrollo laboral, exista texto relacionando el tiempo de seguimiento en meses, de la siguiente manera:                                                          
+Corto plazo (2 meses) 
+Mediano plazo (4 meses) 
+Largo plazo (6 meses) ]]></summary>
+      <preconditions><![CDATA[*Debe estar logueado dentro del sistema ERP Odoo como Jefe o Director.                                         *El Jefe o Director debe tener permiso para navegar dentro del módulo Evaluación de desempeño.                                 
+*Debe existir la sección de "Objetivos de desarrollo laboral"]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-Iniciar sesión como evaluador al sistema Erp Odoo]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-dar clic en el icono que aparece en la parte superior del sistema.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- dar clic en el módulo Evaluación de desempeño.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-Navegar a la evaluación de desempeño del evaluado.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5 dar clic en el botón editar.]]></actions>
+          <expectedresults><![CDATA[Se debe validar que en el campo "Seguimiento" se visualicen los textos en el tiempo de seguimiento en meses]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+  <testsuite name="Bug 2-Opción &quot;Continuar &quot; deshabilitarla para rol de evaluado.">
+    <node_order><![CDATA[]]></node_order>
+    <details><![CDATA[]]></details>
+    <testcase internalid="" name="Opción &quot;Continuar &quot; deshabilitarla para rol de evaluado.">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[En este caso de prueba se validará que el campo "Continuar" no este habilitado para el evaluado dentro del módulo evaluación de desempeño- objetivos de desarrollo laboral.]]></summary>
+      <preconditions><![CDATA[*Debe estar logueado dentro del sistema ERP Odoo como Jefe o Director.                                         *El Jefe o Director debe tener permiso para navegar dentro del módulo Evaluación de desempeño.                                 
+*Debe existir la sección de "Objetivos de desarrollo laboral"]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-Iniciar sesión como evaluado al sistema Erp Odoo]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-Dar clic en el icono que aparece en la parte superior del sistema.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- Dar clic en el módulo Evaluación de desempeño.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-Dar clic en el botón editar.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5- Navegar hasta la sección “Objetivos de desarrollo laboral”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6- Verificar que el campo “Continuar” este deshabilitado para el evaluado.]]></actions>
+          <expectedresults><![CDATA[Se debe validar que al ingresar al módulo evaluación de desempeño- objetivos de desarrollo laboral  el campo "Continuar" debe estar inhabilitado para el evaluado.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+  <testsuite name="bug 3-Modificar alerta">
+    <node_order><![CDATA[]]></node_order>
+    <details><![CDATA[]]></details>
+    <testcase internalid="" name="Modificacion de alerta en notificacion">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Este caso de prueba se asegura de validar que la notificación que llega por correo  la evaluado notificando que su evaluador ha cargado un nuevo compromiso, contenga el siguiente asunto: "Notificación de compromisos de Evaluación de desarrollo laboral."  y con el siguiente cuerpo:                 " Evaluado NOMBRE COLABORADOR su evaluador ha cargado un nuevo compromiso
+en su Evaluación de Desarrollo Laboral. Recuerde realizarlos en los tiempos establecidos, ya que el cumplimiento de estos compromisos se verá reflejados en su evaluación." ]]></summary>
+      <preconditions><![CDATA[*Debe existir un compromiso creado por un evaluador.                                *Debe permitir al evaluado recibir notificaciones.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-Iniciar sesión como evaluador al sistema Erp Odoo]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-dar clic en el icono que aparece en la parte superior del sistema.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- dar clic en el módulo Evaluación de desempeño.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-Navegar a la evaluación de desempeño del evaluado.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5 dar clic en el botón editar.]]></actions>
+          <expectedresults><![CDATA[Se debe validar que la notificacion que llega al evaluado cuando le cargan un compromiso contenga el siguiente asunto: "Notificación de compromisos de Evaluacion de desarrollo laboral."  y con el siguiente cuerpo:                 " Evaluado NOMBRE COLABORADOR su evaluador ha cargado un nuevo compromiso
+en su Evaluación de Desarrollo Laboral. Recuerde realizarlos en los tiempos establecidos, ya que el cumplimiento de estos compromisos se verá reflejados en su evaluación."]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+  <testsuite name="bug-4 -las alertas llegan repetidamente">
+    <node_order><![CDATA[]]></node_order>
+    <details><![CDATA[]]></details>
+    <testcase internalid="" name="validar que no lleguen notificaciones repetidas.">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Este caso de prueba se asegura de validar que la notificación que llega por correo al evaluado notificando que su evaluador ha cargado un nuevo compromiso, llegue una sola vez por compromiso, por ejemplo: si a un evaluado se le cargan tres compromisos el mismo día a corto plazo llegue una sola notificación, si se le cargan tres compromisos a mediano plazo llegue una sola notificación y si se cargan tres compromisos a largo plazo solo llegue una notificación.]]></summary>
+      <preconditions><![CDATA[*Debe existir un compromiso creado por un evaluador.                                *Debe permitir al evaluado recibir notificaciones.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-verificar que llegue la notificación por correo electrónico una sola vez por compromisos.
+ por ejemplo: si a un evaluado se le cargan tres compromisos el mismo día a corto plazo llegue una sola notificación, si se le cargan tres compromisos a mediano plazo llegue una sola notificación y si se cargan tres compromisos a largo plazo solo legue una notificación.]]></actions>
+          <expectedresults><![CDATA[Se debe validar  que la notificación que llega por correo al evaluado notificando que su evaluador ha cargado un nuevo compromiso,llegue una sola vez por compromiso, ya sea a corto, mediano o largo plazo.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+  <testsuite name="bug- 5 No se identifica dentro de los puntos de chequeo el tooltip indicado">
+    <node_order><![CDATA[]]></node_order>
+    <details><![CDATA[]]></details>
+    <testcase internalid="" name="Tooltip en el campo &quot;Comentario&quot;">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Este caso de prueba se asegura de verificar que exista el el tooltip en el campo "Comentario" dentro del módulo evaluación de desempeño, el tooltip debe llevar el siguiente texto, "Espacio para indicar nuevas fechas de compromiso u observaciones del seguimiento".]]></summary>
+      <preconditions><![CDATA[*Debe estar logueado dentro del sistema ERP Odoo como Jefe o Director.                                         *El Jefe o Director debe tener permiso para navegar dentro del módulo Evaluación de desempeño.                                 
+*Debe existir la sección de "Puntos de cheqeo"]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-Iniciar sesión como evaluador al sistema Erp Odoo]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-dar clic en el icono que aparece en la parte superior del sistema.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- dar clic en el módulo Evaluación de desempeño.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-Navegar a la evaluación de desempeño del evaluado.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5 dar clic en el botón editar.                                    ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[ 6-Navegar hasta la seccion "Puntos de chequeo"               ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7- Pasar el cursor por el campo "Comentarios"  de los tres puntos de chequeo 8-Verificar que al pasar el cursos se muestre el tooltip con el siguiente texto  "Espacio para indicar nuevas fechas de compromisos u observaciones del seguimiento".]]></actions>
+          <expectedresults><![CDATA[Se debe verificar que cuando se pase el cursos por cualquiera de los puntos de cheque (Chek point a corto, mediano, largo plazo) se muestre un tooltip con el siguiente texto  "Espacio para indicar nuevas fechas de compromisos u observaciones del seguimiento"]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+</testsuite>

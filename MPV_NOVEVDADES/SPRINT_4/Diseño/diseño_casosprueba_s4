@@ -1,0 +1,1952 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="">
+  <node_order><![CDATA[]]></node_order>
+  <details><![CDATA[]]></details>
+  <testsuite name="3-006 Realizar solicitud de traslado">
+    <node_order><![CDATA[]]></node_order>
+    <details><![CDATA[]]></details>
+    <testcase internalid="" name="opción en menú de solicitud de traslado con funcionalidad&quot;">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que la opción de traslado en el menú tenga la funcionalidad correcta.]]></summary>
+      <preconditions><![CDATA[1.El usuario ha iniciado sesión como jefe inmediato en el sistema.
+2.Existen empleados en el modulo empleados.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1.Ingresar como jefe inmediato.                                                                                                             
+]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2.Ingresar al módulo de empleado.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3.Dar click en Solicitud de traslado.]]></actions>
+          <expectedresults><![CDATA[El sistema muestra la opción " Solicitud de Traslado" en el menu y al dar click se abre una ventana con el nombre "Solicitud de Traslado",]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+  <testsuite name=" 3-007  Aprobación de solicitud de traslado a Jefe inmediato, dentro de la regional">
+    <node_order><![CDATA[]]></node_order>
+    <details><![CDATA[]]></details>
+    <testcase internalid="" name="Creación de solicitud de traslado, dentro de la regional">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que el sistema genere correctamente la solicitud de traslado dentro de la regional.]]></summary>
+      <preconditions><![CDATA[1.El usuario tiene permisos de jefe inmediato en el sistema.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1.Ingresar como jefe inmediato.           ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2.Ingresar al módulo de empleado.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3.Dar click en Solicitud de traslado.       ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4.dar click en crear       ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5. llenar el formulario.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6.visualizar que el cliente destino este dentro de la misma regional.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7.dar click en guardar]]></actions>
+          <expectedresults><![CDATA[Se genera una novedad de traslado para el empleado seleccionado y
+la solicitud de traslado se registra correctamente en el sistema.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Error al intentar realizar una solicitud sin seleccionar un empleado.">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que el sistema muestra un mensaje de error cuando se intenta realizar una solicitud de traslado sin seleccionar previamente un empleado.]]></summary>
+      <preconditions><![CDATA[El usuario ha iniciado sesión como jefe inmediato en el sistema.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1.Ingresar al módulo de empleado.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2.Dar click en Solicitud de traslado]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3.Dar click en Crear]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4.No seleccionar ningún empleado.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5.Presionar el botón "Guardar".]]></actions>
+          <expectedresults><![CDATA[el sistema muestra  un mensaje de error indicando que se debe seleccionar un empleado primero y no deja crear la solicitud.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="solicitud de traslado no exitosa por  campos obligatorios incompletos, dentro de la regional.">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[verificar que el sistema no permita crear solicitud de traslado si no se llenan todos los campos requeridos]]></summary>
+      <preconditions><![CDATA[El usuario ha iniciado sesión como jefe inmediato en el sistema.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1.Ingresar al módulo de empleado.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2.Dar click en Solicitud de traslado]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3.Dar click en Crear]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4.No llenar uno o mas campos requeridos.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5.Presionar el botón "Guardar".]]></actions>
+          <expectedresults><![CDATA[el sistema muestra a un mensaje de error indicando que se deben llenar todos los campos requeridos,no deja crear la solicitud y por ende no se envia la solicitud de traslado.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Notificación de Aprobación de solicitud de traslado por el jefe inmediato">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que el sistema envíe una notificación de solicitud de traslado al jefe inmediato cuando se le genere una.]]></summary>
+      <preconditions><![CDATA[1.El usuario ha iniciado sesión como jefe inmediato en el sistema.
+2.le ha llegado una solicitud de traslado al jefe inmediato.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1. Validar que llega la notificacion.]]></actions>
+          <expectedresults><![CDATA[El sistema envía una notificación de solicitud de traslado al jefe inmediato.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+  <testsuite name="3-008  Aprobación de solicitud de traslado a Jefe inmediat, fuera de la regional">
+    <node_order><![CDATA[]]></node_order>
+    <details><![CDATA[]]></details>
+    <testcase internalid="" name="solicitud exitosa de traslado fuera de la regional.">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que el sistema genere correctamente la solicitud de traslado fuera de la regional.]]></summary>
+      <preconditions><![CDATA[1.El usuario tiene permisos de jefe inmediato en el sistema.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1.Ingresar como jefe inmediato.       ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2.Ingresar al módulo de empleado.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3.Dar click en Solicitud de traslado.                                                                                                                                                                                                                                                             
+
+]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4.dar click en crear ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5. llenar el formulario.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6.visualizar que el cliente destino este fuera de la regional.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7.dar click en guardar]]></actions>
+          <expectedresults><![CDATA[Se genera una novedad de traslado para el empleado seleccionado y
+la solicitud de traslado se registra correctamente en el sistema.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="solicitud de traslado no exitosa por  campos obligatorios incompletos, fuera de la regional.">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[verificar que el sistema no permita crear solicitud de traslado si no se llenan todos los campos requeridos]]></summary>
+      <preconditions><![CDATA[El usuario ha iniciado sesión como jefe inmediato en el sistema.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1.Ingresar al módulo de empleado.
+
+
+
+]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2.Dar click en Solicitud de traslado]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3.Dar click en Crear]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4.No llenar uno o mas campos requeridos.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5.Presionar el botón "Guardar".]]></actions>
+          <expectedresults><![CDATA[el sistema muestra a un mensaje de error indicando que se deben llenar todos los campos requeridos,no deja crear la solicitud y por ende no se envia la solicitud de traslado.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Error al intentar realizar una solicitud sin seleccionar un empleado.">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que el sistema muestra un mensaje de error cuando se intenta realizar una solicitud de traslado sin seleccionar previamente un empleado..]]></summary>
+      <preconditions><![CDATA[El usuario ha iniciado sesión como jefe inmediato en el sistema.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1.Ingresar al módulo de empleado.
+
+
+]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2.Dar click en Solicitud de traslado]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3.Dar click en Crear]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4.No seleccionar ningún empleado.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[
+5.Presionar el botón "Guardar".]]></actions>
+          <expectedresults><![CDATA[el sistema muestra  un mensaje de error indicando que se debe seleccionar un empleado primero y no deja crear la solicitud.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Notificación de Aprobación de solicitud de traslado por el jefe inmediato">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que el sistema envíe una notificación de solicitud de traslado al jefe inmediato cuando se le genere una.]]></summary>
+      <preconditions><![CDATA[1.El usuario ha iniciado sesión como jefe inmediato en el sistema.
+2.le ha llegado una solicitud de traslado al jefe inmediato.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1. Validar que llega la notificacion.]]></actions>
+          <expectedresults><![CDATA[El sistema envía una notificación de solicitud de traslado al jefe inmediato.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+  <testsuite name=" 3-009 Formulario aprobación solicitud de traslado">
+    <node_order><![CDATA[]]></node_order>
+    <details><![CDATA[]]></details>
+    <testcase internalid="" name="Existe el campo Estado  y las acciones aprobar y rechazar.">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[verificar que en el tablero empleados exista el campo  Estado  y las acciones aprobar y rechazar.]]></summary>
+      <preconditions><![CDATA[El usuario ha iniciado sesión como jefe inmediato en el sistema.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1.ingreasar a solicitud de traslado desde el módulo empleado.                                                                                                                ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2. visualizar en el tablero que el empleado con solicitud de traslado tenga el campo estado y las acciones Aprobar y Rechazar.  ]]></actions>
+          <expectedresults><![CDATA[En el tablero de solicitud de tralado  si existen el campo  Estado  y las acciones aprobar y rechazar, para el empleado.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Aprobar solicitud de traslado desde el tablero de empleados.">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que el sistema permita al jefe inmediato aprobar una solicitud de traslado desde el tablero de empleados, actualice correctamente el estado del traslado y se ponga en color verde.]]></summary>
+      <preconditions><![CDATA[1.El usuario ha iniciado sesión como jefe inmediato en el sistema.
+2.Se ha recibido una notificación de solicitud de traslado de un empleado.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1.ingresar al mdulo empleados                                                                           
+
+]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2.Abrir el tablero de empleados.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3.Buscar la solicitud de traslado del empleado.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4.Presionar la acción "Aprobar".]]></actions>
+          <expectedresults><![CDATA[*El sistema muestra el estado de la solicitud como "Aprobado" en color verde.
+*Los datos del empleado se actualizan correctamente en la información del empleado y se vuizualiza el estado de la socitud en el log.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="notificacion de Aprobacion de solicitud de traslado por el jefe inmediato">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que el sistema envié una notificación al jefe inmediato nuevo cuando, el jefe inmediato apruebe la solicitud de traslado del empleado. ]]></summary>
+      <preconditions><![CDATA[1.El usuario ha iniciado sesión como jefe inmediato en el sistema. 2.le ha llegado una solicitud de traslado al jefe inmediato.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1.Validar que llega la notificación. ]]></actions>
+          <expectedresults><![CDATA[ el sistema envia una notificacion al jefe inmediato nuevo, cuando el jefe inmediato apruebe la solicitud de traslado del empleado.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Rechazar solicitud de traslado desde la vista de traslados.">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que el sistema permita al jefe inmediato rechazar una solicitud de traslado desde el tablero de empleados, se actualice la información, se coloque en color rojo  y notifique al solicitante.]]></summary>
+      <preconditions><![CDATA[1.El usuario ha iniciado sesión como jefe inmediato en el sistema.
+2.Se ha recibido una notificación de solicitud de traslado de un empleado.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1.ingresar al módulo empleados                                                                                                            ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2.Abrir el tablero de empleados.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3.Buscar la solicitud de traslado del empleado.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4.Presionar la acción "Rechazar".]]></actions>
+          <expectedresults><![CDATA[*El sistema cambia el estado de la solicitud a "Rechazado".
+*Se genera una notificación al solicitante indicando que su solicitud ha sido rechazada.
+*El sistema muestra el estado de la solicitud como "Rechazado" en color rojo.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Verificar la generación de log de traslado al aprobar   una solicitud.&#xA;">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[ Confirmar que se genera un registro en el log de traslado al aprobar  una solicitud desde e tablero de empleados.]]></summary>
+      <preconditions><![CDATA[1.El usuario ha iniciado sesión como jefe inmediato en el sistema.
+2.Se ha Aprobado  una solicitud de traslado.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1.ingresar a solicitud de traslados desde el módulo empleados.                                                                                                                                                                                                        ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2.dar click en un empleado que tenga aprobada su solicitud de traslado.       ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3. verificar que en el log del sistema aparezca el estado de la solicitud de traslado.]]></actions>
+          <expectedresults><![CDATA[Se genera un registro en el log de traslado indicando que la solicitud ha sido aprobada.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Verificar la generación de log de traslado al rechazar una solicitud.">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Confirmar que se genera un registro en el log de traslado al rechazar una solicitud desde e tablero de empleados.]]></summary>
+      <preconditions><![CDATA[1.El usuario ha iniciado sesión como jefe inmediato en el sistema.
+2.Se ha Rechazado una solicitud de traslado.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1.ingresar a solicitud de traslados desde el módulo empleados.                                                                                                                                                                                                     ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2.dar click en un empleado que tenga rechazada su solicitud de traslado.       ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3. verificar que en el log del sistema aparezca el estado de la solicitud de traslado.]]></actions>
+          <expectedresults><![CDATA[Se genera un registro en el log de traslado indicando que la solicitud ha sido rechazada.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+  <testsuite name="3-0013  Validar Registros en Informe Parte de Horas">
+    <node_order><![CDATA[]]></node_order>
+    <details><![CDATA[]]></details>
+    <testcase internalid="" name="Alerta en campo Duración (horas) cuando se excede el límite configurado.">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que el sistema muestre una alerta en color rojo en el campo Duración (horas) cuando el registro diario de horas del analista asignado al proyecto supera las horas a reportar configuradas desde el módulo de proyectos.]]></summary>
+      <preconditions><![CDATA[1.El usuario ha iniciado sesión como jefe inmediato en el sistema.
+2.Existe un registro diario de horas para un analista asignado a un proyecto.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1.Ingresar al módulo Partes de hora.                                                                                                    ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2.Acceder al informe de parte de horas.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3.Revisar el campo Duración (horas) del registro diario del analista.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4.Verificar que nos de alerta en rojo de las horas excedidas]]></actions>
+          <expectedresults><![CDATA[El sistema muestra una alerta en color rojo junto al campo Duración (horas) para indicar que se han superado las horas a reportar por día]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Validación de registros en el informe de parte de horas.">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Confirmar que el sistema valida correctamente los registros en el informe de parte de horas para facilitar la aprobación de horas facturables.]]></summary>
+      <preconditions><![CDATA[1.El usuario ha iniciado sesión como jefe inmediato en el sistema.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1. Ingresar al modulo Partes de hora.                                                                      ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2.Acceder al informe de parte de horas.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3.Revisar cada registro de horas para garantizar que estén correctamente documentados y clasificados.]]></actions>
+          <expectedresults><![CDATA[Todos los registros de horas están completos y correctamente clasificados, lo que facilita la aprobación de las horas facturables]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+  <testsuite name=" 3-0014 Reportar Horas en Proyecto Asígnado">
+    <node_order><![CDATA[]]></node_order>
+    <details><![CDATA[]]></details>
+    <testcase internalid="" name="Verificar que el empleado este asignado a un proyecto">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Confirmar que el empleado tenga un proyecto asignado.]]></summary>
+      <preconditions><![CDATA[1.El usuario ha iniciado sesión como empleado en el sistema.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1.Ingresar al modulo Partes de hora.                                                                            ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2.Verificar proyecto asignado.]]></actions>
+          <expectedresults><![CDATA[El empleado esta asignado a un Proyecto.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Registro exitoso de horas estando asignado al proyecto.">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que el sistema permita al empleado registrar horas en el módulo de parte de horas cuando está asignado al proyecto.]]></summary>
+      <preconditions><![CDATA[1.El empleado ha iniciado sesión en el sistema.
+2.El empleado está asignado al proyecto al que desea reportar horas.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1.Ingresar al módulo de parte de horas.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2.Seleccionar el proyecto al que el empleado está asignado.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3.Registrar las horas trabajadas.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4.Guardar el registro de horas.]]></actions>
+          <expectedresults><![CDATA[El sistema permite al empleado registrar las horas al proyecto y el registro de horas se guarda exitosamente en el sistema.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Sumatoria de horas reportadas.">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[verificar que el sistema haga la sumatoria de las horas que reporta el empleado.]]></summary>
+      <preconditions><![CDATA[1.El empleado ha iniciado sesión en el sistema.
+2.El empleado está asignado al proyecto al que desea reportar horas.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1.Ingresar al módulo de parte de horas.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2.Seleccionar el proyecto al que el empleado está asignado.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3.Registrar las horas trabajadas.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4.Guardar el registro de horas.]]></actions>
+          <expectedresults><![CDATA[El sistema hace el conteo y muestra el total de horas reportadas.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Registro no exitoso de horas estando no asignado al proyecto.">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que el sistema no permita al empleado registrar horas a reportar a un proyecto que no esta asignado.]]></summary>
+      <preconditions><![CDATA[1.El empleado ha iniciado sesión en el sistema.
+2.El empleado no está asignado al proyecto al que intenta reportar horas.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1.Ingresar al módulo de parte de horas.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2.Seleccionar el proyecto al que el empleado no está asignado.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3.Intentar guardar el registro de horas.]]></actions>
+          <expectedresults><![CDATA[*El sistema no permite al empleado registrar más horas de las configuradas en el campo "tiempo a reportar" para el proyecto.
+*Se genera un mensaje de alerta indicando que el usuario no está asignado al proyecto y no está autorizado para reportar horas adicionales.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+  <testsuite name="4-001 Adjuntar Soporte/Novedad de calamidad.">
+    <node_order><![CDATA[]]></node_order>
+    <details><![CDATA[]]></details>
+    <testcase internalid="" name="Almacenamiento exitoso de novedad de calamidad y conteo de dias solicitados.">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que el sistema guarde correctamente el registro de la novedad de calamidad cuando se completan todos los campos obligatorios y se adjunta el soporte necesario.]]></summary>
+      <preconditions><![CDATA[1.El usuario tiene acceso al sistema como empleado.
+2.El empleado ya tiene vacaciones cargadas.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1.ingresar al módulo de Ausencias                                                                                                                                        ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2.Seleccionar la opción para crear una nueva novedad.     ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3.Completar todos los campos obligatorios correctamente.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4.Adjuntar el soporte de la novedad.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5.Presionar el botón "Guardar".]]></actions>
+          <expectedresults><![CDATA[El sistema debe guardar el registro de la novedad de calamidad de manera exitosa y enviar una notificación al jefe inmediato en estado "Por Aprobar".]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Sumatoria de dias de calamidad escogidas.">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que el sistema haga el conteo de dias escogidos para la calamidad según la  fecha requerida por el empleado.]]></summary>
+      <preconditions><![CDATA[1.El usuario tiene acceso al sistema como empleado.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1.ingresar como empleado.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2. Da click en mi perfil.                                                                                                                                                                                                                                                                                                                                                                             ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3.Dar click en Nueva Ausencia.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4.Completar  los campos de fecha.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5.verificar que haga la sumatoria de los dias solicitados.]]></actions>
+          <expectedresults><![CDATA[el sistema muestra la sumatoria de los dias solictados para calamidad.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Almacenamiento no exitoso de novedad de calamidad - Datos incompletos">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que el sistema no permita guardar el registro de la novedad de calamidad cuando los datos requeridos no están completos.]]></summary>
+      <preconditions><![CDATA[1.El usuario tiene acceso al sistema como empleado.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1.ingresar al módulo de Ausencias.                                                      novedad.      ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2.Seleccionar la opción para crear una nueva]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3.No completar uno o más campos obligatorios.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4.Adjuntar el soporte de la novedad.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5.Intentar guardar la novedad presionando el botón "Guardar"]]></actions>
+          <expectedresults><![CDATA[El sistema no debe permitir el almacenamiento de la novedad y debe mostrar un mensaje de advertencia indicando que los campos son obligatorios.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Almacenamiento no exitoso de novedad de calamidad - Falta de adjunto">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que el sistema no permita guardar el registro de la novedad de calamidad cuando no se adjunta el soporte necesario.]]></summary>
+      <preconditions><![CDATA[1.El usuario tiene acceso al sistema como empleado.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1.ingresar al módulo de Ausencias                                                      ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2.Seleccionar la opción para crear una nueva novedad.  ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3.Completar todos los campos obligatorios correctamente.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4.No adjuntar el soporte de la novedad.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5.Intentar guardar la novedad presionando el botón "Guardar".]]></actions>
+          <expectedresults><![CDATA[El sistema no debe permitir el almacenamiento de la novedad y debe mostrar un mensaje de advertencia indicando que los adjuntos son obligatorios.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Aprobación o rechazo de jefe inmediato">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que el jefe inmediato apruebe o rechace satisfactoriamente la solicitud de Calamidad.]]></summary>
+      <preconditions><![CDATA[El jefe inmediato recibe una solicitud de Calamidad de un empleado.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1.El jefe inmediato ingresa al sistema modulo Ausencias para aprobar o rechazar la solicitud de Calamidad.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2.da click en aprobar o rechazar .                   ]]></actions>
+          <expectedresults><![CDATA[El jefe inmedito aprueba o rechaza satisfactoriamente la solicitud de Calamidad del empleado.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="notificacion al jefe inmediato de solicitud de calamidad para aprobar o rechazar">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[verificar que el sistema envié una notificación al jefe inmediato cuando un empleado le haga una solicitud de calamidad.  ]]></summary>
+      <preconditions><![CDATA[El jefe inmediato recibe una solicitud de Calamidad de un empleado.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1.verificar en el buzón de correo si llego la notificación para aprobar o rechazar una solicitud de calamidad generada por un empleado.]]></actions>
+          <expectedresults><![CDATA[el sistema envia una notificacion al jefe inmediato cuando se le haga una solicitud de calamidad para aprobarla o rechazarla]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="notificación de Aprobación y rechazo de solicitud novedad de calamidad ">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[verificar que el sistema envíe una notificación al empleado cuando el jefe inmediato apruebe o rechace la solicitud de calamidad. ]]></summary>
+      <preconditions><![CDATA[1.el jefe inmediato ha aprobado o rechazado la solicitud]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1.verificar en el buzón de correo si llego la notificación de aprobación o rechazo.]]></actions>
+          <expectedresults><![CDATA[El sistema envia notificacion avisandole al empleado que su solicitud fue aprobada o rechazada por el jefe inmendiato.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+  <testsuite name="4-002 Adjuntar Soporte/Novedad de Incapacidad">
+    <node_order><![CDATA[]]></node_order>
+    <details><![CDATA[]]></details>
+    <testcase internalid="" name="Almacenamiento exitoso de novedad de incapacidad">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que el sistema guarde correctamente el registro de la novedad de incapacidad cuando se completan todos los campos obligatorios y se adjunta el soporte necesario.]]></summary>
+      <preconditions><![CDATA[1.El usuario tiene acceso al sistema como empleado.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1.ingresar al módulo de Ausencias                                                                                                                                 ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2.Seleccionar la opción para crear una nueva novedad.        ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3.Completar todos los campos obligatorios correctamente.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4.Adjuntar el soporte de la novedad.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5.Presionar el botón "Guardar".]]></actions>
+          <expectedresults><![CDATA[El sistema debe guardar el registro de la novedad de Incapacidad de manera exitosa y enviar una notificación al jefe inmediato en estado "Por Aprobar".]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Sumatoria de dias de incapacidad  escogidas.">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que el sistema haga el conteo de dias escogidos para la incapacidad según la  fecha requerida por el empleado.]]></summary>
+      <preconditions><![CDATA[1.El usuario tiene acceso al sistema como empleado.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1.ingresar como empleado.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2. Da click en mi perfil.                                                                                                                                                                                                                                                                                                                                                                          ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3.Dar click en Nueva Ausencia.   ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4.Completar  los campos de fecha.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5.verificar que haga la sumatoria de los dias solicitados.]]></actions>
+          <expectedresults><![CDATA[el sistema muestra la sumatoria de los dias solictados para incapacidad.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Almacenamiento no exitoso de novedad de Incapacidad - Datos incompletos">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que el sistema no permita guardar el registro de la novedad de Incapacidad cuando los datos requeridos no están completos.]]></summary>
+      <preconditions><![CDATA[1.El usuario tiene acceso al sistema como empleado.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1.ingresar al módulo de Ausencias.                                                       ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2.Seleccionar la opción para crear una nueva novedad.    ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3.No completar uno o más campos obligatorios.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4.Adjuntar el soporte de la novedad.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5.Intentar guardar la novedad presionando el botón "Guardar"]]></actions>
+          <expectedresults><![CDATA[El sistema no debe permitir el almacenamiento de la novedad de incapacidad y debe mostrar un mensaje de advertencia indicando que los campos son obligatorios.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Almacenamiento no exitoso de novedad de incapacidad - Falta de adjunto">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que el sistema no permita guardar el registro de la novedad de incapacidad cuando no se adjunta el soporte necesario.]]></summary>
+      <preconditions><![CDATA[1.El usuario tiene acceso al sistema como empleado.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1.ingresar al módulo de Ausencias                                                      ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2.Seleccionar la opción para crear una nueva novedad.  ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3.Completar todos los campos obligatorios correctamente.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4.No adjuntar el soporte de la novedad.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5.Intentar guardar la novedad presionando el botón "Guardar".]]></actions>
+          <expectedresults><![CDATA[El sistema no debe permitir el almacenamiento de la novedad de incapacidad y debe mostrar un mensaje de advertencia indicando que los adjuntos son obligatorios.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Aprobación o rechazo de jefe inmediato">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que el jefe inmediato apruebe satisfactoriamente la solicitud de Incapacidad.]]></summary>
+      <preconditions><![CDATA[El jefe inmediato recibe una solicitud de Incapacidad de un empleado.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1.El jefe inmediato ingresa al sistema modulo Ausencias para aprobar o rechazar la solicitud de Incapacidad.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2.da click en aprobar o rechazar .        ]]></actions>
+          <expectedresults><![CDATA[El jefe inmedito aprueba o rechaza satisfactoriamente la solicitud de incapacidad del empleado.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="notificacion al jefe inmediato de solicitud de Incapacidad para aprobar o rechazar">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[verificar que el sistema envie una notificacion al jefe inmediato cuando un empleado le haga una solicitud de incapacidad.]]></summary>
+      <preconditions><![CDATA[El jefe inmediato recibe una solicitud de Incapacidad de un empleado.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1.verificar en el buzon de correo si llego la notificacion para aprobar o rechazar una solicitud de incapacidad generada por un empleado.]]></actions>
+          <expectedresults><![CDATA[el sistema envia una notificacion al jefe inmediato cuando se le haga una solicitud de incapacidad para aprobarla o rechazarla.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="notificacion de Aprobacion y rechazo de solicitud novedad de Incapacidad">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[verificar que el sistema envie una notificacion al empleado cuando el jefe inmediato apruebe o rechaze la solicitud de Incapacidad.]]></summary>
+      <preconditions><![CDATA[1.el jefe inmediato ha aprobado o rechazado la solicitud]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1.verificar en el buzon de correo si llego la notificacion de aprobacion o rechazo.]]></actions>
+          <expectedresults><![CDATA[El sistema envia notificacion avisandole al empleado que su solicitud fue aprobada o rechazada por el jefe inmendiato.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+  <testsuite name="4-003 Adjuntar Soporte/Novedad de vacaciones.">
+    <node_order><![CDATA[]]></node_order>
+    <details><![CDATA[]]></details>
+    <testcase internalid="" name="Almacenamiento exitoso de novedad de vacaciones">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que el sistema guarde correctamente el registro de la novedad de vacaciones cuando se completan todos los campos obligatorios y se adjunta el soporte necesario.]]></summary>
+      <preconditions><![CDATA[1.El usuario tiene acceso al sistema como empleado.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1.ingresar al módulo de Ausencias.                                                                                                                              ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2.Seleccionar la opción para crear una nueva novedad.          ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3.Completar todos los campos obligatorios correctamente.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4.Adjuntar el soporte de la novedad.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5.Presionar el botón "Guardar".]]></actions>
+          <expectedresults><![CDATA[El sistema debe guardar el registro de la novedad de vaciones de manera exitosa y enviar una notificación al jefe inmediato en estado "Por Aprobar".]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Sumatoria de dias de vacaciones escogidas.">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que el sistema haga el conteo de dias escogidos para las vacaciones según la  fecha requerida por el empleado.]]></summary>
+      <preconditions><![CDATA[1.El usuario tiene acceso al sistema como empleado.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1.ingresar como empleado.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2. Da click en mi perfil.                                                                                                                                                                                                                                                                                                                                                                            ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3.Dar click en Nueva Ausencia. ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4.Completar  los campos de fecha.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5.verificar que haga la sumatoria de los dias solicitados.]]></actions>
+          <expectedresults><![CDATA[el sistema muestra la sumatoria de los dias solictados para vacaciones]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Almacenamiento no exitoso de novedad de vaciones - Datos incompletos">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que el sistema no permita guardar el registro de la novedad de vacaciones cuando los datos requeridos no están completos.]]></summary>
+      <preconditions><![CDATA[1.El usuario tiene acceso al sistema como empleado.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1.ingresar al módulo de Ausencias.                                                           ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2.Seleccionar la opción para crear una nueva novedad.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3.No completar uno o más campos obligatorios.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4.Adjuntar el soporte de la novedad.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5.Intentar guardar la novedad presionando el botón "Guardar"]]></actions>
+          <expectedresults><![CDATA[El sistema no debe permitir el almacenamiento de la novedad de vacaciones  y debe mostrar un mensaje de advertencia indicando que los campos son obligatorios.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Almacenamiento no exitoso de novedad de vacaciones - Falta de adjunto">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que el sistema no permita guardar el registro de la novedad de vacaciones cuando no se adjunta el soporte necesario.]]></summary>
+      <preconditions><![CDATA[1.El usuario tiene acceso al sistema como empleado.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1.ingresar al módulo de Ausencias                                                      ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2.Seleccionar la opción para crear una nueva novedad.  ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3.Completar todos los campos obligatorios correctamente.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4.No adjuntar el soporte de la novedad.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5.Intentar guardar la novedad presionando el botón "Guardar".]]></actions>
+          <expectedresults><![CDATA[El sistema no debe permitir el almacenamiento de la novedad de vacaciones  y debe mostrar un mensaje de advertencia indicando que los adjuntos son obligatorios.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Aprobación o rechazo de jefe inmediato">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que el jefe inmediato apruebe satisfactoriamente la solicitud de vacaciones.]]></summary>
+      <preconditions><![CDATA[El jefe inmediato recibe una solicitud de vacaciones de un empleado.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1.El jefe inmediato ingresa al sistema modulo Ausencias para aprobar o rechazar la solicitud de vacaciones.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2.da click en aprobar o rechazar .                 ]]></actions>
+          <expectedresults><![CDATA[El jefe inmedito aprueba o rechaza satisfactoriamente la solicitud de vacaciones del empleado.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="notificacion al jefe inmediato de solicitud de Vacaciones para aprobar o rechazar">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[verificar que el sistema envie una notificacion al jefe inmediato cuando un empleado le haga una solicitud de Vacaciones.]]></summary>
+      <preconditions><![CDATA[El jefe inmediato recibe una solicitud de vacaciones de un empleado.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1.verificar en el buzon de correo si llego la notificacion para aprobar o rechazar una solicitud de Vacaciones generada por un empleado.]]></actions>
+          <expectedresults><![CDATA[el sistema envia una notificacion al jefe inmediato cuando se le haga una solicitud de Vacaciones para aprobarla o rechazarla.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="notificacion de Aprobacion y rechazo de solicitud novedad de Vacaciones">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[verificar que el sistema envie una notificacion al empleado cuando el jefe inmediato apruebe o rechaze la solicitud de Vacaciones.]]></summary>
+      <preconditions><![CDATA[1.el jefe inmediato ha aprobado o rechazado la solicitud]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1.verificar en el buzon de correo si llego la notificacion de aprobacion o rechazo.]]></actions>
+          <expectedresults><![CDATA[El sistema envia notificacion avisandole al empleado que su solicitud fue aprobada o rechazada por el jefe inmendiato.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="validación que no tome los días sábado y domingos  ">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[verificar que el sistema cuando el empleado escoja sus días que solicitara vacaciones, este no le 
+cuente ni sábados ni domingos  ]]></summary>
+      <preconditions><![CDATA[1.El usuario tiene acceso al sistema como empleado. ]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1.ingresar como empleado. ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2. Da click en mi perfil.                                                                                                                                                                           ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3.Dar click en Nueva Ausencia.                                                                                                                                                           ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4.Completar los campos de fecha. ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5.verificar que cuando este hace el conteo de los días o cuente sábados ni domingos. ]]></actions>
+          <expectedresults><![CDATA[el sistema valida que al momento que el usuario escoge sus dias vacacionales el no cunata ni sabado ni domingo.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+  <testsuite name="4-004 Precargue Historico de Vacaciones">
+    <node_order><![CDATA[]]></node_order>
+    <details><![CDATA[]]></details>
+    <testcase internalid="" name="Comparar la información de días de vacaciones disponibles en la pestaña Configuración RRHH ubicada en el módulo Empleados del ERP ODOO, con respecto a la fuente de la misma  ingresando como usuario Administrador.">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Validar que la información anual acerca de los días de descanso disponibles en la pestaña Configuración RRHH ubicada en el módulo Empleados del ERP ODOO, sea la misma que la del archivo fuente enviado por el área Financiera.]]></summary>
+      <preconditions><![CDATA[1. El usuario tiene acceso como usuario Administrador al ERP ODOO.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1. Ingresar al ERP ODOO.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2. Ingresar al módulo Empleados.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3. Ingresar a la tarjeta del empleado.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4. Ingresar a la pestaña Configuración RRHH.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5. Dirigirse a la sección Partes de Horas.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6. Visualizar el campo Días de vacaciones.]]></actions>
+          <expectedresults><![CDATA[El campo Dias de vacaciones de la pestana Configuracion RRHH del modulo Empleados muestra la informacion anual de los dias de descanso disponibles igual a la del archivo fuente.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Verificar que la información de días de vacaciones disponibles en la pestaña Configuración RRHH ubicada en el módulo Empleados del ERP ODOO, no se visualice al ingresar con usuario Responsable.">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Validar que la información anual acerca de los días de descanso disponibles en la pestaña Configuración RRHH ubicada en el módulo Empleados del ERP ODOO, no sea visualizada.]]></summary>
+      <preconditions><![CDATA[1. El usuario tiene acceso como usuario Responsable al ERP ODOO.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1. Ingresar al ERP ODOO.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2. Ingresar al módulo Empleados.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3. Ingresar a la tarjeta del empleado.]]></actions>
+          <expectedresults><![CDATA[La pestana Configuracion RRHH del modulo Empleados no se visualiza.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Verificar que la información de días de vacaciones disponibles en la pestaña Configuración RRHH ubicada en el módulo Empleados del ERP ODOO, no se visualice al ingresar con usuario Empleado.">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Validar que la información anual acerca de los días de descanso disponibles en la pestaña Configuración RRHH ubicada en el módulo Empleados del ERP ODOO, no sea visualizada.]]></summary>
+      <preconditions><![CDATA[1. El usuario tiene acceso como usuario Empleado al ERP ODOO.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1. Ingresar al ERP ODOO.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2. Ingresar al módulo Empleados.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3. Ingresar a la tarjeta del empleado.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4. Ingresar a la pestaña Configuración RRHH.]]></actions>
+          <expectedresults><![CDATA[El campo Dias de vacaciones de la pestana Configuracion RRHH del modulo Empleados no se visualiza.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+  <testsuite name="4-005 Calcular Días disponibles de Vacaciones">
+    <node_order><![CDATA[]]></node_order>
+    <details><![CDATA[]]></details>
+    <testcase internalid="" name="Validar que el empleado tiene dias de vacaciones disponibles en el campo deplegable de la ventana Peticiones de ausencia.">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que la ventana Peticiones de ausencia del modulo Ausencias en el ERP ODOO, permita visualizar el campo desplegable con la informacion total de los dias de vacaciones correspondientes a cada ano completo e incompleto de servicio.]]></summary>
+      <preconditions><![CDATA[1. El usuario tiene acceso como empleado al modulo de Ausencias.
+
+2. El usuario debe cumplir con un ano corrido en la empresa desde la fecha de contratacion.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1. Presionar el boton Nueva ausencia.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2. Visualizar la ventana Peticiones de ausencia.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3. Desplegar campo con la informacion anual de los dias de descanso disponibles.]]></actions>
+          <expectedresults><![CDATA[El campo desplegable de la ventana Peticiones de ausencia muestra la totalidad de los dias de vacaciones disponibles correspondientes a los anos completos e incompletos de servicio.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Validar que el campo Duracion permite visualizar dias de descanso escogidos de los dias de vacaciones disponibles.">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que el campo Duracion de la ventana Peticiones de ausencia en el modulo Ausencias del ERP ODOO, permita visualizar los dias de descanso escogidos de los dias de vacaciones disponibles calculados por el sistema.]]></summary>
+      <preconditions><![CDATA[1. El usuario tiene acceso como empleado al modulo de Ausencias.
+
+2. El usuario debe cumplir con un ano corrido en la empresa desde la fecha de contratacion.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1. Presionar el boton Nueva ausencia.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2. Visualizar la ventana Peticiones de ausencia.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3. Desplegar campo con la informacion anual de los dias de descanso disponibles y escoger criterio.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4. Desplegar campo Fechas Desde y escoger fecha.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5. Desplegar campo Fecchas Hasta y escoger fecha.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6. Visualizar el campo Duracion con los dias solicitados.]]></actions>
+          <expectedresults><![CDATA[Visualizar el campo Duracion en formato de numero entero sin aproximaciones.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Validar que el sistema calcula correctamente los dias de vacaciones disponibles y utilizados en el campo Dias por periodo.">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que el campo Dias por periodo de la ventana Peticiones de ausencia en el modulo Ausencias del ERP ODOO, calcule correctamente los dias de vacaciones disponibles y los dias de vacaciones utilizados a partir de la fecha de la fecha de creacion del empleado y la fecha de inicio del periodo de vacaciones solicitado.]]></summary>
+      <preconditions><![CDATA[1. El usuario tiene acceso como empleado al modulo de Ausencias.
+
+2. El usuario debe cumplir con un ano corrido en la empresa desde la fecha de contratacion.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1. Presionar el boton Nueva ausencia.]]></actions>
+          <expectedresults><![CDATA[Visualizar el campo Dias por periodo con la informacion total de los dias de vacaciones disponibles y los dias de vacaciones utilizados por cada ano de servicio completo e incompleto.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2. Visualizar la ventana Peticiones de ausencia.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3. Desplegar campo con la informacion anual de los dias de descanso disponibles y escoger criterio.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4. Desplegar campo Fechas Desde y escoger fecha.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5. Desplegar campo Fecchas Hasta y escoger fecha.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6. Visualizar el campo Duracion con los dias solicitados.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7. Visualizar el campo Dias por periodo con la informacion de los dias acumulados y Dias tomados.]]></actions>
+          <expectedresults><![CDATA[Visualizar el campo Dias por periodo con la informacion total de los dias de vacaciones disponibles y los dias de vacaciones utilizados por cada ano de servicio completo e incompleto.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+  <testsuite name="4-006 Consumir Vacaciones Orden de Antigüedad">
+    <node_order><![CDATA[]]></node_order>
+    <details><![CDATA[]]></details>
+    <testcase internalid="" name="Consumo exitoso de días de vacaciones en orden de antigüedad">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que el sistema consuma los días de vacaciones en orden de antigüedad de los períodos acumulados cuando el empleado cuenta con más de un período de vacaciones.]]></summary>
+      <preconditions><![CDATA[1.El usuario tiene acceso al sistema como empleado.   2.El empleado tiene más de un período de vacaciones acumulado.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1.el usuario ingresa al módulo Ausencias. ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2. dar click en Nueva Ausencia                                                                                                                     ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3. coloca la fecha desde, Hasta]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4.Verificar que se esté consumiendo los días solicitados en los periodos antiguos.]]></actions>
+          <expectedresults><![CDATA[ El sistema debe restar los días solicitados de los períodos de vacaciones acumulados, en orden de antigüedad, y descontar estos días del histórico de vacaciones del empleado.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Consumo de días de vacaciones con un solo período acumulado">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que el sistema consuma los días de vacaciones correctamente cuando el empleado tiene un solo período acumulado.]]></summary>
+      <preconditions><![CDATA[1.El usuario tiene acceso al sistema como empleado.   2.El empleado tiene solo un período de vacaciones acumulado.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1.el usuario ingresa al modulo Ausencias.                              ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2.El empleado crea una solicitud de vacaciones.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3.Selecciona la cantidad de días a solicitar.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4.Envía la solicitud.]]></actions>
+          <expectedresults><![CDATA[El sistema debe restar los días solicitados del único período de vacaciones acumulado y descontar estos días del histórico de vacaciones del empleado.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Consumo de días de vacaciones sin períodos  acumulados">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que el sistema no permita al empleado consumir días de vacaciones si no tiene períodos  acumulados.]]></summary>
+      <preconditions><![CDATA[1.El usuario tiene acceso al sistema como empleado.       2.El empleado no tiene ningún período de vacaciones acumulado.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1.el usuario ingresa al modulo Ausencias.                              ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2.El empleado intenta crear una solicitud de vacaciones.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3.Selecciona la cantidad de días a solicitar.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4.Intenta enviar la solicitud.]]></actions>
+          <expectedresults><![CDATA[El sistema no debe permitir al empleado enviar la solicitud de vacaciones y debe mostrar un mensaje indicando que no tiene períodos de vacaciones acumulados.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name=" Excede Dias Vacacionales">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que el sistema muestre un mensaje indicando que no tiene dias suficientes a su solicitud.]]></summary>
+      <preconditions><![CDATA[ El empleado no tiene años acumulados de vacaciones]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1.el usuario ingresa al modulo Ausencias.                               ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2.El empleado ingresa la fecha de inicio y fin del período de vacaciones.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3.Intenta realizar la solicitud de vacaciones. ]]></actions>
+          <expectedresults><![CDATA[El sistema debe mostrar un mensaje indicando que el empleado no tiene días suficientes a su solictud.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+  <testsuite name=" 4-007 Comentario Validación Días Disponibles Vacaciones">
+    <node_order><![CDATA[]]></node_order>
+    <details><![CDATA[]]></details>
+    <testcase internalid="" name="Validación de comentario para días de vacaciones disponibles.">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que el sistema muestre correctamente el comentario de validación de días disponibles acumulados de vacaciones al empleado.
+]]></summary>
+      <preconditions><![CDATA[ 1.El usuario tiene acceso al sistema como empleado.    2.El empleado tiene dias de vacaciones acumulados.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1.el usuario ingresa al modulo Ausencias.                                                                                                                               ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2. Da click en Nueva ausencia.         ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3. Visualizar que aparezca el comentario de  dias disponibles.]]></actions>
+          <expectedresults><![CDATA[El sistema debe mostrar un comentario en pantalla indicando los días disponibles  acumulados que tiene el empleado.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+  <testsuite name="4-008 Mensaje Validación Días Perfil Administrativo">
+    <node_order><![CDATA[]]></node_order>
+    <details><![CDATA[]]></details>
+    <testcase internalid="" name="Mensaje de validación del período afectado para un solo año acumulado.">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que el sistema muestre correctamente el comentario de validación cuando el jefe inmediato ingrese a aprobar la solicitud.]]></summary>
+      <preconditions><![CDATA[ 1.El usuario tiene acceso al sistema como Jefe inmediato.                   2.El jefe inmediato recibe una solicitud de vacaciones de un empleado con un año acumulado]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[ 1.ingresar al sistema al módulo de Ausencia a aprobar la solicitud.                                                                                ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2. Dar click en el empleado que ha realizado la solicitud de vacaciones.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3. verificar que este el comentario de validación donde dice que el empleado tiene días de vacaciones en un periodo acumulado.]]></actions>
+          <expectedresults><![CDATA[El sistema debe mostrar un comentario en pantalla indicando los días disponibles para el año correspondiente.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Validación del período afectado para múltiples años acumulados">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que el sistema muestre correctamente el comentario de validación del período afectado para varios años acumulados de vacaciones.]]></summary>
+      <preconditions><![CDATA[El jefe inmediato recibe una solicitud de vacaciones de un empleado con múltiples años acumulados.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[ 1.ingresar al sistema al módulo de Ausencia a aprobar la solicitud.                                                                                ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2. Dar click en el empleado que ha realizado la solicitud de vacaciones.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3. verificar que este el comentario de validación donde dice que el empleado tiene días de vacaciones en varios  periodos acumulados.                   ]]></actions>
+          <expectedresults><![CDATA[ El sistema debe mostrar comentarios en pantalla indicando los días disponibles para cada año acumulado por el empleado.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+</testsuite>

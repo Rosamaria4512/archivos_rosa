@@ -1,0 +1,395 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="">
+  <node_order><![CDATA[]]></node_order>
+  <details><![CDATA[]]></details>
+  <testsuite name=" ED-010 -Mensaje de validación por cambios de compromisos ">
+    <node_order><![CDATA[]]></node_order>
+    <details><![CDATA[]]></details>
+    <testcase internalid="" name="Validación de cambios en la tabla de objetivos de desarrollo laboral">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Este caso de prueba verifica que el sistema muestre un mensaje de alerta cuando el evaluador y/o evaluado hace un cambio en algún campo de la tabla Objetivos de desarrollo laboral, en el módulo evaluación de desempeño.]]></summary>
+      <preconditions><![CDATA[*Debe existir al menos una evaluación de desempeño con compromisos en la tabla de 'Objetivos de desarrollo laboral'.
+*El usuario (evaluador o empleado) debe tener permisos para modificar la evaluación de desempeño.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-Iniciar sesión como evaluador o empleado con permisos para modificar evaluaciones de desempeño.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-dar clic en el icono que aparece en la parte superior del sistema.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- dar clic en el módulo Evaluación de desempeño.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-Navegar a la evaluación de desempeño del evaluado.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5 dar clic en el botón editar.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6-Realizar un cambio en la tabla de 'Objetivos de desarrollo laboral' (ej. editar un compromiso existente).]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7-verificar que se genere la alerta "Se han registrado cambios en los compromisos del colaborador" ]]></actions>
+          <expectedresults><![CDATA[El sistema debe mostrar una alerta de con las siguientes características:
+Cuerpo del mensaje: ""Se han registrado cambios en los compromisos del colaborador" 
+El usuario tiene la opción de confirmar o cancelar la acción.
+Si el usuario cancela, los cambios no deben ser guardados.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="verificar que si se descartan los cambios.">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[En este caso de prueba se verifica que al dar clic en el boton descatar  el sistema deje la información anteriormente registrada, dentro de la  tabla Objetivos  de desarrollo laboral, en el modulo evalución de desempeño.]]></summary>
+      <preconditions><![CDATA[*Debe existir al menos una evaluación de desempeño con compromisos en la tabla de 'Objetivos de desarrollo laboral'.
+*El usuario (evaluador o empleado) debe tener permisos para modificar la evaluación de desempeño.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-Iniciar sesión como evaluador o empleado con permisos para modificar evaluaciones de desempeño.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-dar clic en el icono que aparece en la parte superior del sistema.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- dar clic en el módulo Evaluación de desempeño.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-Navegar a la evaluación de desempeño del evaluado.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5 dar clic en el botón editar.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6-Realizar un cambio en la tabla de 'Objetivos de desarrollo laboral' (ej. editar un compromiso existente).]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7-verificar que se genere la alerta "Se han registrado cambios en los compromisos del colaborador"   ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[8]]></step_number>
+          <actions><![CDATA[8-dar clic en el botón descartar                                                       ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[9]]></step_number>
+          <actions><![CDATA[9- verificar que el sistema mantenga la información anteriormente registrada.      ]]></actions>
+          <expectedresults><![CDATA[al ingresar al ERP odoo se valida que al ingresar al modulo evalución de desempeño al hacer un cambio en la tabla objetivos de desarrollo laboral, al darle clic en el botón descartar, se mentiene la información antes registrada en el sistema.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+  <testsuite name="Spike : Límite de calificación en base a los compromisos		">
+    <node_order><![CDATA[]]></node_order>
+    <details><![CDATA[]]></details>
+    <testcase internalid="" name="limitar calificación en base a compromisos no cumplidos ">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[En este caso de prueba se verifica que cuando el evaluador vaya a dar clasificación a un colaborador en la dimensión ACTUAR  "compromisos organizacional “ y uno de sus compromisos este en estado "no cumplido" no debe permitirle calificarse en 5, debe salir una advertencia con el siguiente mensaje:  “Las calificaciones deben estar entre 1 y 4. Recuerde que, si el colaborador no cumplió con las objetivos pactados en la evaluación de desarrollo laboral de la vigencia anterior y/o compromisos organizacionales, la calificación deberá ser inferior a 5.” y no permite guardar la calificación]]></summary>
+      <preconditions><![CDATA[*Debe existir al menos una evaluación de desempeño con compromisos en la tabla de 'Objetivos de desarrollo laboral' en estado "No cumplido"
+*Deben existir dimesaiones cargadas.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-Iniciar sesión como evaluador al sistema Erp Odoo]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-dar clic en el icono que aparece en la parte superior del sistema.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- dar clic en el módulo Evaluación de desempeño.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-Navegar a la evaluación de desempeño del evaluado, debe estar en estado ‘Evaluación líder’.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5 dar clic en el botón editar.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6- Navegar hasta las dimensiones.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7-Verificar que haya compromisos en estado “No cumplido” en la tabla Objetivos de desarrollo laboral.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[8]]></step_number>
+          <actions><![CDATA[8-Intentar registrar la calificación en un valor “5”, en un objetivo específico]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[9]]></step_number>
+          <actions><![CDATA[9-Dar clic en el botón “Guardar”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[10]]></step_number>
+          <actions><![CDATA[10-Verificar que salga la siguiente validación “Las calificaciones deben estar entre 1 y 4. Recuerde que, si el colaborador no cumplió con los objetivos pactados en la evaluación de desarrollo laboral de la vigencia anterior y/o compromisos organizacionales, la calificación deberá ser inferior a 5.”]]></actions>
+          <expectedresults><![CDATA[al ingresar al ERP odoo se valida que al ingresar al modulo evalución de desempeño a calificar la dimensión ACTUAR  "compromisos organizacional “   de un evaluado el sistema arroja una validación  y no permite guardar la calificacion.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="verificar que guarde la calificacion si esta sobre 4 o menos.">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[En este caso de prueba se verifica que cuando el evaluador de su  clasificación a un colaborador en la dimensión ACTUAR  "compromisos organizacional “el sistema guarde la calificación cuando el evaluado la coloque sobre 4 o menos, dentro del módulo Evaluación de desempeño, en las dimensiones.]]></summary>
+      <preconditions><![CDATA[*Debe existir al menos una evaluación de desempeño con compromisos en la tabla de 'Objetivos de desarrollo laboral' en estado "No cumplido" *Deben existir dimesaiones cargadas.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-Iniciar sesión como evaluador al sistema Erp Odoo]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-dar clic en el icono que aparece en la parte superior del sistema.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- dar clic en el módulo Evaluación de desempeño.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-Navegar a la evaluación de desempeño del evaluado.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5 dar clic en el botón editar.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6- Navegar hasta las dimensiones.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7-Verificar que haya compromisos en estado “No cumplido” en la tabla Objetivos de desarrollo laboral.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[8]]></step_number>
+          <actions><![CDATA[8- registrar la calificación en un valor “4” o menos.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[9]]></step_number>
+          <actions><![CDATA[9-Dar clic en el botón “Guardar”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[10]]></step_number>
+          <actions><![CDATA[10-Verificar que el sistema permita guardar la calificación.]]></actions>
+          <expectedresults><![CDATA[Al ingresar al ERP odoo se valida que al ingresar al modulo evalución de desempeño a calificar la dimensión ACTUAR  "compromisos organizacional “   de un evaluado el sistema  permite guardar las calificaciones que estan sobre 4 o menos correctamente.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+  <testsuite name="Cambios menores 			">
+    <node_order><![CDATA[]]></node_order>
+    <details><![CDATA[]]></details>
+    <testcase internalid="" name="verificar el cambio del placeholder en campo 'Comentarios finales' 					">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[En este caso de prueba se verifica que se haya hecho un cambio en el campo "comentarios finales" debe implementarse el siguiente texto: “Indicar temas excepcionales o particularidades relevantes en esta evaluación. Por ejemplo: ausencias de largo plazo (vacaciones, licencias, incapacidades, entre otros), dentro del módulo evaluación de desempeño, al navegar hasta la sección "Comentarios finales". ]]></summary>
+      <preconditions><![CDATA[*Debe estar dentro del módulo evaluación de desempeño.    
+*Debe existir la sección "comentarios finales".]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-Iniciar sesión como evaluador al sistema Erp Odoo]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-Dar clic en el icono que aparece en la parte superior del sistema.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3-Dar clic en el módulo Evaluación de desempeño.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-Seleccionar una evaluación de desempeño de un colaborador.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-Navegar hasta la sección “Comentarios finales”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6-Verificar que en el placeholder este el siguiente texto: “Indicar temas excepcionales o particularidades relevantes en esta evaluación. Por ejemplo: ausencias de largo plazo (vacaciones, licencias, incapacidades, entre otros), dentro del módulo evaluación de desempeño.]]></actions>
+          <expectedresults><![CDATA[Al ingresar al sistema Erp odoo al modulo evaluación de desempeño al navegar hasta "Comentarios  finales" se debe validar que el cambio del placeholder se haya realizado correctamente.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Verificar ajuste en notificación &quot;no aceptación del compromiso&quot;">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[En este caso de prueba se valida que el ajuste solicitado al cambio de la palabra "porfavor" a "por favor" y "relice" a "realice" se vea efectuado, dentro de la notificación de no acpetacion del compromiso.]]></summary>
+      <preconditions><![CDATA[*Debe existir una notificación de compromiso.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-verificar que en la notificación de “No aceptación del compromiso” se vea reflejado el cambio de la palabra "porfavor" a "por favor" y "relice" a "realice".]]></actions>
+          <expectedresults><![CDATA[Al revisar la notificación de no aceptación del compromiso se verifica que el cambio de la palabra "porfavor" a la palabra "por favor" y "relice" a "realice" se visualiza exitosmente.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="verificar cambio de nombres de los checkpoint">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[En este caso de prueba se verifica el cambio de nombres de los checkpoint en el módulo evaluación de desempeño, deben quedar de la siguiente manera: checkpoint a corto plazo, checkpoint a mediano plazo y checkpoint a largo plazo.]]></summary>
+      <preconditions><![CDATA[*Debe estar dentro del modulo evaluación de desempeño.                                     *Debe existir la sección de los checkpoint.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-Iniciar sesión como evaluador al sistema Erp Odoo]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2-Dar clic en el icono que aparece en la parte superior del sistema.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3-Dar clic en el módulo Evaluación de desempeño.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-Seleccionar una evaluación de desempeño de un colaborador.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-Navegar hasta la sección de los checkpoint.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6-Verificar que los nombres de los checkpoint esten de la siguiente manera:  checkpoint a corto plazo, checkpoint a mediano plazo y checkpoint a largo plazo.]]></actions>
+          <expectedresults><![CDATA[Se verifica que el cambio de nombre de los checkpoint en el modulo evaluación de desempeño, con los siguientes nombres checkpoint a corto plazo, checkpoint a mediano plazo y check point a largo plazo, se muestran correctamente.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+</testsuite>

@@ -1,0 +1,595 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="">
+  <node_order><![CDATA[]]></node_order>
+  <details><![CDATA[]]></details>
+  <testsuite name="ED-001- Creación de compromisos evaluación de desempeño">
+    <node_order><![CDATA[]]></node_order>
+    <details><![CDATA[]]></details>
+    <testcase internalid="" name="Crear un nuevo compromiso de evaluación">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que cuando el usuario con perfil de líder evaluador ingrese al ERP odoo y al módulo Evaluación de desempeño, el sistema le permita agregar un nuevo compromiso de evaluación cuando él le dé clic en “agregue una nueva línea" en la tabla "objetivos de desarrollo laboral" y llene todos los campos correspondientes.]]></summary>
+      <preconditions><![CDATA[*El usuario ha iniciado sesión como líder evaluador.
+*'El usuario tiene acceso a la tabla "Objetivos de desarrollo labora ya que la evaluación se encuentra en estado 'Evaluación líder'.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-ingresar al ERP odoo con credenciales de líder evaluador.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2- dar clic en el icono de “menú principal”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- dar clic en el módulo “evaluación y desempeño”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-dar clic en el botón “crear”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-llenar lo campos: Fecha, tipo, nombre del empleado, fecha de ingreso, departamento, jefe inmediato, Evaluador.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6- navegar y dar clic en la sección “Objetivos de desarrollo laboral".]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7-dar clic en el texto “agregar línea” en la tabla "Objetivos de desarrollo laboral".]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[8]]></step_number>
+          <actions><![CDATA[8-Ingresar la siguiente información en los campos correspondientes:*Criterio: [seleccionar una opción de la lista desplegable]                                             
+*Objetivo profesional: [seleccionar una opción de la lista desplegable]
+*Categoría: [si se escoge una de las opciones de Izy Academy como: curso Izy Acdemy, certificación Izy Academy, ruta de formación Izy Academy, entonces escoger unas de la opcines de la lista desplegable del campo categoría]
+*Curso Izy Academy: [si se escoge una de las opciones de Izy Academy como: curso Izy Acdemy, certificación Izy Academy, ruta de formación Izy Academy]                                   
+*Fecha de creación: Verificar que se establezca automáticamente con la fecha actual.
+*Descripción del compromiso: [Descripción detallada]
+*Año de asignación: Verificar que se establezca automáticamente con el año en curso y sea de solo lectura.
+*Entregable: [Adjuntar archivo]
+*sesión de retroalimentación [agregar información]
+*Seguimiento: [Seleccionar una opción de la lista desplegable (Corto plazo, Mediano plazo, Largo plazo]
+*Estado: Verificar que por defecto se seleccione "En proceso".
+*Continuar: Verificar que por defecto sea "True" y de solo lectura.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[9]]></step_number>
+          <actions><![CDATA[9-Dar clic en el botón guardar.]]></actions>
+          <expectedresults><![CDATA[Al ingresar al sistema ERP odoo como lider evaluador agregar una nueva linea en la tabla "Objetivos de desarrollo laboral" llenar todos los campos correspondientes, y darle guardar se crea un compromiso nuevo correctamente para un empleado.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Verificar la creación automática de la &quot;Fecha de creación&quot;">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que cuando el usuario con perfil de líder evaluador ingrese al ERP odoo y al módulo Evaluación de desempeño, analizar que el campo "Fecha de creación" se establezca automáticamente con la fecha actual cuando se crea un nuevo compromiso, dentro de la tabla "Objetivos de desarrollo laboral".]]></summary>
+      <preconditions><![CDATA[*El usuario ha iniciado sesión como líder evaluador.
+*'El usuario tiene acceso a la tabla "Objetivos de desarrollo labora ya que la evaluación se encuentra en estado 'Evaluación líder'.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-ingresar al ERP odoo con credenciales de líder evaluador.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2- dar clic en el icono de “menú principal”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- dar clic en el módulo “evaluación y desempeño”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-dar clic en el botón “crear”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-llenar lo campos: Fecha, tipo, nombre del empleado, fecha de ingreso, departamento, jefe inmediato, Evaluador.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6- navegar y dar clic en la sección “Objetivos de desarrollo laboral".]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7-dar clic en el texto “agregar línea” en la tabla "Objetivos de desarrollo laboral".]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[8]]></step_number>
+          <actions><![CDATA[8-Verificar que el campo "Fecha de creación" se establezca automáticamente con la fecha actual.                  ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[9]]></step_number>
+          <actions><![CDATA[9-Guardar los cambios.]]></actions>
+          <expectedresults><![CDATA[Cuando se ingresa al sistema con perfil de lider evaludor se logra validar que la "fecha de creación" se crea por defecto con la fecha de creación del compromiso]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Verificar la creación automática del &quot;Año de asignación&quot;">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que cuando el usuario con perfil de líder evaluador ingrese al ERP odoo y al módulo Evaluación de desempeño, analizar que el campo "Año de asignación" se establezca automáticamente con el año en curso y sea de solo lectura cuando se crea un nuevo compromiso dentro de la tabla "Objetivos de desarrollo laboral".]]></summary>
+      <preconditions><![CDATA[*El usuario ha iniciado sesión como líder evaluador.
+*'El usuario tiene acceso a la tabla "Objetivos de desarrollo labora ya que la evaluación se encuentra en estado 'Evaluación líder'.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-ingresar al ERP odoo con credenciales de líder evaluador.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2- dar clic en el icono de “menú principal”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- dar clic en el módulo “evaluación y desempeño”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-dar clic en el botón “crear”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-llenar lo campos: Fecha, tipo, nombre del empleado, fecha de ingreso, departamento, jefe inmediato, Evaluador.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6- navegar y dar clic en la sección “Objetivos de desarrollo laboral".]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7-dar clic en el texto “agregar línea” en la tabla "Objetivos de desarrollo laboral".]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[8]]></step_number>
+          <actions><![CDATA[8-Verificar que el campo "Año de asignación" se establezca automáticamente con el año en curso y sea de solo lectura.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[9]]></step_number>
+          <actions><![CDATA[9-Guardar los cambios.]]></actions>
+          <expectedresults><![CDATA[Cuando se ingresa al sistema con perfil de lider evaludor se logra validar que el "año de asiganción"  se crea por defecto con el año en curso para la creación del compromiso y tambien el campo "Año de asignación" es de  solo lectura.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Validación de campo obligatorio &quot;Seguimiento&quot;">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que cuando el usuario con perfil de líder evaluador ingrese al ERP odoo y al módulo Evaluación de desempeño, el campo "Seguimiento" sea obligatorio y presente opciones en la lista desplegable dentro de la tabla "Objetivos de desarrollo laboral".]]></summary>
+      <preconditions><![CDATA[*El usuario ha iniciado sesión como líder evaluador.
+*'El usuario tiene acceso a la tabla "Objetivos de desarrollo labora ya que la evaluación se encuentra en estado 'Evaluación líder'.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-ingresar al ERP odoo con credenciales de líder evaluador.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2- dar clic en el icono de “menú principal”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- dar clic en el módulo “evaluación y desempeño”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-dar clic en el botón “crear”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-llenar lo campos: Fecha, tipo, nombre del empleado, fecha de ingreso, departamento, jefe inmediato, Evaluador.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6- navegar y dar clic en la sección “Objetivos de desarrollo laboral".]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7-dar clic en el texto “agregar línea” en la tabla "Objetivos de desarrollo laboral".]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[8]]></step_number>
+          <actions><![CDATA[ 8- Verificar que el campo "Seguimiento" presente una lista desplegable con las opciones "Corto plazo", "Mediano plazo" y "Largo plazo" en la lista desplegable.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[9]]></step_number>
+          <actions><![CDATA[9-Dejar el campo "Seguimiento" en blanco.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[10]]></step_number>
+          <actions><![CDATA[10-dar clic en el botón guardar                                              ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[11]]></step_number>
+          <actions><![CDATA[11- validar que no se pueda guardar los cambios.]]></actions>
+          <expectedresults><![CDATA[Cuando se ingresa al sistema con perfil de lider evaludor se logra validar que el campo seguimiento es obligatorio, porque al guardar cambios si ese campo no se ha ingresado información el sistema no permite guardar cambios, tambien se logra validar que es una campo que tiene una lista despleable con las siguientes opciones  "Corto plazo", "Mediano plazo" y "Largo plazo]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Validación del campo &quot;Estado&quot;">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que cuando el usuario con perfil de líder evaluador ingrese al ERP odoo y al módulo Evaluación de desempeño, el campo "Estado" presente las opciones "Cumplido", "No cumplido" y "En proceso" dentro de la tabla "Objetivos de desarrollo laboral" y que por defecto se seleccione "En proceso".]]></summary>
+      <preconditions><![CDATA[*El usuario ha iniciado sesión como líder evaluador.
+*'El usuario tiene acceso a la tabla "Objetivos de desarrollo labora ya que la evaluación se encuentra en estado 'Evaluación líder'.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-ingresar al ERP odoo con credenciales de líder evaluador.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2- dar clic en el icono de “menú principal”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- dar clic en el módulo “evaluación y desempeño”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-dar clic en el botón “crear”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-llenar los campos: Fecha, tipo, nombre del empleado, fecha de ingreso, departamento, jefe inmediato, Evaluador.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6- navegar y dar clic en la sección “Objetivos de desarrollo laboral".]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7-dar clic en el texto “agregar línea” en la tabla "Objetivos de desarrollo laboral".]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[8]]></step_number>
+          <actions><![CDATA[8-Verificar que el campo "Estado” presente las opciones "Cumplido", "No cumplido" y "En proceso" en la lista desplegable.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[9]]></step_number>
+          <actions><![CDATA[9-Verificar que por defecto se seleccione "En proceso".]]></actions>
+          <expectedresults><![CDATA[Al ingresar al ERP odoo se logra validar que el campo "estado" es de lista desplegable y tiene las siguientes opciones "Cumplido", "No cumplido" y "En proceso", añadido a eso se visualiza que por defecto se selecciona la opción en proceso .]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="validación del campo &quot;Continuar&quot; en true">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que cuando el usuario con perfil de líder evaluador ingrese al ERP odoo y al módulo Evaluación de desempeño, el campo "continuar “sea un campo booleano y por defecto debe ser true , dentro de la tabla "Objetivos de desarrollo laboral", cuando se cree un compromiso nuevo.]]></summary>
+      <preconditions><![CDATA[*El usuario ha iniciado sesión como líder evaluador.
+*'El usuario tiene acceso a la tabla "Objetivos de desarrollo labora ya que la evaluación se encuentra en estado 'Evaluación líder'.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-ingresar al ERP odoo con credenciales de líder evaluador.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2- dar clic en el icono de “menú principal”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- dar clic en el módulo “evaluación y desempeño”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4-dar clic en el botón “crear”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-llenar los campos: Fecha, tipo, nombre del empleado, fecha de ingreso, departamento, jefe inmediato, Evaluador.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6- navegar y dar clic en la sección “Objetivos de desarrollo laboral".]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7-dar clic en el texto “agregar línea” en la tabla "Objetivos de desarrollo laboral".]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[8]]></step_number>
+          <actions><![CDATA[8-verificar que el capo "continuar" se dé tipo booleano y que por defecto se cargue true]]></actions>
+          <expectedresults><![CDATA[Al ingresar al ERP odoo con credenciales de lider evaluador se valida que el campo "continuar" es bolleano y se carga por defecto en true dentro de la tabla "Objetivos de desarrollo laboral", correctamente.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+  <testsuite name="ED-002 -Visualización de compromisos previos">
+    <node_order><![CDATA[]]></node_order>
+    <details><![CDATA[]]></details>
+    <testcase internalid="" name="Listado de compromisos previos">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que cuando el usuario con perfil de líder evaluador ingrese al ERP odoo y al módulo Evaluación de desempeño, el líder evaluador pueda visualizar el listado de compromisos de la evaluación inmediatamente anterior cuando se navegue hasta la tabla "Objetivos de desarrollo laboral".]]></summary>
+      <preconditions><![CDATA[*El usuario debe haber iniciado sesión como líder evaluador.
+*El empleado cuya evaluación se va a revisar debe tener compromisos agregados en la evaluación inmediatamente anterior.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-ingresar al ERP odoo con credenciales de líder evaluador.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2- dar clic en el icono de “menú principal”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- dar clic en el módulo “evaluación y desempeño”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4- buscar un empleado en el buscador]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-Dar clic en la evaluación vigente]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6-Navegar a la sección de objetivos de desarrollo laboral]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7-Visualizar el listado de compromisos de la evaluación inmediatamente anterior.]]></actions>
+          <expectedresults><![CDATA[Al ingresar al sistema ERP odoo como lider evaluador navegar hasta el modulo evaluación y desempeño  y dar clic en la tabla "Objetivos de desarrollo laboral", se valida que muestra el listado de compromisos de la evaluación anterior correctamente.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="Visualización detallada de los compromisos">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que cuando el usuario con perfil de  lider evaluador  ingrese al ERP odoo y navegue modulo Evaluación de desempeño el líder evaluador pueda visualizar la información detallada de cada compromiso de la evaluación inmediatamente anterior, cuando el ingrese a la tabla "Objetivos de desarrollo laboral".]]></summary>
+      <preconditions><![CDATA[*El usuario debe haber iniciado sesión como líder evaluador.
+*El empleado cuya evaluación se va a revisar debe tener compromisos agregados en la evaluación inmediatamente anterior.]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-ingresar al ERP odoo con credenciales de líder evaluador.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2- dar clic en el icono de “menú principal”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- dar clic en el módulo “evaluación y desempeño”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4- buscar un empleado en el buscador]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-Dar clic en la evaluación vigente]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6-Navegar a la sección de objetivos de desarrollo laboral]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7-Visualizar el listado de compromisos de la evaluación inmediatamente anterior.]]></actions>
+          <expectedresults><![CDATA[Al ingresar al ERP ODOO como  se logra validar que el sistema permite visualizar los detalles de los compromisos de evaluación correctamente.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+    <testcase internalid="" name="validación del campo &quot;Continuar&quot; en false">
+      <node_order><![CDATA[]]></node_order>
+      <externalid><![CDATA[]]></externalid>
+      <version><![CDATA[]]></version>
+      <summary><![CDATA[Verificar que cuando el usuario con perfil de líder evaluador ingrese al ERP odoo y al módulo Evaluación de desempeño, al el querer ver los detalles de un compromiso en específico de debe visualizar que el campo “continuar “sea un campo booleano y debe ser false, dentro de la tabla "Objetivos de desarrollo laboral"]]></summary>
+      <preconditions><![CDATA[*El usuario ha iniciado sesión como líder evaluador.
+*Existe una evaluación vigente para el colaborador.
+*El usuario tiene acceso a la tabla "Objetivos de desarrollo laboral".]]></preconditions>
+      <execution_type><![CDATA[1]]></execution_type>
+      <importance><![CDATA[3]]></importance>
+      <steps>
+        <step>
+          <step_number><![CDATA[1]]></step_number>
+          <actions><![CDATA[1-ingresar al ERP odoo con credenciales de líder evaluador.]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[2]]></step_number>
+          <actions><![CDATA[2- dar clic en el icono de “menú principal”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[3]]></step_number>
+          <actions><![CDATA[3- dar clic en el módulo “evaluación y desempeño”]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[4]]></step_number>
+          <actions><![CDATA[4- buscar un empleado en el buscador]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[5]]></step_number>
+          <actions><![CDATA[5-Dar clic en la evaluación vigente]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[6]]></step_number>
+          <actions><![CDATA[6-Navegar a la sección de objetivos de desarrollo laboral]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[7]]></step_number>
+          <actions><![CDATA[7-Seleccionar un compromiso de la lista para ver los detalles.                                                                                           ]]></actions>
+          <expectedresults><![CDATA[]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+        <step>
+          <step_number><![CDATA[8]]></step_number>
+          <actions><![CDATA[8- visualizar que los detalles de los compromisos se muestren.]]></actions>
+          <expectedresults><![CDATA[Al ingresar al ERP odoo con credenciales de lider evaluador se valida que el campo "continuar" es boleano y esta en false dentro de la tabla "Objetivos de desarrollo laboral", correctamente.]]></expectedresults>
+          <execution_type><![CDATA[1]]></execution_type>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+</testsuite>
